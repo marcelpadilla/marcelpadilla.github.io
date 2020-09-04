@@ -8368,3 +8368,26 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #4897fc; }
+
+
+/*# ================================================*/
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.2fr 0.3fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "Top-Bar Top-Bar Top-Bar Top-Bar"
+    "Side-Bar Main-Area Main-Area Main-Area"
+    "Bottom-Bar Bottom-Bar Bottom-Bar Bottom-Bar";
+}
+
+.Top-Bar { grid-area: Top-Bar; }
+
+.Bottom-Bar { grid-area: Bottom-Bar; }
+
+.Side-Bar { grid-area: Side-Bar; }
+
+.Main-Area { grid-area: Main-Area; }
