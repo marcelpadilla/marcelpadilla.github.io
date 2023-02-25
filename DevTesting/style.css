@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* reset browser defaults */
+}
+
+body {
+    font-family: Questrial;
+    padding: 0px;
+}
+
+nav {
+    background-color: rgb(255, 0, 0);
+}
+
+main {
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+p {
+    color: rgb(86, 79, 79);
+    padding: 10px 10px;
+}
+
+.thumbnail{
+    width: 50%;
+    height: 80%;
+}
+
+.thumbnail:hover{
+    border: 4px solid red;
+}
+
+/* 
+Cheat Sheet
+
+* {
+    EVERYTHING
+}
+
+type {
+    Specific HTML type. such as p, h1, h2, body
+}
+
+.X {
+    special classes. mark e.g. <img class="X Y Z" ...>
+    in html and then this will be applied to it.
+    multiple classes possible.
+}
+
+#X {
+    Will only apply to one instance with this id
+    <p id="X"> </p>. Overrides everything else
+}
+
+a[href*='florence'] {
+    links <a> that contain the string "florence"
+    in their href. This is by attribute
+}
+
+p:X {
+  pseudoclass on <p></p>
+  X can be :focus, :visited, :disabled,
+   and :active :hovered
+}
+
+type.X{
+    only specific type with class X
+}
+
+.X type{
+type type {
+    only addresse the type or class of the decendents 
+    (inside the block of type) gets targeted
+}
+
+type, Y {
+    both type and Y are addressed
+}
+
+hirarchy
+type < class < id
+
+
+box model
+https://content.codecademy.com/courses/freelance-1/unit-4/diagram-boxmodel.svg
+
+border: thickness style color;
+border-radius:
+margin: top right down left (clockwise)
+margin: top left-right down
+margin top-bottom left-right
+left and right add up.Top and bottom collapse
+can use auto to balance it out.
+
+min-height: 150px;
+max-height: 300px;
+min-width: 300px;
+max-width: 600px;
+
+Give width in % of page widths.
+
+overflow: 
+    scroll
+    visible
+    hidden
+
+box-sizing: border-box;
+    this is the better box model
+
+
+* {
+    margin: 0;
+    padding: 0;
+    reset browser defaults
+}
+
+HTML FLOW
+A browser will render the elements of an HTML document that has no CSS from left to right, top to bottom, in the same order as they exist in the document. This is called the flow of elements in HTML.
+
+
+
+The position property can take one of five values:
+static
+    the default value (it does not need to be specified)
+    stay in html flow
+relative
+    (move relative to static)
+    stay in html flow
+absolute
+    (like relative but dont move anything else relative to it)
+    removed from html flow
+fixed
+    (stays alway, like a navigation bar)
+    removed from html flow
+sticky
+    keep on scroll until limit is reached
+
+
+position: relative (to static position):
+    top - moves the element down from the top.
+    bottom - moves the element up from the bottom.
+    left - moves the element away from the left side (to the right).
+    right - moves the element away from the right side (to the left).
+
+
+z-index: integer;
+    layer to render on top of each other.
+
+display:
+    inline
+        default for html type <a> <strong> <emph>
+        wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element
+        can share space with others on one line
+    block
+        block elements fill the line by default
+        default for <hX> <p> <div> <footer>
+        but their with can be set
+    inline-block
+        default for <div>
+        puts boxes next to each other horizontally
+
+
+float:
+    right; move things right
+    left;
+
+clear: Used this to handle collisions of float.
+    left; left side of element will not touch any element
+            with the same containing element
+    right;
+    both;
+    none;
+
+
+
+*/
+
+
