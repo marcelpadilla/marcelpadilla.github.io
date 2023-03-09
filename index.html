@@ -5,6 +5,8 @@
 
 <head>
 
+    <meta charset="UTF-8">
+
     <!-- TAB TITLE -->
     <title>Marcel Padilla</title>
 
@@ -12,7 +14,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
 
     <!-- CSS import -->
-    <link href='style.css' rel='stylesheet'>
+    <link href='./Source/style.css' rel='stylesheet'>
+
+    <!-- jQuery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Navigation Bar Inclusion Function -->
+    <script>
+        $(function () {
+            $("#navigation-bar").load("./Source/navigation-bar.html");
+        });
+    </script>
 
 </head>
 
@@ -23,27 +35,12 @@
 <body>
 
     <!-- NAVIGATION -->
-    <nav>
-        <a class="nav-first" href="#home">Marcel Padilla</a>
-        <a href="#Publications">Publications</a>
-        <a href="#Teaching">Teaching</a>
-        <a href="#AboutMe">About Me</a>
-        <a href="https://www.youtube.com/@marcelpadilla">YouTube</a>
-    </nav>
+    <div id="navigation-bar"></div>
 
 
     <!-- MAIN -->
     <main id="home">
 
-
-
-
-
-
-        <!-- Position Title -->
-        <!-- <p id="position">
-            Doctoral Researcher at TU Berlin
-        </p> -->
 
 
 
@@ -62,7 +59,7 @@
 
 
                     <a class="publication-title" href="#AboutMe">
-                        Doctoral Researcher at TU Berlin
+                        Doctoral Researcher at TU Berlin 🎓
                     </a>
 
                     <div class="publication-authors">
@@ -75,10 +72,10 @@
 
                     <p>
                         <a class="publication-link" href="https://www.youtube.com/@marcelpadilla">
-                            &#x2022;  YouTube
+                            &#x2022; YouTube
                         </a>
                         <a class="publication-link" href="https://scholar.google.com/citations?user=HtxEN4UAAAAJ&hl=en">
-                            &#x2022;  Google Schoolar
+                            &#x2022; Google Schoolar
                         </a>
                         <a class="publication-link" href="http://www.linkedin.com/in/marcel-padilla">
                             &#x2022; linkedin
@@ -109,7 +106,7 @@
         <!-- PUBLICATIONS -->
         <div id="Publications">
 
-            <h1>Publications</h1>
+            <h1>Publications 📜</h1>
 
 
 
@@ -117,14 +114,15 @@
             <div class="row">
 
                 <div class="column-image">
-                    <img src="./images/FilamentBasedPlasma/Project Thumbnail.png" alt="Image description">
+                    <img src="./Projects/Filament_Based_Plasma/Project Thumbnail.png"
+                        alt="Thumbnail of Filament Based Plasma">
                 </div>
 
                 <div class="column-text">
 
 
                     <a class="publication-title"
-                        href="https://www3.math.tu-berlin.de/geometrie/wp_padilla/filament-based-plasma-siggraph-2022/">
+                        href="./Filament_Based_Plasma.html">
                         Filament Based Plasma
                     </a>
 
@@ -394,7 +392,7 @@
         <!-- TEACHING -->
         <div id="Teaching">
 
-            <h1>Teaching</h1>
+            <h1>Teaching 📖</h1>
 
 
 
@@ -508,7 +506,7 @@
         <!-- About Me -->
         <div id="AboutMe">
 
-            <h1>About Me</h1>
+            <h1>About Me 🦆</h1>
 
 
 
@@ -552,13 +550,13 @@
 
                     <p>
                         <a class="publication-link" href="https://www.youtube.com/@marcelpadilla">
-                            &#x2022;  YouTube
+                            &#x2022; YouTube
                         </a>
                     </p>
 
                     <p>
                         <a class="publication-link" href="https://scholar.google.com/citations?user=HtxEN4UAAAAJ&hl=en">
-                            &#x2022;  Google Schoolar
+                            &#x2022; Google Schoolar
                         </a>
                     </p>
 
