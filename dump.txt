@@ -1,0 +1,31 @@
+<div class="row">
+
+                    <div class="column-image">
+                        <img src="./Projects/Filament_Based_Plasma/Project Thumbnail.png"
+                            alt="Thumbnail of Filament Based Plasma">
+                    </div>
+
+                    <div class="column-text">
+
+
+                        <a class="publication-title" href="./Filament_Based_Plasma.html">
+                            Filament Based Plasma
+                        </a>
+
+                        <div class="publication-authors">
+                            Marcel Padilla, Oliver Gross, Felix Knöppel, Albert Chern, Ulrich Pinkall, Peter Schröder
+                        </div>
+
+                        <div class="publication-journal">
+                            ACM Transactions on Graphics (TOG) - Proceedings of <strong>ACM SIGGRAPH 2022</strong>. Vol.
+                            41
+                            Issue 4, July 2022
+                        </div>
+
+                        <a class="publication-link" href="https://doi.org/10.1145/3528223.3530102">
+                            DOI 10.1145/3528223.3530102
+                        </a>
+
+
+                    </div>
+                </div>
