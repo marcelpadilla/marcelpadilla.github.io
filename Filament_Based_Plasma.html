@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
 
     <!-- TAB TITLE -->
-    <title>Filament Based Plasma</title>
+    <title>🌞Filament Based Plasma</title>
 
     <!-- GET FONT -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
@@ -41,9 +41,8 @@
     <!-- MAIN -->
     <main id="home">
 
-
+        <!-- TITLE -->
         <h1 class="project-title">Filament Based Plasma</h1>
-
 
         <p class="project-subtitle">
             published in ACM Transactions on Graphics (SIGGRAPH 2022), Jul. 2022.
@@ -51,60 +50,199 @@
 
 
 
+        <!-- AUTHORS -->
         <div class="project-authors-row">
 
-            <a href="./">
-                <div class="project-author">
-                    Marcel Padilla
-                    <div class="project-author-affiliation">
-                        TU Berlin
-                    </div>
+            <a class="project-author" href="./">
+                Marcel Padilla
+                <div class="project-author-affiliation">
+                    TU Berlin
                 </div>
             </a>
 
-            <div class="project-author">
+            <a class="project-author" href="https://olligross.github.io/">
                 Oliver Gross
                 <div class="project-author-affiliation">
                     TU Berlin
                 </div>
-            </div>
+            </a>
 
-            <div class="project-author">
+            <a class="project-author" href="https://page.math.tu-berlin.de/~knoeppel/">
                 Felix Knöppel
                 <div class="project-author-affiliation">
                     TU Berlin
                 </div>
-            </div>
+            </a>
 
-            <div class="project-author">
+            <a class="project-author" href="https://cseweb.ucsd.edu/~alchern/">
                 Albert Chern
                 <div class="project-author-affiliation">
                     UC San Diego
                 </div>
-            </div>
+            </a>
 
-            <div class="project-author">
+            <a class="project-author" href="https://page.math.tu-berlin.de/~pinkall/">
                 Ulrich Pinkall
                 <div class="project-author-affiliation">
                     TU Berlin
                 </div>
-            </div>
+            </a>
 
-            <div class="project-author">
+            <a class="project-author"
+                href="https://page.math.tu-berlin.de/~pinkall/https://www.eas.caltech.edu/people/ps">
                 Peter Schröder
                 <div class="project-author-affiliation">
                     Caltech
                 </div>
-            </div>
+            </a>
         </div>
 
-        <div class="project-images">
-            <img src="./Projects/Filament_Based_Plasma/XRayComparisons-1536x668.jpg">
+
+        <!-- TEASER IMAGE -->
+        <div class="project-box">
+
+            <img class="project-box-image" src="./Files/Filament_Based_Plasma/XRayComparisons-1536x668.jpg">
+
+            <p class="project-box-caption">
+                Pairwise comparisons of our output (left) with footage by NASA (right) <br> in both, EUV (top row) and
+                X-Ray (bottom row) emissions.
+            </p>
+
         </div>
 
-        <iframe src="https://www.youtube.com/embed/D9NIF-2lRjA" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+        <!-- ABSTRACT -->
+        <div class="project-box">
+
+            <h2>Abstract</h2>
+
+            <p class="project-box-abstract">
+                Simulation of stellar atmospheres, such as that of our own sun, is a common task in CGI for scientific
+                visualization, movies and games. A fibrous volumetric texture is a visually dominant feature of the
+                solar corona---the plasma that extends from the solar surface into space. These coronal fibers can be
+                modeled as magnetic filaments whose shape is governed by the magnetohydrostatic equation. The magnetic
+                filaments provide a Lagrangian curve representation and their initial configuration can be prescribed by
+                an artist or generated from magnetic flux given as a scalar texture on the sun's surface. Subsequently
+                the shape of the filaments is determined based on a variational formulation. The output is a visual
+                rendering of the whole sun. We demonstrate the fidelity of our method by comparing the resulting
+                renderings with actual images of our sun's corona.
+            </p>
+
+            <a class="publication-link" href="https://doi.org/10.1145/3528223.3530102">
+                DOI:10.1145/3528223.3530102
+            </a>
+
+        </div>
+
+
+
+
+
+        <!-- VIDEO -->
+        <div class="project-box">
+
+            <h2>Submission Video</h2>
+
+            <iframe src="https://www.youtube.com/embed/D9NIF-2lRjA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="project-box">
+
+            <h2>Quick Summary</h2>
+
+            <p class="project-box-abstract">
+            <ul class="project-summary">
+                <li>
+                    Addresses Magnetoghydrostatic equations through a Lagrangian technique
+                </li>
+                <li>
+                    Establish plasma filament model
+                </li>
+                <li>
+                    Establish filament glow model
+                </li>
+                <li>
+                    Procedurally generate solar-like images
+                </li>
+                <li>
+                    Reproduce solar loop structures
+                </li>
+            </ul>
+
+            </p>
+
+        </div>
+
+        <!-- TALK -->
+        <div class="project-box">
+
+            <h2>Talk</h2>
+
+            <iframe src="https://www.youtube.com/embed/Bd6OZGZI9RU" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENTS -->
+        <div class="project-box">
+
+            <h2>Acknowledgements</h2>
+
+            <p class="project-box-abstract">
+                This work was supported in part by the DFG Collaborative Research Center TRR 109 "Discretization in
+                Geometry and Dynamics," the Caltech Center for Information Science and Technology, and the Einstein
+                Foundation Berlin. Additional support was provided by SideFX software. We thank the reviewers for their
+                helpful input.
+            </p>
+
+        </div>
+
+        <!-- BIBTEX -->
+        <div class="project-box">
+
+            <h2>Bibtex</h2>
+
+            <p class="project-box-bibtex">
+                @article{padilla2022filament,<br>
+                &#8196; author = {Marcel Padilla and Oliver Gross and <br> &#8196; Felix Kn\"{o}ppel and Albert Chern
+                and Ulrich Pinkall and Peter Schr\"{o}der},<br>
+                &#8196; title = {Filament Based Plasma},<br>
+                &#8196; journal = {ACM Transaction on Graphics (TOG)},<br>
+                &#8196; year = {2022},<br>
+                &#8196; month = {07},<br>
+                &#8196; volume = {41},<br>
+                &#8196; number = {4},<br>
+                &#8196; articleno = {153},<br>
+                &#8196; doi = {https://doi.org/10.1145/3528223.3530102},<br>
+                &#8196; publisher = {ACM},<br>
+                &#8196; address = {New York, NY, USA}<br>
+                }
+            </p>
+
+        </div>
+
+
+        <!-- NOTE -->
+        <div class="project-box">
+
+            <h2 style="font-size: 15px">Note</h2>
+
+            <p style="font-size: 10px" project-box-abstract">
+                This work will be wildly expanded and covered in more detail in my upcoming PhD thesis.
+            </p>
+
+
+        </div>
+
+
+
 
     </main>
 
