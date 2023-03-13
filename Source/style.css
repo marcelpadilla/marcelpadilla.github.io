@@ -238,15 +238,18 @@ img.icon {
 h1.project-title {
     font-size: 40px;
     padding: 20px 0;
-    color: #310000;
+    color: #770000;
     text-align: center;
     margin: 0 auto;
 }
 
-p.project-subtitle {
+a.project-subtitle {
+    display: block;
     text-align: center;
-    margin: 0 auto;
+    justify-content: center;
+    /* margin: 0 auto; */
     margin: 0px 0 20px 0;
+    color: inherit
 }
 
 .project-authors-row {
@@ -267,13 +270,12 @@ a.project-author {
     color: inherit;
 }
 
-.project-author:hover   {
+.project-author:hover {
     outline: 2px #220000;
     background-color: #f0f0f0;
     outline: 1px solid black;
     text-decoration: none;
     color: inherit;
-    
 }
 
 .project-author-affiliation {
@@ -302,18 +304,14 @@ img.project-box-image {
 
 p.project-box-caption {
     position: relative;
-    /* top: -5px; */
+    top: 5px;
     width: 100%;
     font-size: 10px;
-    /* background-color: #f0f0f0; */
     color: #696969;
-    /* align-items: center; */
     text-align: center;
 }
 
-p.project-box-abstract {
-    /* background-color: aliceblue; */
-}
+
 
 .project-box h2 {
     color: #900101;
@@ -326,32 +324,59 @@ p.project-box-abstract {
     padding: 0 10px;
 }
 
-.project-summary{
+.project-summary {
     padding: 0 0 0 20px;
 }
 
-  /* IMAGE ROW */
+
+
+/* IMAGE ROW */
 .image-row {
     display: flex;
     align-items: center;
     justify-content: flex-start
-  }
-  
+}
 
-  .column {
+
+.column {
     box-sizing: border-box;
-    background-color: #00b3f9;
-  }
-  
-  .column img {
+    /* background-color: #00b3f9; */
+}
+
+.column img {
     width: 100%;
     height: auto;
     vertical-align: middle
-  }
-
-  
+}
 
 
+/* Buttons */
+.project-buttons-row {
+    width: 80%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #220000;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+a.project-button {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    outline: 2px #220000;
+    background-color: #f0f0f0;
+    outline: 1px solid black;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-button:hover {
+    background-color: #b9b9b9;
+}
 
 
 
