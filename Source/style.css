@@ -289,7 +289,8 @@ a.project-author {
     padding: 10px 10px;
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img.project-box-image {
@@ -328,6 +329,31 @@ p.project-box-abstract {
 .project-summary{
     padding: 0 0 0 20px;
 }
+
+  /* IMAGE ROW */
+.image-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+  }
+  
+
+  .column {
+    box-sizing: border-box;
+    background-color: #00b3f9;
+  }
+  
+  .column img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle
+  }
+
+  
+
+
+
+
 
 
 
