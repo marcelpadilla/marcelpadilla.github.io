@@ -25,6 +25,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    min-width: 1000px
     /* transition: background-color 2s ease-out 100ms; */
 }
 
@@ -401,7 +402,7 @@ iframe {
 
 
 /* Small Screens */
-@media (max-width: 968px) {
+@media (max-width: 1100px) {
     .row {
         flex-direction: column;
     }
