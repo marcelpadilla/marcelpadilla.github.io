@@ -164,8 +164,8 @@ img.icon {
 }
 
 .column-image-title {
-    width: 15%;
-    max-width: 80px;
+    width: 20%;
+    max-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,7 +375,8 @@ a.project-button {
 }
 
 .project-button:hover {
-    background-color: #b9b9b9;
+    background-color: #dcdcdc;
+    /* outline: 3px black; */
 }
 
 
