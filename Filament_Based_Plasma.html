@@ -5,28 +5,15 @@
 
 <head>
 
-    <meta charset="UTF-8">
-
     <!-- TAB TITLE -->
     <title>🌞Filament Based Plasma</title>
-
-    <!-- TAB ICON -->
-    <link rel="shortcut icon" href="./Source/images/MP.png" type="image/x-icon">
-
-    <!-- GET FONT -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
-
-    <!-- CSS import -->
-    <link href='./Source/style.css' rel='stylesheet'>
 
     <!-- jQuery Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-    <!-- Navigation Bar Inclusion Function -->
+    <!-- Import Header -->
     <script>
-        $(function () {
-            $("#navigation-bar").load("./../Source/navigation-bar.html");
-        });
+        $(function () { $("head").load("./Source/header.html") });
     </script>
 
 </head>
@@ -48,7 +35,7 @@
         <h1 class="project-title">Filament Based Plasma</h1>
 
         <a class="project-subtitle" href="https://doi.org/10.1145/3528223.3530102">
-            published in ACM Transactions on Graphics (SIGGRAPH 2022), Jul. 2022.
+            published in ACM Transactions on Graphics (SIGGRAPH 2022), Jul. 2022
         </a>
 
 
@@ -103,6 +90,7 @@
 
         <!-- IMAGE ROW -->
         <div class="project-box">
+
             <div class="image-row" style="background-color: black;">
 
                 <div class="column" style="width: 88.7%;">
@@ -129,21 +117,21 @@
         <!-- <div class="project-box"> -->
         <div class="project-buttons-row">
 
-            <a class="project-button" href="./Files/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf" target="_blank">
-                📄See Paper
+            <a class="project-button" href="./Files/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf"
+                target="_blank">
+                📄<br>See Paper
             </a>
 
-            <a class="project-button"
-                href="https://github.com/marcelpadilla/Filament-Based-Plasma" target="_blank">
-                📂Supplement Material
+            <a class="project-button" href="https://github.com/marcelpadilla/Filament-Based-Plasma" target="_blank">
+                📂<br>Supplement Material
             </a>
 
-            <a class="project-button" href="./Filament_Based_Plasma.html#Talk">
-                🗣️Talk
+            <a class="project-button" href="#Talk">
+                🗣️<br>Talk
             </a>
 
-            <a class="project-button" href="./Filament_Based_Plasma.html#Cite">
-                ✍️Cite
+            <a class="project-button" href="#Cite">
+                ✍️<br>Cite
             </a>
 
         </div>
@@ -188,6 +176,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
+
 
         </div>
 
@@ -280,6 +269,23 @@
         <div class="project-box" id="Cite">
 
             <h2>Bibtex</h2>
+<!-- 
+            <button class="bibtex-button" onclick="copyToClipboard(`@article{padilla2022filament,
+                title = {Filament Based Plasma},
+                author = {Marcel Padilla and Oliver Gross and Felix Kn\"{o}ppel and Albert Chern and Ulrich Pinkall and Peter Schr\"{o}der},
+                journal = {ACM Transaction on Graphics (TOG)},
+                year = {2022},
+                month = {07},
+                volume = {41},
+                number = {4},
+                articleno = {153},
+                doi = {https://doi.org/10.1145/3528223.3530102},
+                publisher = {ACM},
+                address = {New York, NY, USA}
+                }`)">
+                📋 Click here to copy the Bibtex to your clipboard
+            </button>
+ -->
 
             <p class="project-box-bibtex">
                 @article{padilla2022filament,<br>
