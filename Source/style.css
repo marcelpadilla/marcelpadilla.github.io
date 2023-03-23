@@ -14,8 +14,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* reset browser defaults */
-    /* background-color: #8e0000; */
 }
 
 body {
@@ -44,7 +42,6 @@ nav {
     top: 0;
     width: 100%;
     /* min-width: 1000px */
-        /* transition: background-color 2s ease-out 100ms; */
 }
 
 nav a {
@@ -56,8 +53,10 @@ nav a {
     text-decoration: none;
     font-size: 14px;
     /* font-size: 20px; */
+    font-size: 2.5vw;
     /* font-size: min(2.5vw,14px); */
     /* max-height: 20px; */
+    transition: background-color 100ms ease-out 100ms;
 }
 
 nav a.nav-first {
@@ -300,6 +299,7 @@ a.project-author {
     margin: 0px 3px;
     border-radius: 6px;
     color: var(--red_medium);
+    transition: background-color 100ms ease-out 100ms;
 }
 
 .project-author:hover {
@@ -310,7 +310,7 @@ a.project-author {
 }
 
 .project-author-affiliation {
-    font-size: 10px;
+    font-size: 15px;
     color: black;
 }
 
