@@ -24,7 +24,7 @@ body {
 }
 
 
-ul{
+ul {
     padding-left: 20px;
     text-indent: -0px;
 }
@@ -36,7 +36,7 @@ ul{
 }
 
 nav {
-    overflow:hidden;
+    overflow: hidden;
     background-color: var(--red_light);
     position: fixed;
     top: 0;
@@ -53,7 +53,7 @@ nav a {
     text-decoration: none;
     font-size: 14px;
     /* font-size: 20px; */
-    font-size: 2.5vw;
+    /* font-size: 2.5vw; */
     /* font-size: min(2.5vw,14px); */
     /* max-height: 20px; */
     transition: background-color 100ms ease-out 100ms;
@@ -78,6 +78,7 @@ main {
     justify-content: center;
     margin: 48px auto -15px auto;
     padding: 1px 0 20px 0;
+
 }
 
 a {
@@ -270,7 +271,8 @@ h1.project-title {
     margin: 0 auto;
 }
 
-a.project-subtitle, p.project-subtitle {
+a.project-subtitle,
+p.project-subtitle {
     display: block;
     text-align: center;
     justify-content: center;
@@ -369,7 +371,7 @@ p.project-box-caption {
 
 /* IMAGE ROW */
 .image-row {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: flex-start
 }
@@ -388,7 +390,7 @@ p.project-box-caption {
 
 }
 
-p.column-text{
+p.column-text {
     text-align: center;
     /* background-color: aqua; */
 }
@@ -462,12 +464,12 @@ iframe {
 /* Small Screens */
 /* @media (max-width: 767px) { */
 @media (max-aspect-ratio: 4/5) {
-    
+
     .row {
         flex-direction: column;
         margin: 10px auto;
         width: 95%;
-        max-width:100%;
+        max-width: 100%;
         /* outline-style: dashed; */
         box-sizing: border-box;
     }
@@ -475,7 +477,7 @@ iframe {
     .column-image,
     .column-text {
         width: 90%;
-        min-width:none;
+        min-width: none;
         /* max-height: 40%; */
         max-width: none;
         /* max-width:70%; */
@@ -487,25 +489,30 @@ iframe {
         margin: 5px;
     }
 
-    /* nav a {
-        font-size: 30px;
-    } */
-
     .project-box {
         width: 90%;
         margin: 10px auto;
         /* outline-style: dashed; */
     }
-/* 
-    .project-authors-row {
-        font-size: 25px;
-    } */
 
+    nav a {
+        /* font-size: 2.5vw; */
+        font-size: 28px;
+        /* float: none; */
+        /* display: inline-block; */
+        /* color: #ffffff; */
+        /* text-align: left; */
+        /* justify-content: space-around; */
 
-    /* 
-    .column-text {
-        width: 100%;
-        max-width: none;
-    } */
+    }
+
+    main {
+        margin: 130px auto -15px auto;
+    }
+
+    body {
+        background-color: white;
+    }
+
 
 }
