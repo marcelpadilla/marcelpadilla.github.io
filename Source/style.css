@@ -254,6 +254,7 @@ img.icon {
     color: var(--red_very_light);
     font-size: 16px;
     text-decoration: none;
+    display: inline-block;
     /* margin: -5px 0; */
 }
 
