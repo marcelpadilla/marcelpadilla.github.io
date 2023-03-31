@@ -496,6 +496,26 @@ iframe {
         /* outline-style: dashed; */
     }
 
+    .project-author {
+        font-size: 24px;
+    }
+
+    a.project-author {
+        font-size: 30px;
+    }
+    .project-author-affiliation{
+        font-size: 24px;
+    }
+
+    .publication-journal {
+        font-size: 18px;
+    }
+
+    .publication-link {
+        font-size: 22px;
+    }
+
+
     nav a {
         /* font-size: 2.5vw; */
         font-size: 28px;
