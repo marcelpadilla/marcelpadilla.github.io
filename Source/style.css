@@ -21,6 +21,7 @@ body {
     font-family: Helvetica, sans-serif;
     line-height: 1.42857143;
     background-color: var(--red_medium);
+    font-size: 14px;
 }
 
 
