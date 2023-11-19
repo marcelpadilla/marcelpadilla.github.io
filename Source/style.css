@@ -511,7 +511,7 @@ iframe {
         font-size: 18px;
     }
 
-    a {
+    a, nav a {
         font-size: inherit;
     }
     /* .publication-link { */
