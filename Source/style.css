@@ -512,7 +512,7 @@ iframe {
         font-size: 18px;
     }
 
-    a, nav a {
+    p, a, nav a {
         font-size: inherit;
     }
     /* .publication-link { */
@@ -537,6 +537,7 @@ iframe {
 
     body {
         background-color: white;
+        font-size: 14px;
     }
 
 
