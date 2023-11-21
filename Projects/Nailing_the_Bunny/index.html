@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<!-- META -->
+
+<head>
+
+    <!-- jQuery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Import Header -->
+    <script>
+        $(function () { $("head").load("/Source/header.html") });
+    </script>
+
+    <!-- TAB TITLE -->
+    <title>Nailing the Bunny</title>
+
+</head>
+
+
+
+<!-- BODY -->
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVIGATION -->
+    <div id="navigation-bar"></div>
+
+
+    <!-- MAIN -->
+    <main id="home">
+
+        <!-- TITLE -->
+        <h1 class="project-title">Nailing the Bunny</h1>
+
+        <a class="project-subtitle" href="https://doi.org/10.1145/3528223.3530102">
+            A private side project, 2022
+        </a>
+
+
+
+        <!-- AUTHORS -->
+        <div class="project-authors-row">
+
+            <a class="project-author" href="/">
+                Marcel Padilla
+                <div class="project-author-affiliation">
+                    TU Berlin
+                </div>
+            </a>
+
+        </div>
+
+
+
+
+        <!-- ABSTRACT -->
+        <div class="project-box">
+
+            <h2>Abstract</h2>
+
+            <p>
+                Take white board, hammer some nails into it, and connect the nails to form the visualisation of a 3D mesh.
+
+                <br><br>
+                I present here the short story of how this project turned out.
+            </p>
+
+        </div>
+
+
+<!-- IMAGE ROW -->
+<div class="project-box">
+
+    <div class="image-row" style="background-color: black; display: flex;">
+
+        <div class="column" style="flex: 1; overflow: hidden;">
+            <img src="/Projects/Mathematicians_Reimagined/gauss.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    
+        <div class="column" style="flex: 1; overflow: hidden;">
+            <img src="/Projects/Mathematicians_Reimagined/mygauss.png" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    
+    </div>
+    
+
+    <p class="project-box-caption">
+        Carl Friedrich Gauss reimagined. The image on the left is public domain.
+    </p>
+
+</div>
+
+
+        <!-- SUMMARY -->
+        <div class="project-box">
+
+            <h2>Workflow</h2>
+
+            <p class="project-box-abstract">
+            <ul class="project-summary">
+                <li>
+                    Stable diffusion 1.5 img2img
+                </li>
+                <li>
+                    ControlNet Canny + ip-adapter-full-face with
+                </li>
+                <li>
+                    ReActor face swapping
+                </li>
+                <li>
+                    Minor fixes and upscaling
+                </li>
+            </ul>
+
+            </p>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENTS -->
+        <div class="project-box">
+
+            <h2>Note</h2>
+
+            <p class="project-box-abstract">
+                I personally make no copy right claims on this output, and advice you to be careful regarding
+                copyrights of these images as they are output of ai models that were trained on unknown data sets.
+                You can however still cite this webpage using the bibtext below.
+            </p>
+
+        </div>
+
+        <!-- BIBTEX -->
+        <div class="project-box" id="Cite">
+
+            <h2>Bibtex</h2>
+
+            <p class="project-box-bibtex">
+                @article{padilla_mathematicians_reimagined,<br>
+                &#8196; author = {Marcel Padilla,<br>
+                &#8196; title = {Mathematicians Reimagined},<br>
+                &#8196; year = {2023},<br>
+                &#8196; url = {marcelpadilla.com},<br>
+                }
+            </p>
+
+        </div>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
