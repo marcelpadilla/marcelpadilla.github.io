@@ -35,7 +35,7 @@ script_dir = os.path.join(cwd, "Files", "python")
 
 index_dir = cwd
 
-header_file = os.path.join(script_dir, "header.html")
+header_file = os.path.join(script_dir, "head.html")
 index_file = os.path.join(index_dir, "index.html")
 custom_title = "Marcel Padilla"  # Replace with your desired title
 
