@@ -27,17 +27,25 @@ def replace_header(source_file, target_file, title_name):
     with open(target_file, 'w', encoding='utf-8') as file:
         file.write(new_content)
 
-# Replace the header in 'index_test.html' with the header from 'header.html' and set a custom title
+# setup
 cwd = os.getcwd()
-script_dir = os.path.join(cwd, "Files", "python")
+source_dir = os.path.join(cwd, "Source")
+header_file = os.path.join(source_dir, "head.html")
+project_dir = os.path.join(cwd, "Projects")
+print("using head file : " , header_file )
 
 
+def overwrite_head( head_file, target_folder , title):
+    index_file = os.path.join(target_folder, "index.html")    
+    print("updating the head of " , index_file)
+    replace_header(head_file, index_file, title)
 
-index_dir = cwd
+index_file = os.path.join(cwd, "index.html")
 
-header_file = os.path.join(script_dir, "head.html")
-index_file = os.path.join(index_dir, "index.html")
-custom_title = "Marcel Padilla"  # Replace with your desired title
+target_folder = cwd
+title = "Marcel Padilla"
+overwrite_head(header_file, cwd, title)
 
-print(header_file)
-replace_header(header_file, index_file, custom_title)
+target_folder = os.path.join(project_dir , "Filament_Based_Plasma")
+title = "Filament Based Plasma"
+overwrite_head(header_file, target_folder, title)
