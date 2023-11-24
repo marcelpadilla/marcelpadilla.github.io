@@ -27,6 +27,14 @@ def replace_header(source_file, target_file, title_name):
     with open(target_file, 'w', encoding='utf-8') as file:
         file.write(new_content)
 
+
+def overwrite_head( head_file, target_folder , title):
+    print("working on the page :" , title)
+    index_file = os.path.join(target_folder, "index.html")    
+    print("updating the head of :" , index_file)
+    replace_header(head_file, index_file, title)
+
+
 # setup
 cwd = os.getcwd()
 source_dir = os.path.join(cwd, "Source")
@@ -35,17 +43,31 @@ project_dir = os.path.join(cwd, "Projects")
 print("using head file : " , header_file )
 
 
-def overwrite_head( head_file, target_folder , title):
-    index_file = os.path.join(target_folder, "index.html")    
-    print("updating the head of " , index_file)
-    replace_header(head_file, index_file, title)
-
-index_file = os.path.join(cwd, "index.html")
-
+##########################
+# Update main page
 target_folder = cwd
 title = "Marcel Padilla"
 overwrite_head(header_file, cwd, title)
 
-target_folder = os.path.join(project_dir , "Filament_Based_Plasma")
-title = "Filament Based Plasma"
-overwrite_head(header_file, target_folder, title)
+
+##########################
+# Update all the projects
+
+# folder name + title
+projects = [
+    ["Filament_Based_Plasma", "☀️Filament Based Plasma"],
+    ["On_Bubble_Rings_and_Ink_Chandeliers", "🫧On Bubble Rings and Ink Chandeliers"],
+    ["Point_Vortex_Dynamics_on_Closed_Surfaces", "🌍Point Vortex Dynamics on Closed Surfaces"],
+    ["Zeros_of_Random_Sections_on_Line_Bundles", "🏐Zeros of Random Sections on Line Bundles"],
+    ["Hyperbolic_Tiling_3,7", "📐Hyperbolic Tiling {3,7}"],
+    ["Mathematicians_Reimagined", "🎨Mathematicians Reimagined"],
+    ["Sphere_Eversion_with_Transparency_Video", "🌐Sphere Eversion with Transparency"]
+]
+#["", ""],
+
+for project in projects:
+    folder_name = project[0]
+    target_folder = os.path.join(project_dir , folder_name)
+    title = project[1]
+    overwrite_head(header_file, target_folder, title)
+
