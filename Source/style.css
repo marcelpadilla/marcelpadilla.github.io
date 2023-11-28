@@ -18,8 +18,7 @@
 
 body {
     /* font-family: Questrial; */
-    /* font-family: Arial;, Helvetica, sans-serif; */
-    font-family: Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     line-height: 1.42857143;
     background-color: var(--red_medium);
     font-size: 14px;
@@ -31,7 +30,15 @@ ul {
     text-indent: -0px;
 }
 
+
+
+
+
+
+
+/* ################################## */
 /* NAVIGATION BAR */
+/* ################################## */
 
 :target {
     scroll-margin-top: 60px;
@@ -44,8 +51,6 @@ nav {
     top: 0;
     width: 100%;
     /* min-width: 1000px */
-    z-index: 1000;
-    /* High z-index to ensure it's on top of other content */
 }
 
 nav a {
@@ -74,7 +79,16 @@ nav a:hover {
 }
 
 
+
+
+
+
+/* ################################## */
 /* MAIN */
+/* ################################## */
+
+
+
 main {
     background-color: white;
     max-width: 1000px;
