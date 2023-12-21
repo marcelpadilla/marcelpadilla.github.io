@@ -8,6 +8,7 @@
     --gray_dark: rgb(210, 210, 210);
     --gray_medium: rgb(240, 240, 240);
     --gray_light: rgb(247, 247, 247);
+    --gray_very_very_dark: #303030;
 }
 
 
@@ -30,15 +31,7 @@ ul {
     text-indent: -0px;
 }
 
-
-
-
-
-
-
-/* ################################## */
 /* NAVIGATION BAR */
-/* ################################## */
 
 :target {
     scroll-margin-top: 60px;
@@ -79,16 +72,7 @@ nav a:hover {
 }
 
 
-
-
-
-
-/* ################################## */
 /* MAIN */
-/* ################################## */
-
-
-
 main {
     background-color: white;
     max-width: 1000px;

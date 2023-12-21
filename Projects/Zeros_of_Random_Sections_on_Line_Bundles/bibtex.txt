@@ -1,0 +1,8 @@
+@article{padilla2016randomZeros,
+  author = {Marcel Padilla},
+  title = {Zeros of Random Sections on Line Bundles},
+  journal = {B.S. Thesis},
+  year = {2016},
+  month = {06},
+  publisher = {TU Berlin},
+}

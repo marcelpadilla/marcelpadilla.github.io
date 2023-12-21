@@ -1,0 +1,5 @@
+@article{padilla2023solar,
+  title={The solar corona: modeled, discretized, visualized},
+  author={Padilla, Marcel},
+  year={2023}
+}
