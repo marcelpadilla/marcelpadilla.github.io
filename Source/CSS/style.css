@@ -206,6 +206,10 @@ table tr td {
    flex-basis: 20%;
    min-width: 200px;
    order: 2;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 
 }
 
@@ -217,12 +221,18 @@ table tr td {
 }
 
 .sidebar-element {
-   width: var(--sidebar_width);
+   width: 100%;
    height: auto;
    /* background-color: yellowgreen; */
    margin: 0 auto;
    margin-bottom: 10px;
    text-align: center;
+   flex: 1;
+   /* Each element can grow */
+   min-width: 150px;
+   /* Minimum width for each sidebar element */
+   max-width: 100%;
+   
 }
 
 .sidebar-element img {
@@ -251,7 +261,7 @@ table tr td {
 .sidebar-element p {
    margin: 2px 0;
    text-align: center;
-   font-size: 10pt;
+   font-size: 9pt;
 }
 
 .sidebar-element .textbox {
@@ -274,6 +284,22 @@ table tr td {
    font-size: 11pt;
    /* margin: 5px 25px; */
    text-align: left;
+}
+
+.text-box {
+   background-color: var(--gray_light);
+   margin: 3px;
+   padding: 6px;
+   border-radius: 10px;
+   font-size: 9pt;
+   text-align: left;
+   outline: 1px solid black;
+}
+
+.text-box h1 {
+   font-weight: bold;
+   font-size: 11pt;
+   margin: 3px 0;
 }
 
 
@@ -592,21 +618,7 @@ table tr td {
    color: white;
 }
 
-.about_me_box{
-   background-color: var(--gray_light);
-   margin: 3px;
-   padding: 6px;
-   border-radius: 10px;
-   font-size: 11pt;
-   text-align: left;
-   outline: 1px solid black;
-}
 
-.about_me_box h1{
-   font-weight: bold;
-   font-size: 11pt;
-   margin: 3px 0 ;
-}
 
 
 
@@ -618,6 +630,38 @@ table tr td {
       padding-right: 2px;
    }
 
+   .page-container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .sidebar {
+      order: 1;
+      /* Sidebar comes first */
+      width: 100%;
+      /* Full width */
+      position: relative;
+      flex-direction: column;
+   }
+
+   .mainContent {
+      order: 2;
+      /* Main content comes second */
+      width: 100%;
+      /* Full width */
+      position: relative;
+   }
+
+   .bottom-sidebar {
+      order: 3;
+      /* Bottom sidebar comes last */
+      width: 100%;
+      /* Full width */
+      position: relative;
+   }
+
+   .sidebar-element {
+      max-width: 100%; /* Full width on small screens */
+  }
+
 }
-
-
