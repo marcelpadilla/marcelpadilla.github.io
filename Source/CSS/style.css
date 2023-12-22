@@ -14,7 +14,8 @@
 
    /* MEASUREMENTS */
    --card_width: 230px;
-   --card_height: calc(var(--card_width)*1.586);
+   --card_aspect_ration: 1.586;
+   --card_height: calc(var(--card_width)*var(--card_aspect_ration));
    --header_height: 45px;
    --sidebar_width: 220px;
    --main_content_width: 1220px;
@@ -71,7 +72,7 @@ a:visited {
 }
 
 a:hover {
-   color: var(--main_color_dark);
+   /* color: var(--main_color_dark); */
 }
 
 a.anchor {
@@ -520,6 +521,10 @@ table tr td {
    /* color: white; */
 }
 
+.button-container-sidebar a:hover {
+   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
 
 
 .item-container {
@@ -590,26 +595,12 @@ table tr td {
 
 /* On narrow screens */
 @media (max-width: 700px) {
-   .header .navigation {
+   .header .navigation a {
       font-size: 8pt;
-   }
-
-   .page-container {
-     flex-direction: column;
-   }
- 
-   .sidebar {
-     position: relative;
-     width: 100%;
-     height: auto; /* Adjust based on content */
-     order: 1;
-   }
- 
-   .mainContent {
-     width: 100%;
-     margin-right: 0;
-     order: 2;
-     padding-top: 400px; /* Adjust this value based on the actual height of your sidebar */
+      padding-left: 2px;
+      padding-right: 2px;
    }
 
 }
+
+
