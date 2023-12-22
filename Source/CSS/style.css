@@ -40,10 +40,14 @@ html {
    overflow-x: hidden;
    scroll-behavior: smooth;
    height: 100%;
-   background: linear-gradient(to bottom right, var(--gray_medium), var(--gray_very_dark));
-   /* Smooth transition from teal to light purple */
-   /* background-repeat: no-repeat; */
+   /* background: linear-gradient(to bottom right, var(--gray_medium_dark), var(--gray_very_dark)); */
+   /* background: linear-gradient(to bottom right, #980000, transparent),
+   linear-gradient(to top right, #ffffff, transparent),
+   linear-gradient(to bottom left, #0b0000, transparent); */
+   background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 71, 71));
+   
    background-attachment: fixed;
+   /* background-attachment: scroll; */
 }
 
 a img {
@@ -207,7 +211,7 @@ table tr td {
    right: 0px;
    width: var(--sidebar_width);
    padding: 5px;
-   background-image: linear-gradient(to bottom right, rgb(224, 221, 221), rgb(208, 208, 208));
+   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(156, 156, 156));
    height: calc(100vh - var(--header_height));
    flex-basis: 20%;
    min-width: 200px;
