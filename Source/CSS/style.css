@@ -688,9 +688,23 @@ table tr td {
   }
 
   .paperCard{
-   /* width: 90%; */
-   transform: scale(0.80);
-   margin: -30px -20px;
+   width: 50%;
+   transform: scale(0.75);
+   margin: -40px -15px;
+   /* padding: -100px; */
+  }
+
+  .paperSet{
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+
+  }
+
+  .mainContent{
+   width: 100%;
+   padding: 0px;
+   padding-top: 7px;
   }
 
 }
