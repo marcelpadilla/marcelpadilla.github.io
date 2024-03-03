@@ -1,5 +1,11 @@
-@article{padilla2023solar,
-  title={The solar corona: modeled, discretized, visualized},
-  author={Padilla, Marcel},
-  year={2023}
+@phdthesis{padilla2023phd,
+  author       = {Padilla, Marcel}, 
+  title        = {The Solar Corona: Modeled, Discretized, Visualized},
+  school       = {Technische Universit\"at Berlin},
+  address      = {Berlin, Germany},
+  month        = sep,
+  year         = 2023,
+  type         = {PhD dissertation},
+  note         = {Supervision: Prof. Dr. Peter Schr\"oder and Prof. Dr. Ulrich Pinkall},
+  url          = {https://depositonce.tu-berlin.de/handle/11303/12723.2}
 }
