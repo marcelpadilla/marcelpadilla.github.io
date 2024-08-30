@@ -1,10 +1,18 @@
 :root {
 
    /* COLORS */
-   --main_color_dark: #550000;
+   /* TU BERLIN RED */
+   /* --main_color_dark: #550000;
    --main_color_medium: #790000;
    --main_color_light: #930000;
-   --main_color_very_light: #c20000;
+   --main_color_very_light: #c20000; */
+   /* ETH IGL GREEN */
+   --main_color_dark: #035500;
+   --main_color_medium: #009d1d;
+   --main_color_light: #09ba00;
+   --main_color_very_light: #48ff00;
+
+   /* GRAY SCALE */
    --gray_very_dark: #7c7c7c;
    --gray_dark: #d2d2d2;
    --gray_medium_dark: #e1e1e1;
@@ -316,7 +324,7 @@ table tr td {
 }
 
 .text-box a{
-   color: var(--main_color_very_light);
+   color: var(--main_color_light);
 }
 
 

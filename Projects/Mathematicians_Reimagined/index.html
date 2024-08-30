@@ -8,8 +8,7 @@
     <!-- Charset -->
     <meta charset="UTF-8">
 
-    <!-- CSS import -->
-    <link href='/Source/style.css' rel='stylesheet'>
+
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -34,13 +33,17 @@
 </script> -->
 
     <!-- ICON -->
-    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Source/images/MP_green.png" type="image/x-icon">
 
     <!-- GET FONT -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
 
+
+    <!-- CSS import Legacy for the project pages-->
+    <link href='/Source/style_old.css' rel='stylesheet'>
+
     <!-- CSS import -->
-    <link href='/Source/style.css' rel='stylesheet'>
+    <link href='/Source/CSS/style.css' rel='stylesheet'>
 
     <!-- Navigation Bar Inclusion Function -->
     <!-- <script>
@@ -49,14 +52,19 @@
         });
     </script> -->
 
-    <nav>
-        <a class="nav-first" href="/">Marcel Padilla 🎓</a>
-        <a href="/#Publications">Publications 📜</a>
-        <a href="/#Teaching">Teaching 📖</a>
-        <a href="/#AboutMe">About Me 📌</a>
-    </nav>
+    <a class="anchor" id="top"></a>
+    <div class="header">
+        <div class="navigation">
+            <a href="/">Marcel Padilla 🎓</a>
+            <a href="#publications">Publications 📜</a>
+            <a href="#teaching">Teaching 📖</a>
+            <a href="#exploration">Exploration 🔮</a>
+            <a href="#aboutme">About Me 📌</a>
+        </div>
+    </div>
+    <div class="headerSpacer"></div>
 
-    <title>🎨Mathematicians Reimagined</title>
+<title>🎨Mathematicians Reimagined</title>
 
 </head>
 
@@ -66,24 +74,29 @@
 
 <body>
 
+
+
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- NAVIGATION -->
-    <div id="navigation-bar"></div>
+    <!-- <div id="navigation-bar"></div> -->
+
 
 
     <!-- MAIN -->
     <main id="home">
+        <!-- <div class="mainContent"> MAINCONTENT -->
 
         <!-- TITLE -->
         <h1 class="project-title">Mathematicians Reimagined</h1>
 
-        <a class="project-subtitle" href="https://doi.org/10.1145/3528223.3530102">
+        <p class="project-subtitle">
             A private side project, winter 2023
-        </a>
+        </p>
 
 
 
@@ -111,10 +124,7 @@
                 I was fooling around with Ai image generators
                 and came across stable diffusion models and extensions which allowed
                 me to generate modern images of famous mathematicians using old existing public domain images
-                as input. I present here a few of my results.
-
-                <br><br>
-                I will continue to update this page every once and a while when I feel like it. The people here sorted
+                as input. I present here a few of my results. The people displayed here are sorted
                 by birth year.
             </p>
 
@@ -560,7 +570,6 @@
 
 
     </main>
-
 
 </body>
 
