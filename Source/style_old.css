@@ -2,13 +2,13 @@
 :root {
     /* COLORS */
     /* TU BERLIN RED */
-    /* --red_dark: #550000;
+    --red_dark: #550000;
     --red_medium: #790000;
-    --red_light: #930000; */
+    --red_light: #930000;
     /* ETH IGL GREEN */
-    --red_dark: #035500;
+    /* --red_dark: #035500;
     --red_medium: #009d1d;
-    --red_light: #09ba00;
+    --red_light: #09ba00; */
 
 
     --red_very_light: rgb(194, 0, 0);
