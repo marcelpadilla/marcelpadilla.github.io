@@ -62,7 +62,8 @@ projects = [
     ["Hyperbolic_Tiling_3,7", "📐Hyperbolic Tiling {3,7}"],
     ["Mathematicians_Reimagined", "🎨Mathematicians Reimagined"],
     ["Sphere_Eversion_with_Transparency_Video", "🌐Sphere Eversion with Transparency"],
-    ["Rotating_Snakes_Study", "🐍Rotating Snakes Study"]
+    ["Rotating_Snakes_Study", "🐍Rotating Snakes Study"],
+    ["Nailing_the_Bunny", "🐇Nailing the Bunny"]
 ]
 #["", ""],
 

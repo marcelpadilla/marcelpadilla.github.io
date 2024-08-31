@@ -5,16 +5,64 @@
 
 <head>
 
-    <!-- jQuery Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Charset -->
+    <meta charset="UTF-8">
 
-    <!-- Import Header -->
-    <script>
-        $(function () { $("head").load("/Source/header.html") });
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
+    <!-- End Google Tag Manager -->
 
-    <!-- TAB TITLE -->
-    <title>Nailing the Bunny</title>
+    <!-- TAG marcelpadilla.github.com -->
+    <!-- Google tag (gtag.js)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE3HMMJMWH');
+</script> -->
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+
+    <!-- GET FONT -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
+
+
+    <!-- CSS import Legacy for the project pages-->
+    <link href='/Source/style_old.css' rel='stylesheet'>
+
+    <!-- CSS import -->
+    <link href='/Source/CSS/style.css' rel='stylesheet'>
+
+    <!-- Navigation Bar Inclusion Function -->
+    <!-- <script>
+        $(function () {
+            $("#navigation-bar").load("/Source/navigation-bar.html");
+        });
+    </script> -->
+
+    <a class="anchor" id="top"></a>
+    <div class="header">
+        <div class="navigation">
+            <a href="/">Marcel Padilla 🎓</a>
+            <a href="#publications">Publications 📜</a>
+            <a href="#teaching">Teaching 📖</a>
+            <a href="#exploration">Exploration 🔮</a>
+            <a href="#aboutme">About Me 📌</a>
+        </div>
+    </div>
+    <div class="headerSpacer"></div>
+
+    <title>🐇Nailing the Bunny</title>
 
 </head>
 
@@ -29,8 +77,6 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- NAVIGATION -->
-    <div id="navigation-bar"></div>
 
 
     <!-- MAIN -->
@@ -39,9 +85,9 @@
         <!-- TITLE -->
         <h1 class="project-title">Nailing the Bunny</h1>
 
-        <a class="project-subtitle" href="https://doi.org/10.1145/3528223.3530102">
+        <p class="project-subtitle">
             A private side project, 2020
-        </a>
+        </p>
 
 
 
@@ -66,8 +112,9 @@
             <h2>Abstract</h2>
 
             <p>
-                Grab some white board, hammer some nails into it, and connect the nails to form the visualisation of a
-                3D mesh.
+                Grab some whiteboard, hammer some nails into it, and connect the nails to form the visualization of a
+                3D mesh. This is about as minimal as things can get. My goal was to physically recreate this 2D
+                mesh representation of the familiar 3D bunny.
 
                 <br><br>
                 I present here the short story of how this project turned out.
@@ -75,28 +122,175 @@
 
         </div>
 
-
-
-        <!-- ABSTRACT -->
         <div class="project-box">
 
-            <h2>Connecting the Nails</h2>
+            <h2>Design</h2>
 
             <p>
-                Once all the nails were hammered in, I could connect all each of them using lines.
-                Originally, I was set to use a thing black string for this. I quickly noticed
+                Launch Houdini and remesh the bunny to a low polygon mesh to stay sane during this project. Then delete
+                all faces/points/edges that are not facing the camera. Then project it onto the plane and copy some
+                nails into the mesh points. The virtual creation of this project was really straightforward and simple.
+            </p>
+
+        </div>
+
+
+        <div class="project-box">
+
+            <h2>Virtual Setup</h2>
+
+            <p>
+                Once all the nails were hammered in, I could connect each of them using lines.
+                Originally, I was set to use a thin black string for this. I quickly noticed
                 that that would take way too much time. So instead, I drew the lines with a black fine liner.
             </p>
 
         </div>
 
+        <div class="project-box">
+
+            <div class="image-row" style="background-color: white; display: flex;">
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_front_simple_projection_04_374.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_close_up_simple_projection_04_375.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+
+            </div>
+
+            <p class="project-box-caption">
+                The virtual version of the project rendered.
+            </p>
+
+        </div>
+
+        <div class="project-box">
+
+            <div class="image-row" style="background-color: white; display: flex;">
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer_2.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bear_wood_test_observer.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+            </div>
+
+            <p class="project-box-caption">
+                A banana, and the Mathon bear processed by the same method.
+            </p>
+
+        </div>
+
+
+        <div class="project-box">
+
+            <h2>Finding the Right Mesh</h2>
+
+            <p>
+                I also attempted to remesh according to different criteria. After all, the density of triangles
+                influences our perception of depth. In the end, the natural 3D remeshing of similar triangle sizes (in
+                3D) gave the best results.
+            </p>
+
+            <br>
+
+            <div class="image-row" style="background-color: white; display: flex;">
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_simple_projection.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_flat_shade_adaptive_02.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_flat_shade_adaptive_03.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+            </div>
+
+            <p class="project-box-caption">
+                Various versions of the bunny with different remeshing techniques. Left: all triangles similar size in
+                3D. Middle: curvature dependent. Right: similar triangle size in 2D.
+            </p>
+
+        </div>
+
+
         <!-- IMAGE ROW -->
         <div class="project-box">
 
-            <div class="image-row" style="background-color: black; display: flex;">
+
+
+            <h2>Mapping and Building</h2>
+
+            <p>
+                Next comes the dreaded physical part. In order to get the mapping well on a board I had, I simply used a
+                projector.
+            </p>
+
+            <br>
+
+
+            <div class="image-row" style="background-color: white; display: flex;">
 
                 <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/Progression.png"
+                    <img src="/Projects/Nailing_the_Bunny/bunny_print_out.jpeg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/Projection crop.png"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/see_dots.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+            </div>
+
+            <p class="project-box-caption">
+                Projecting the image on the left using a simple projector and then drawing the dots with a pencil.
+            </p>
+
+            <br>
+
+
+            <p>
+                Then we connect each line. Interestingly, following the exact line instructions was very important. I
+                once connected the wrong lines, and then it became really confusing to the viewer as to what was
+                happening to the geometry in that area.
+                <br>
+                Originally, I had intended to use a black string and wrap it around the nails. This turned out to be too
+                difficult, and thus I stuck to drawing each line.
+            </p>
+
+            <div class="image-row" style="background-color: white; display: flex;">
+
+                <div class="column" style="flex: 1; overflow: hidden;">
+                    <img src="/Projects/Nailing_the_Bunny/Progression.jpg"
                         style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
 
@@ -110,20 +304,25 @@
         </div>
 
 
+        <div class="project-box">
+
+            <h2>Final Result</h2>
+
+            <div class="column" style="flex: 1; overflow: hidden;">
+                <img src="/Projects/Nailing_the_Bunny/Final.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+        </div>
+
+
         <!-- SUMMARY -->
         <div class="project-box">
 
-            <h2>Workflow</h2>
+            <h2>Why?</h2>
 
-            <p class="project-box-abstract">
-            <ul class="project-summary">
-                <li>
-                    Render the project in Houdini.
-                </li>
-                <li>
-                    ???
-                </li>
-            </ul>
+            <p>
+
+                Why not?
 
             </p>
 
@@ -131,7 +330,7 @@
 
 
         <!-- ACKNOWLEDGEMENTS -->
-        <div class="project-box">
+        <!-- <div class="project-box">
 
             <h2>Note</h2>
 
@@ -139,13 +338,9 @@
                 Don't forget to be a friend to yourself too!
             </p>
 
-        </div>
-
-
-
+        </div> -->
 
     </main>
-
 
 </body>
 
