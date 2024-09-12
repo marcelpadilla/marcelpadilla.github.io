@@ -648,7 +648,8 @@ table tr td {
 
 
 /* On narrow screens */
-@media (max-width: 550px) {
+/* @media (max-width: 550px) { */
+@media (max-aspect-ratio: 3/5) {
    .header .navigation a {
       font-size: 8pt;
       padding-left: 2px;
