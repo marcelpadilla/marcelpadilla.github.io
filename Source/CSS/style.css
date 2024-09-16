@@ -659,12 +659,9 @@ table tr td {
 
 /* On narrow screens */
 /* @media (max-width: 550px) { */
+/* 
 @media (max-aspect-ratio: 2.5/5) {
-   /* .header .navigation a {
-      font-size: 8pt;
-      padding-left: 2px;
-      padding-right: 2px;
-   } */
+   
 
    .page-container {
       display: flex;
@@ -673,35 +670,28 @@ table tr td {
 
    .sidebar {
       order: 1;
-      /* Sidebar comes first */
       width: 100%;
-      /* Full width */
       position: relative;
       flex-direction: column;
    }
 
    .mainContent {
       order: 2;
-      /* Main content comes second */
       width: 100%;
-      /* Full width */
       position: relative;
    }
 
    .bottom-sidebar {
       order: 3;
-      /* Bottom sidebar comes last */
       width: 100%;
-      /* Full width */
       position: relative;
    }
 
    .sidebar-element {
-      max-width: 95%; /* Full width on small screens */
+      max-width: 95%; 
   }
 
   .paperCard{
-   /* width: 90%; */
    transform: scale(1.35);
    margin: 70px 10px;
   }
@@ -710,7 +700,6 @@ table tr td {
    width: 50%;
    transform: scale(0.80);
    margin: -33px -15px;
-   /* padding: -100px; */
   }
 
   .paperSet{
@@ -727,3 +716,4 @@ table tr td {
   }
 
 }
+ */
