@@ -116,11 +116,9 @@ img.icon {
 }
 
 .header {
-   /* position: fixed; */
-   position: sticky;
-   top: 0;
+   position: fixed;
    width: 100%;
-   /* height: var(--header_height); */
+   height: var(--header_height);
    background-color: var(--main_color_light);
    z-index: 1000;
    border-bottom: 2px solid #000000;
@@ -129,9 +127,8 @@ img.icon {
 
 .headerSpacer {
    width: 100%;
-   /* height: var(--header_height); */
-   /* height: calc(var(--header_height) + 4px); */
-   height: auto;
+   height: var(--header_height);
+   height: calc(var(--header_height) + 4px);
 }
 
 
@@ -139,7 +136,7 @@ img.icon {
 .header .navigation {
    background-color: var(--main_color_dark);
    width: 100%;
-   /* height: var(--header_height); */
+   height: var(--header_height);
    z-index: 2;
    color: white;
    font-size: 16px;
@@ -155,17 +152,12 @@ img.icon {
    /* Vertically center items in the navigation bar */
    justify-content: center;
    /* Horizontally center the navigation links */
-   flex-wrap: wrap; /* Add this line */
-   
-   
 
 }
 
 ::-webkit-scrollbar {
    display: none;
 }
-
-
 
 .header .navigation a {
    background-color: var(--main_color_medium);
@@ -201,9 +193,9 @@ table tr td {
 
 .mainContent {
    display: inline-block;
-   /* position: absolute; */
+   position: absolute;
    left: 0px;
-   width: 100%; 
+   width: auto;
    margin-right: calc(var(--sidebar_width) + 15px);
    padding-left: 10px;
    padding-right: 5px;
@@ -213,8 +205,7 @@ table tr td {
 }
 
 .page-container {
-   /* display: flex;*/
-   display: block;
+   display: flex;
    /* flex-direction: column; */
 }
 
@@ -225,16 +216,15 @@ table tr td {
 
 .sidebar {
    display: inline-block;
-   /* position: fixed; */
+   position: fixed;
    right: 0px;
-   /* width: var(--sidebar_width); */
-   width: 100%;        /* Make sidebar full width */
+   width: var(--sidebar_width);
    padding: 5px;
    /* background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(156, 156, 156)); */
    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 0));
    background-image: linear-gradient(to bottom, var(--main_color_dark), var(--main_color_very_light));
    /* background-color: var(--main_color_very_light); */
-   /* height: calc(100vh - var(--header_height)); */
+   height: calc(100vh - var(--header_height));
    flex-basis: 20%;
    min-width: 200px;
    order: 2;
@@ -659,9 +649,12 @@ table tr td {
 
 /* On narrow screens */
 /* @media (max-width: 550px) { */
-/* 
-@media (max-aspect-ratio: 2.5/5) {
-   
+@media (max-aspect-ratio: 3/5) {
+   .header .navigation a {
+      font-size: 8pt;
+      padding-left: 2px;
+      padding-right: 2px;
+   }
 
    .page-container {
       display: flex;
@@ -670,28 +663,35 @@ table tr td {
 
    .sidebar {
       order: 1;
+      /* Sidebar comes first */
       width: 100%;
+      /* Full width */
       position: relative;
       flex-direction: column;
    }
 
    .mainContent {
       order: 2;
+      /* Main content comes second */
       width: 100%;
+      /* Full width */
       position: relative;
    }
 
    .bottom-sidebar {
       order: 3;
+      /* Bottom sidebar comes last */
       width: 100%;
+      /* Full width */
       position: relative;
    }
 
    .sidebar-element {
-      max-width: 95%; 
+      max-width: 95%; /* Full width on small screens */
   }
 
   .paperCard{
+   /* width: 90%; */
    transform: scale(1.35);
    margin: 70px 10px;
   }
@@ -700,6 +700,7 @@ table tr td {
    width: 50%;
    transform: scale(0.80);
    margin: -33px -15px;
+   /* padding: -100px; */
   }
 
   .paperSet{
@@ -716,4 +717,3 @@ table tr td {
   }
 
 }
- */
