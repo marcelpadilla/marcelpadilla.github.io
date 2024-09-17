@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Padilla</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Marcel Padilla 🎓</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Sidebar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-lg-3 bg-light sidebar py-4">
+                <div class="text-center">
+                    <img src="/Files/AboutMe/portrait.jpg" alt="Profile Image" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px;">
+                    <h2>Dr. Marcel Padilla</h2>
+                    <p class="text-muted">Research Associate at TU Berlin</p>
+                    <p>Email: padilla(ät)math.tu-berlin.de</p>
+                    <div class="d-grid gap-2">
+                        <a href="https://www.youtube.com/@marcelpadilla" target="_blank"
+                            class="btn btn-danger">YouTube</a>
+                        <a href="https://github.com/marcelpadilla" target="_blank" class="btn btn-dark">GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=HtxEN4UAAAAJ&hl=en" target="_blank"
+                            class="btn btn-primary">Google Scholar</a>
+                        <a href="https://orcid.org/0000-0001-8962-9355" target="_blank"
+                            class="btn btn-success">ORCiD</a>
+                        <a href="./Files/AboutMe/CV_of_Marcel_Padilla.pdf" target="_blank"
+                            class="btn btn-secondary">CV</a>
+                    </div>
+                    <hr>
+                    <h4>About Me:</h4>
+                    <p class="text-start">
+                        My main interest is the interplay between physical simulations, geometry
+                        processing, discrete exterior calculus and applications in graphics and animation.
+                        I am currently starting a Postdoc at the
+                        <a href="https://igl.ethz.ch/" target="_blank">Interactive Geometry Lab</a>
+                        with Olga Sorkine Hornung at ETH Zürich through the
+                        <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/feodor-lynen-research-fellowship"
+                            target="_blank">
+                            Feodor-Lynen fellowship</a> from the Alexander von Humboldt foundation.
+                        I was previously employed at the Technical University of Berlin and work with the
+                        <a href="https://www.discretization.de/" target="_blank">Discretization in Geometry and
+                            Dynamics</a>
+                        research group.
+                    </p>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Main Content -->
+            <main class="col-lg-9 py-4">
+                <!-- Publications Section -->
+                <section id="publications">
+                    <h2 class="mb-4">Publications 📜</h2>
+                    <!-- Publication Cards -->
+                    <div class="row">
+                        <!-- Publication Card 1 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./Projects/Going_with_the_Flow/SwimmingTurtle.jpg" class="card-img-top"
+                                    alt="Going with the Flow">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Going with the Flow</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Soliman, Padilla, Gross, Knöppel, Pinkall,
+                                        Schröder<br>
+                                        <strong>Venue:</strong> ACM Transactions on Graphics<br>
+                                        <strong>Info:</strong> Fast and accurate motion in fluids without simulating the
+                                        fluid.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/index.html"
+                                            target="_blank" class="btn btn-primary btn-sm">Project Page</a>
+                                        <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/GoingWithTheFlow.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 2 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./Projects/Dissertation/Thumbnail.jpg" class="card-img-top"
+                                    alt="The Solar Corona">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">The Solar Corona: Modeled, Discretized, Visualized</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Author:</strong> Marcel Padilla<br>
+                                        <strong>Venue:</strong> Doctoral Dissertation, TU Berlin<br>
+                                        Detailed solar magnetic field theory and image generation.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="/Projects/Dissertation/The Solar Corona Modeled, Discretized, Visualized.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 3 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./Projects/Motion_From_Shape_Change/JellyfishSequence.jpg"
+                                    class="card-img-top" alt="Motion from Shape Change">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Motion from Shape Change</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Gross, Soliman, Padilla, Knöppel, Pinkall,
+                                        Schröder<br>
+                                        <strong>Venue:</strong> ACM Transactions on Graphics<br>
+                                        Estimated motion in viscous medium without running a fluid simulation.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="https://olligross.github.io/projects/MotionFromShapeChange/MotionFromShapeChange_project.html"
+                                            target="_blank" class="btn btn-primary btn-sm">Project Page</a>
+                                        <a href="https://olligross.github.io/publications/MotionFromShapeChange/MotionFromShapeChange_reduced.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 4 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./Projects/4D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_3D_Shape_Data/Australian-Paper-Title.jpg"
+                                    class="card-img-top" alt="4D Atlas">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">4D Atlas: Statistical Analysis of the Spatiotemporal
+                                        Variability in Longitudinal 3D Shape Data</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Laga, Padilla, Jermyn, Kurtek, Bennamoun,
+                                        Srivastava<br>
+                                        <strong>Venue:</strong> Transactions on Pattern Analysis and Machine
+                                        Intelligence<br>
+                                        Temporal shape matching.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="https://sites.google.com/view/hamidlaga/3d4d-shape-analysis"
+                                            target="_blank" class="btn btn-primary btn-sm">Project Page</a>
+                                        <a href="https://arxiv.org/pdf/2101.09403.pdf" target="_blank"
+                                            class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 5 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/Filament_Based_Plasma/Project Thumbnail.png" class="card-img-top"
+                                    alt="Filament Based Plasma">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Filament Based Plasma</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Padilla, Gross, Knöppel, Chern, Pinkall, Schröder<br>
+                                        <strong>Venue:</strong> ACM Transactions on Graphics<br>
+                                        Plasma loop modeling.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="/Projects/Filament_Based_Plasma/" target="_blank"
+                                            class="btn btn-primary btn-sm">Project Page</a>
+                                        <a href="/Projects/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 6 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/thumbnail.jpg"
+                                    class="card-img-top" alt="On Bubble Rings and Ink Chandeliers">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">On Bubble Rings and Ink Chandeliers</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Padilla, Chern, Knöppel, Pinkall, Peter<br>
+                                        <strong>Venue:</strong> ACM Transactions on Graphics<br>
+                                        Vortex filament dynamics.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/" target="_blank"
+                                            class="btn btn-primary btn-sm">Project Page</a>
+                                        <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/On_Bubble_Rings_and_Ink_Chandeliers.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 7 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/PointVortexCoverGif.gif"
+                                    class="card-img-top" alt="Point Vortex Dynamics">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Point Vortex Dynamics On Closed Surfaces</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Author:</strong> Marcel Padilla<br>
+                                        <strong>Venue:</strong> M.S. Thesis, TU Berlin<br>
+                                        Surface fluid dynamics theory.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Marcel-Padilla-master-thesis-final-small.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 8 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/The_Nearest_Hermitian_Inverse_Eigenvalue_Problem_Solution_with_Respect_to_the_2-Norm/Mandi.png"
+                                    class="card-img-top" alt="The Nearest Hermitian Inverse Eigenvalue Problem">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">The Nearest Hermitian Inverse Eigenvalue Problem Solution
+                                        with Respect to the 2-Norm</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Padilla, Kolbe, Chakraborty<br>
+                                        <strong>Venue:</strong> DAAD Rise Worldwide Internship Results<br>
+                                        Matrix geometry analysis for eigenvalue restoration.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="https://arxiv.org/pdf/1703.00829.pdf" target="_blank"
+                                            class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 9 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/SumatraPDF_2018-12-20_16-50-20.png"
+                                    class="card-img-top" alt="The Zeros of Random Sections on Line Bundles">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">The Zeros of Random Sections on Line Bundles</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Author:</strong> Marcel Padilla<br>
+                                        <strong>Venue:</strong> B.S. Thesis, TU Berlin<br>
+                                        Root analysis of smoothed random fields.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/" target="_blank"
+                                            class="btn btn-primary btn-sm">Project Page</a>
+                                        <a href="./Projects/Zeros_of_Random_Sections_on_Line_Bundles/Zeros-of-Random-Sections-on-Line-Bundles-B.S.-Thesis.pdf"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 10 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/ACTIVE/ACTIVE.jpg" class="card-img-top"
+                                    alt="A.C.T.I.V.E. Superellipsoid-based CFD Visualization">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">A.C.T.I.V.E. Superellipsoid-based CFD Visualization</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Authors:</strong> Herrmann, Padilla, Pastorelli<br>
+                                        <strong>Venue:</strong> EuroVR, European Association of Virtual and Augmented
+                                        Reality<br>
+                                        Tensor field visualization in virtual reality.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="http://diglib.eg.org/handle/10.2312/eurovr.20141344.089-092"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Publication Card 11 -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="/Projects/Komplexe_Funktionen_Darstellen/chrome_2018-12-11_13-43-10.png"
+                                    class="card-img-top" alt="Komplexe Funktionen Darstellen">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Komplexe Funktionen Darstellen</h5>
+                                    <p class="card-text flex-grow-1">
+                                        <strong>Author:</strong> Marcel Padilla<br>
+                                        <strong>Venue:</strong> Junge Wissenschaft issue Nr. 94. School project.<br>
+                                        Visualizing through matching parallel planes.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.junge-wissenschaft.ptb.de/fileadmin/hefte/bis_2017/JuWi_94_2012.pdf#page=46"
+                                            target="_blank" class="btn btn-secondary btn-sm">PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End Publications Section -->
+
+                <!-- Teaching Section -->
+                <!-- (Teaching content remains the same as previous example) -->
+                <!-- You can add more teaching items here if needed -->
+
+                <!-- Exploration Section -->
+                <!-- (Exploration content remains the same as previous example) -->
+                <!-- You can add more exploration items here if needed -->
+
+                <!-- About Me Section -->
+                <!-- (About Me content can go here or can be included in the sidebar as per your preference) -->
+            </main>
+            <!-- End Main Content -->
+        </div>
+    </div>
+    <!-- End Sidebar and Main Content -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>Technische Universität Berlin</p>
+        <p>TU Berlin, MA 8–3<br>Str. des 17. Juni 136<br>10623 Berlin, Germany</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

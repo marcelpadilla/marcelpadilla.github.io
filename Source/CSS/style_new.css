@@ -1,0 +1,104 @@
+/* Base Styles */
+body {
+   margin: 0;
+   padding-top: 70px; /* Adjust this value as needed */
+   font-family: Arial, sans-serif;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+   background-color: #f8f9fa;
+}
+
+@media (max-width: 991.98px) {
+   /* On mobile devices, move the sidebar content to the top */
+   .sidebar {
+       order: -1;
+   }
+}
+
+/* Card Image Styles */
+.card-img-top {
+   height: 200px;
+   object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+/* Heading Styles */
+h2 {
+   font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+   font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+   font-size: 1rem;
+   color: #ffffff; /* Make navigation links white */
+   background-color: #0fff93; /* Dark background to make it button-like */
+   margin: 0 5px; /* Add spacing between buttons */
+   border-radius: 25px; /* Rounded corners */
+   padding: 8px 12px; /* Increase padding for better click area */
+}
+
+.navbar-nav .nav-link:hover {
+   background-color: #0080ff; /* Slightly lighter on hover */
+   color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+   .nav-link {
+       font-size: 0.9rem;
+       padding: 6px 8px;
+   }
+}
+
+/* Social Media Buttons */
+.social-buttons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.social-buttons .btn {
+   width: 48%;
+   margin: 1%;
+}
+
+@media (min-width: 576px) {
+   .social-buttons .btn {
+       width: 100%;
+       margin-bottom: 10px;
+   }
+}
+
+/* Ensure Images in Cards are the Same Height */
+.card-img-top {
+   height: 200px;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* Adjust Card Heights for Consistency */
+.card {
+   height: 100%;
+}
+
+/* Adjust Card Text */
+.card-title {
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+.card-text {
+   font-size: 0.9rem;
+}
