@@ -1,0 +1,23 @@
+/* Custom styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    margin-top: 2rem;
+}
+
+.authors p {
+    margin-bottom: 0;
+}
+
+.image img,
+.video video {
+    margin-bottom: 0.5rem;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+}
