@@ -32,6 +32,10 @@ main {
     padding-top: 55px;
 }
 
+.main-content {
+   padding-bottom: 5px !important;
+}
+
 /* Style all links within paragraphs */
 p a {
     color: var(--link-color);
@@ -66,6 +70,38 @@ p a:hover {
     scroll-margin-top: 100px;
 }
 
+
+
+/* Customize the card style */
+.card {
+   background-color: var(--gray_light); /* Change to your desired background color */
+   border-radius: 25px;       /* Adjust the value for rounder corners */
+   border: none;              /* Remove default border if desired */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+   outline: var(--outline-thickness) solid rgba(0, 0, 0, 0.2);
+   padding: 3px;
+}
+
+.card:hover {
+   background-color: var(--gray_medium);
+   box-shadow: 6px 6px 25px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (min-width: 992px) {
+
+   .main-content {
+      min-height: 100vh;
+  }
+
+   .sidebar {
+       position: sticky;
+       top: 60px; /* Adjust this value to match the height of your navbar */
+       height: calc(100vh - 60px); /* Subtract the navbar height */
+       overflow-y: auto;
+   }
+}
+
 @media (max-width: 991.98px) {
     /* On mobile devices, move the sidebar content to the top */
     .sidebar {
@@ -81,6 +117,7 @@ p a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
 }
 
 /* Card Image Styles */
@@ -98,6 +135,8 @@ footer {
     width: 100%;
     padding: 0;
     margin: 0;
+    border-radius: 20px;
+    outline: var(--outline-thickness) solid white;
 }
 
 /* Heading Styles */
@@ -116,32 +155,44 @@ h2 {
     padding: 0.5rem 1rem; /* Adjust padding as needed */
     border-radius: 0.25rem; /* Rounded corners */
     color: #ffffff; /* Text color */
+    font-weight: bold;
     background-color: var(--main_color_light); /* Bootstrap primary color */
     border: none;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
+    outline: var(--outline-thickness) solid black;    
 }
 
 .navbar-brand.btn:hover {
     background-color: var(--main_color_medium); /* Darken on hover */
-    color: #ffffff;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.8);
 }
 
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: bold;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: var(--main_color_very_light);
     margin: 5px;
     border-radius: 25px;
-    padding: 6px 12px;
+    padding: 6px 15px !important;
+    outline: var(--outline-thickness) solid black;
+    
 }
 
+@media (max-width: 991.98px) {
+   .navbar-nav .nav-link {
+       text-align: center;
+   }
+}
+
+
 .navbar-nav .nav-link:hover {
-    background-color: #980000;
-    color: #ffffff;
+    background-color: var(--main_color_light);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.8);
+    
 }
 
 @media (max-width: 575.98px) {
@@ -157,6 +208,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px; /* Adjusts the space between buttons */
+    
 }
 
 .social-buttons .btn {
@@ -166,6 +218,7 @@ h2 {
     padding: 5px 10px; /* Adjust padding as needed */
     font-size: 0.9rem; /* Adjust font size as needed */
     white-space: nowrap; /* Prevents text from wrapping within buttons */
+    outline: var(--outline-thickness) solid black;
 }
 
 @media (max-width: 575.98px) {
@@ -182,8 +235,9 @@ h2 {
 
 /* Adjust Card Text */
 .card-title {
-    font-size: 1.1rem;
-    font-weight: bold;
+   font-size: 1.1rem;
+   font-weight: bold;
+   text-align: center;  /* This centers the text */
 }
 
 .card-text {
