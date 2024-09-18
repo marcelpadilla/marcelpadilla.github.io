@@ -1,11 +1,32 @@
 :root {
+
+/* COLORS */
+   /* TU BERLIN RED */
+   --main_color_dark: #550000;
+   --main_color_medium: #790000;
+   --main_color_light: #930000;
+   --main_color_very_light: #c20000;
+   /* ETH IGL GREEN */
+   /* --main_color_dark: #035500;
+   --main_color_medium: #009d1d;
+   --main_color_light: #09ba00;
+   --main_color_very_light: #48ff00; */
+
+   /* GRAY SCALE */
+   --gray_very_dark: #7c7c7c;
+   --gray_dark: #d2d2d2;
+   --gray_medium_dark: #e1e1e1;
+   --gray_medium: #f0f0f0;
+   --gray_light: #f7f7f7;
+   --gray_very_very_dark: #303030;
+
+   --link-color: #ffcb6b;
+
    --outline-thickness: 1px;
 }
 
 /* Base Styles */
 body {
-   margin: 0px;
-   padding-top: 0px; /* Adjusted to match the actual navbar height */
    font-family: Arial, sans-serif;
 }
 
@@ -14,12 +35,28 @@ main {
 }
 
 .main-field {
-   padding-top: 60px;
+   padding-top: 55px;
 }
+
+/* Style all links within paragraphs */
+p a {
+   color: var(--link-color);
+   text-decoration: none;
+}
+
+p a:hover {
+   color: var(--link-color);
+   text-decoration: underline;
+}
+
 
 /* Sidebar Styles */
 .sidebar {
-   background-color: #aeaeae;
+   /* background-color: #aeaeae; */
+   background-image: linear-gradient(to bottom, var(--main_color_dark), var(--main_color_very_light));
+   color: white;
+   /* max-width: 300px; */
+   border-right: var(--outline-thickness) solid black;
 }
 
 
@@ -38,6 +75,7 @@ main {
    /* Add any other styles you prefer */
    text-shadow: calc(-1* var(--outline-thickness)) calc(-1* var(--outline-thickness)) 0 #000, var(--outline-thickness) calc(-1* var(--outline-thickness)) 0 #000, calc(-1* var(--outline-thickness)) var(--outline-thickness) 0 #000, var(--outline-thickness) var(--outline-thickness) 0 #000;
    outline: 1px solid black;
+   scroll-margin-top: 160px; 
 }
 
 
@@ -68,12 +106,6 @@ main {
     object-fit: contain;
 }
 
-/* Remove previous conflicting styles for .card-img-top */
-/* .card-img-top {
-   height: 200px;
-   object-fit: cover;
-} */
-
 /* Footer Styles */
 footer {
    position: relative;
@@ -88,9 +120,28 @@ h2 {
    font-weight: bold;
 }
 
+.navbar {
+   background-color: var(--main_color_dark);
+   outline: var(--outline-thickness) solid black;
+   outline-offset: -1px;
+}
+
 /* Navbar Styles */
-.navbar-brand {
-   font-weight: bold;
+.navbar-brand.btn {
+   padding: 0.5rem 1rem; /* Adjust padding as needed */
+   border-radius: 0.25rem; /* Rounded corners */
+   color: #ffffff; /* Text color */
+   background-color: var(--main_color_light); /* Bootstrap primary color */
+   border: none;
+   display: inline-block;
+   text-align: center;
+   vertical-align: middle;
+   text-decoration: none;
+}
+
+.navbar-brand.btn:hover {
+   background-color: var(--main_color_medium); /* Darken on hover */
+   color: #ffffff;
 }
 
 .navbar-nav .nav-link {
@@ -120,17 +171,22 @@ h2 {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   gap: 0px; /* Adjusts the space between buttons */
 }
 
 .social-buttons .btn {
-   width: 48%;
-   margin: 1%;
+   flex: 1 1 auto;
+   max-width: 120px; /* Set your desired maximum width */
+   margin: 5px;
+   padding: 5px 10px; /* Adjust padding as needed */
+   font-size: 0.9rem; /* Adjust font size as needed */
+   white-space: nowrap; /* Prevents text from wrapping within buttons */
 }
 
-@media (min-width: 576px) {
+@media (max-width: 575.98px) {
    .social-buttons .btn {
-       width: 100%;
-       margin-bottom: 10px;
+       flex: 1 1 45%; /* Buttons will take up about half the width on small screens */
+       max-width: none;
    }
 }
 
