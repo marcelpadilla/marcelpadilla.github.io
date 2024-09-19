@@ -53,7 +53,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Sidebar -->
-                <aside class="col-lg-3 sidebar py-4">
+                <aside class="col-lg-3 col-md-4 sidebar py-4">
                     <div class="text-center">
                         <img src="/Files/AboutMe/portrait.jpg" alt="Profile Image" class="img-fluid rounded-circle mb-3"
                             style="width: 150px;">
@@ -96,42 +96,46 @@
                 <!-- End Sidebar -->
 
                 <!-- Main Content -->
-                <main class="col-lg-9 py-4 main-content">
+                <main class="ol-lg-9 col-md-8 py-4 main-content">
                     <!-- Publications Section -->
                     <section>
                         <h2 id="publications" class="section-title mb-4">Publications 📜</h2>
                         <!-- Publication Cards -->
                         <div class="row">
                             <!-- Publication Card 1 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
-
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Going with the Flow</h5>
                                         <div class="card-img-container">
                                             <img src="./Projects/Going_with_the_Flow/SwimmingTurtle.jpg"
                                                 class="card-img-top" alt="Going with the Flow">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Soliman, Padilla, Gross, Knöppel, Pinkall,
-                                            Schröder<br>
-                                            <strong>Venue:</strong> ACM Transactions on Graphics<br>
-                                            <strong>Info:</strong> Fast and accurate motion in fluids without simulating
-                                            the
-                                            fluid.
-                                        </p>
-                                        <div class="mt-auto">
+                                        <p class="card-authors">Soliman, Padilla, Gross, Knöppel, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Fast and accurate motion in fluids without simulating the
+                                            fluid.</p>
+
+                                        <!-- Buttons Row -->
+                                        <div class="button-container">
                                             <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/index.html"
                                                 target="_blank" class="btn btn-primary btn-sm">Project Page</a>
                                             <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/GoingWithTheFlow.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2024</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 2 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">The Solar Corona: Modeled, Discretized, Visualized</h5>
@@ -139,21 +143,29 @@
                                             <img src="./Projects/Dissertation/Thumbnail.jpg" class="card-img-top"
                                                 alt="The Solar Corona">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Author:</strong> Marcel Padilla<br>
-                                            <strong>Venue:</strong> Doctoral Dissertation, TU Berlin<br>
-                                            Detailed solar magnetic field theory and image generation.
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">Doctoral Dissertation, TU Berlin</p>
+                                        <p class="card-info">Detailed solar magnetic field theory and image generation.
                                         </p>
+
                                         <div class="mt-auto">
                                             <a href="/Projects/Dissertation/The Solar Corona Modeled, Discretized, Visualized.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item PhD">
+                                                PhD</div>
+                                            <div class="item">2023</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 3 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Motion from Shape Change</h5>
@@ -161,24 +173,30 @@
                                             <img src="./Projects/Motion_From_Shape_Change/JellyfishSequence.jpg"
                                                 class="card-img-top" alt="Motion from Shape Change">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Gross, Soliman, Padilla, Knöppel, Pinkall,
-                                            Schröder<br>
-                                            <strong>Venue:</strong> ACM Transactions on Graphics<br>
-                                            Estimated motion in viscous medium without running a fluid simulation.
-                                        </p>
+                                        <p class="card-authors">Gross, Soliman, Padilla, Knöppel, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Estimated motion in viscous medium without running a fluid
+                                            simulation.</p>
+
                                         <div class="mt-auto">
                                             <a href="https://olligross.github.io/projects/MotionFromShapeChange/MotionFromShapeChange_project.html"
                                                 target="_blank" class="btn btn-primary btn-sm">Project Page</a>
                                             <a href="https://olligross.github.io/publications/MotionFromShapeChange/MotionFromShapeChange_reduced.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2023</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 4 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">4D Atlas: Statistical Analysis of the Spatiotemporal
@@ -187,25 +205,30 @@
                                             <img src="./Projects/4D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_3D_Shape_Data/Australian-Paper-Title.jpg"
                                                 class="card-img-top" alt="4D Atlas">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Laga, Padilla, Jermyn, Kurtek, Bennamoun,
-                                            Srivastava<br>
-                                            <strong>Venue:</strong> Transactions on Pattern Analysis and Machine
-                                            Intelligence<br>
-                                            Temporal shape matching.
+                                        <p class="card-authors">Laga, Padilla, Jermyn, Kurtek, Bennamoun, Srivastava</p>
+                                        <p class="card-venue">Transactions on Pattern Analysis and Machine Intelligence
                                         </p>
+                                        <p class="card-info">Temporal shape matching.</p>
+
                                         <div class="mt-auto">
                                             <a href="https://sites.google.com/view/hamidlaga/3d4d-shape-analysis"
                                                 target="_blank" class="btn btn-primary btn-sm">Project Page</a>
                                             <a href="https://arxiv.org/pdf/2101.09403.pdf" target="_blank"
                                                 class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item IEEE">IEEE</div>
+                                            <div class="item">2023</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 5 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Filament Based Plasma</h5>
@@ -213,24 +236,29 @@
                                             <img src="/Projects/Filament_Based_Plasma/Project Thumbnail.png"
                                                 class="card-img-top" alt="Filament Based Plasma">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Padilla, Gross, Knöppel, Chern, Pinkall,
-                                            Schröder<br>
-                                            <strong>Venue:</strong> ACM Transactions on Graphics<br>
-                                            Plasma loop modeling.
-                                        </p>
+                                        <p class="card-authors">Padilla, Gross, Knöppel, Chern, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Plasma loop modeling.</p>
+
                                         <div class="mt-auto">
                                             <a href="/Projects/Filament_Based_Plasma/" target="_blank"
                                                 class="btn btn-primary btn-sm">Project Page</a>
                                             <a href="/Projects/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2022</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 6 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">On Bubble Rings and Ink Chandeliers</h5>
@@ -238,23 +266,29 @@
                                             <img src="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/thumbnail.jpg"
                                                 class="card-img-top" alt="On Bubble Rings and Ink Chandeliers">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Padilla, Chern, Knöppel, Pinkall, Peter<br>
-                                            <strong>Venue:</strong> ACM Transactions on Graphics<br>
-                                            Vortex filament dynamics.
-                                        </p>
+                                        <p class="card-authors">Padilla, Chern, Knöppel, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Vortex filament dynamics.</p>
+
                                         <div class="mt-auto">
                                             <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/" target="_blank"
                                                 class="btn btn-primary btn-sm">Project Page</a>
                                             <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/On_Bubble_Rings_and_Ink_Chandeliers.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2019</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 7 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Point Vortex Dynamics On Closed Surfaces</h5>
@@ -262,69 +296,86 @@
                                             <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/PointVortexCoverGif.gif"
                                                 class="card-img-top" alt="Point Vortex Dynamics">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Author:</strong> Marcel Padilla<br>
-                                            <strong>Venue:</strong> M.S. Thesis, TU Berlin<br>
-                                            Surface fluid dynamics theory.
-                                        </p>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">M.S. Thesis, TU Berlin</p>
+                                        <p class="card-info">Surface fluid dynamics theory.</p>
+
                                         <div class="mt-auto">
                                             <a href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Marcel-Padilla-master-thesis-final-small.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item MSc">MSc</div>
+                                            <div class="item">2018</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 8 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">The Nearest Hermitian Inverse Eigenvalue Problem Solution
                                             with Respect to the 2-Norm</h5>
                                         <div class="card-img-container">
                                             <img src="/Projects/The_Nearest_Hermitian_Inverse_Eigenvalue_Problem_Solution_with_Respect_to_the_2-Norm/Mandi.png"
-                                                class="card-img-top"
-                                                alt="The Nearest Hermitian Inverse Eigenvalue Problem">
+                                                class="card-img-top" alt="Nearest Hermitian Inverse Eigenvalue Problem">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Padilla, Kolbe, Chakraborty<br>
-                                            <strong>Venue:</strong> DAAD Rise Worldwide Internship Results<br>
-                                            Matrix geometry analysis for eigenvalue restoration.
-                                        </p>
+                                        <p class="card-authors">Padilla, Kolbe, Chakraborty</p>
+                                        <p class="card-venue">DAAD RISE Worldwide Internship Results</p>
+                                        <p class="card-info">Matrix geometry analysis for eigenvalue restoration.</p>
+
                                         <div class="mt-auto">
                                             <a href="https://arxiv.org/pdf/1703.00829.pdf" target="_blank"
                                                 class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item arXiv">arXiv</div>
+                                            <div class="item">2017</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 9 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">The Zeros of Random Sections on Line Bundles</h5>
                                         <div class="card-img-container">
                                             <img src="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/SumatraPDF_2018-12-20_16-50-20.png"
-                                                class="card-img-top" alt="The Zeros of Random Sections on Line Bundles">
+                                                class="card-img-top" alt="Zeros of Random Sections on Line Bundles">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Author:</strong> Marcel Padilla<br>
-                                            <strong>Venue:</strong> B.S. Thesis, TU Berlin<br>
-                                            Root analysis of smoothed random fields.
-                                        </p>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">B.S. Thesis, TU Berlin</p>
+                                        <p class="card-info">Root analysis of smoothed random fields.</p>
+
                                         <div class="mt-auto">
                                             <a href="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/"
                                                 target="_blank" class="btn btn-primary btn-sm">Project Page</a>
                                             <a href="./Projects/Zeros_of_Random_Sections_on_Line_Bundles/Zeros-of-Random-Sections-on-Line-Bundles-B.S.-Thesis.pdf"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item BSc">BSc</div>
+                                            <div class="item">2016</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 10 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">A.C.T.I.V.E. Superellipsoid-based CFD Visualization</h5>
@@ -332,45 +383,56 @@
                                             <img src="/Projects/ACTIVE/ACTIVE.jpg" class="card-img-top"
                                                 alt="A.C.T.I.V.E. Superellipsoid-based CFD Visualization">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Authors:</strong> Herrmann, Padilla, Pastorelli<br>
-                                            <strong>Venue:</strong> EuroVR, European Association of Virtual and
-                                            Augmented
-                                            Reality<br>
-                                            Tensor field visualization in virtual reality.
-                                        </p>
+                                        <p class="card-authors">Herrmann, Padilla, Pastorelli</p>
+                                        <p class="card-venue">EuroVR, European Association of Virtual and Augmented
+                                            Reality</p>
+                                        <p class="card-info">Tensor field visualization in virtual reality.</p>
+
                                         <div class="mt-auto">
                                             <a href="http://diglib.eg.org/handle/10.2312/eurovr.20141344.089-092"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item Eurographics">EG</div>
+                                            <div class="item">2014</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Publication Card 11 -->
-                            <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
                                 <div class="card h-100">
-
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Komplexe Funktionen Darstellen</h5>
                                         <div class="card-img-container">
                                             <img src="/Projects/Komplexe_Funktionen_Darstellen/chrome_2018-12-11_13-43-10.png"
                                                 class="card-img-top" alt="Komplexe Funktionen Darstellen">
                                         </div>
-                                        <p class="card-text flex-grow-1">
-                                            <strong>Author:</strong> Marcel Padilla<br>
-                                            <strong>Venue:</strong> Junge Wissenschaft issue Nr. 94. School project.<br>
-                                            Visualizing through matching parallel planes.
-                                        </p>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">Junge Wissenschaft issue Nr. 94</p>
+                                        <p class="card-info">Visualizing through matching parallel planes.</p>
+
                                         <div class="mt-auto">
                                             <a href="https://www.junge-wissenschaft.ptb.de/fileadmin/hefte/bis_2017/JuWi_94_2012.pdf#page=46"
                                                 target="_blank" class="btn btn-secondary btn-sm">PDF</a>
                                         </div>
+
+                                        <!-- Items Row (right-aligned) -->
+                                        <div class="item-container">
+                                            <div class="item">2012</div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                         </div>
+
+
                     </section>
                     <!-- End Publications Section -->
 
