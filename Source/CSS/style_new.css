@@ -87,7 +87,7 @@ p a:hover {
    color: #ffffff;
    background-color: var(--main_color_very_light);
    margin: 5px;
-   border-radius: 25px;
+   border-radius: 7px;
    padding: 6px 15px !important;
    outline: var(--outline-thickness) solid black;
 }
@@ -239,9 +239,7 @@ p a:hover {
    overflow: hidden;
    display: flex;
    align-items: center;
-   justify-content: center;
-   border-radius: 30px;
-   
+   justify-content: center;   
    overflow: hidden;
 }
 
@@ -281,9 +279,45 @@ footer {
 /* Container for the buttons */
 .button-container {
    display: flex;
-   justify-content: space-around;
-   margin-bottom: 10px;
+   justify-content: space-between; /* Evenly distribute space between buttons */
+   gap: 10px; /* Optional: add some gap between buttons */
+   width: 100%; /* Ensure the container spans the entire row */
 }
+
+
+.button-container .btn {
+   display: block; /* Make buttons behave as block elements */
+   width: 100%; /* Ensure each button takes up the full width */
+   margin: 5px 0; /* Add space between buttons */
+   text-align: center; /* Center the text */
+   flex-grow: 1; /* Allow buttons to grow */
+   padding: 10px; /* Adjust padding if buttons appear too small */
+   flex: 1; /* Ensure each button takes up equal space */
+}
+
+.button {
+   flex: 1;
+   text-align: center;
+   box-sizing: border-box;
+   background-color: var(--main_color_light);
+   border: 1px solid black;
+   text-decoration: none;
+   border-radius: 5px;
+   margin: 1%;
+   line-height: 1.5em;
+   transition: box-shadow var(--transition-duration_medium_fast) ease-out var(--transition-duration_medium_fast);
+   color: white;
+}
+
+.card-body .btn {
+   background-color: var(--main_color_light); /* Set the button background color */
+   color: #fff; /* Optional: Set text color to white */
+}
+
+.card-body .btn:hover {
+   background-color: var(--main_color_medium); /* Optional: Set hover background color */
+}
+
 
 /* Container for the items like SIGGRAPH and year */
 .item-container {
@@ -308,6 +342,8 @@ footer {
    border-radius: 20px;
    font-size: 10pt;
 }
+
+
 
 .SIGGRAPH {
    background-image: linear-gradient(to bottom right, rgb(0, 204, 255), rgb(174, 0, 255), red);
