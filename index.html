@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 
 <head>
-
-    <!-- Charset -->
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="Source/CSS/style_new.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -20,1398 +24,744 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- TAG marcelpadilla.github.com -->
-    <!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-YE3HMMJMWH');
-</script> -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
 
-    <!-- ICON -->
-    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
-
-    <!-- GET FONT -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
-
-
-    <!-- CSS import Legacy for the project pages-->
-    <link href='/Source/style_old.css' rel='stylesheet'>
-
-    <!-- CSS import -->
-    <link href='/Source/CSS/style.css' rel='stylesheet'>
-
-    <!-- Navigation Bar Inclusion Function -->
-    <!-- <script>
-        $(function () {
-            $("#navigation-bar").load("/Source/navigation-bar.html");
-        });
-    </script> -->
-
-    <a class="anchor" id="top"></a>
-    <div class="header">
-        <div class="navigation">
-            <a href="/">Marcel Padilla 🎓</a>
-            <a href="#publications">Publications 📜</a>
-            <a href="#teaching">Teaching 📖</a>
-            <a href="#exploration">Exploration 🔮</a>
-            <a href="#aboutme">About Me 📌</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="headerSpacer"></div>
+    </nav>
+
 
     <title>Marcel Padilla</title>
 
 </head>
 
-
 <body>
 
 
-    <div class="page-container">
 
 
+    <main class="main-field">
 
-        <div class="sidebar">
+        <!-- Sidebar and Main Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <aside class="col-lg-3 col-md-4 sidebar py-4">
+                    <div class="text-center">
+                        <img src="/Files/AboutMe/portrait.jpg" alt="Profile Image" class="img-fluid rounded-circle mb-3"
+                            style="width: 150px ; border: 2px solid black;">
+                        <p>
+                            PostDoc at ETH Zürich
+                            <br>
+                            <a id="email" href="#">[email protected]</a> ✉️
+                        </p>
 
-
-            <div class="sidebar-element">
-                <img src="/Files/AboutMe/portrait.jpg" alt="Profile Image" class="profile-img">
-            </div>
-
-            <div class="sidebar-element">
-
-                <div class="name" style="color: white;">
-                    Dr. Marcel Padilla
-                </div>
-
-                <div class="subtitle" style="color: white;">
-                    Research Associate at TU Berlin
-                </div>
-
-                <div class="email" style="color: white;">
-                    Email: mail(ät)marcelpadilla.com
-                </div>
-
-
-
-            </div>
-
-            <div class="sidebar-element">
-
-
-                <div class="button-container-sidebar">
-                    <a href="https://www.youtube.com/@marcelpadilla" target="_blank" class="button YouTube"><i
-                            class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                        YouTube</a>
-
-                </div>
-
-                <div class="button-container-sidebar">
-                    <a href="https://github.com/marcelpadilla" target="_blank" class="button GitHub"><i
-                            class="fab fa-github"></i>
-                        GitHub</a>
-                </div>
-
-                <div class="button-container-sidebar">
-                    <a href="https://scholar.google.com/citations?user=HtxEN4UAAAAJ&hl=en" target="_blank"
-                        class="button Google-Scholar"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
-                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                            <path fill="#ffffff"
-                                d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z" />
-                        </svg>
-                        Scholar</a>
-                </div>
-
-                <div class="button-container-sidebar">
-                    <a href="https://orcid.org/0000-0001-8962-9355" target="_blank" class="button ORCiD"><i
-                            class="fa-brands fa-orcid" style="color: #000;"></i>
-                        ORCiD</a>
-                </div>
-
-                <div class="button-container-sidebar">
-                    <a href="./Files/AboutMe/CV_of_Marcel_Padilla.pdf" target="_blank" class="button CV"><i
-                            class="fa-solid fa-file" style="color: #ffffff;"></i>
-                        CV</a>
-                </div>
-
-            </div>
-
-
-
-            <div class="sidebar-element">
-
-                <div class="text-box">
-                    <h1>About Me:</h1>
-                    My main interest is the interplay between physical simulations, geometry
-                    processing, discrete
-                    exterior calculus and applications in graphics and animation.
-                    I am currently starting a Postdoc at the
-                    <a class="publication-link" href="https://igl.ethz.ch/">
-                        Interactive Geometry Lab
-                    </a>
-                    with Olga Sorkine Hornung at ETH Zürich through the
-                    <a class="publication-link"
-                        href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/feodor-lynen-research-fellowship">
-                        Feodor-Lynen fellowship
-                    </a> from the Alexander von Humboldt foundation.
-                    I was previously employed at the Technical University of Berlin and work with the
-                    <a class="publication-link" href="https://www.discretization.de/">
-                        Discretization in Geometry and Dynamics
-                    </a>
-                    research group.
-                </div>
-            </div>
-
-
-
-
-
-
-
-        </div> <!-- end sidebar -->
-
-        <div class="mainContent"> <!-- MAINCONTENT -->
-
-
-
-            <!-- 
-                        <div class="card">
-                        <div class="info-container">
-                            <img src="/Files/AboutMe/portrait.jpg" alt="Profile Image" class="profile-img">
-                        </div>
-                        <div class="info-container">
-                            <div class="info-text">
-                                <h2>Dr. Marcel Padilla</h2>
-                                <p>Research Associate at TU Berlin</p>
-                                <p>Email: padilla ät math.tu-berlin.de</p>
-                                <a class="publication-link" href="https://www.youtube.com/@marcelpadilla"
-                                    target="_blank">
-                                    <img class="icon" src="https://www.google.com/s2/favicons?domain=www.youtube.com"
-                                        alt="YouTube Icon"> YouTube
-                                </a>
-
-                                <a class="publication-link" href="https://github.com/marcelpadilla" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    Github
-                                </a>
-
-
-                                <a class="publication-link"
-                                    href="https://scholar.google.com/citations?user=HtxEN4UAAAAJ&hl=en" target="_blank">
-                                    <img class="icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com"
-                                        alt="Google Scholar Icon">
-                                    Scholar
-                                </a>
-                                <a class="publication-link" href="https://orcid.org/0000-0001-8962-9355"
-                                    target="_blank">
-                                    <img class="icon" src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                                        alt="ORCID logo">
-                                    orcid
-                                </a>
-                            </div>
+                        <div class="social-buttons">
+                            <a href="https://www.youtube.com/@marcelpadilla" target="_blank" class="social-btn YouTube">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+                                    alt="YouTube" style="width: 20px; height: 20px;"> YouTube
+                            </a>
+                            <a href="https://github.com/marcelpadilla" target="_blank" class="social-btn GitHub">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                                    alt="GitHub" style="width: 20px; height: 20px; filter: invert(1);"> GitHub
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=HtxEN4UAAAAJ&hl=en" target="_blank"
+                                class="social-btn Google-Scholar">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg"
+                                    alt="Google Scholar" style="width: 20px; height: 20px;"> Scholar
+                            </a>
+                            <a href="https://orcid.org/0000-0001-8962-9355" target="_blank" class="social-btn ORCiD">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCiD"
+                                    style="width: 20px; height: 20px;"> ORCiD
+                            </a>
+                            <a href="./Files/AboutMe/CV_of_Marcel_Padilla.pdf" target="_blank" class="social-btn CV">
+                                📃CV
+                            </a>
                         </div>
 
 
-                    </div> -->
 
 
-            <a class="anchor" id="publications"></a>
-            <div class="publications"> <!-- PUBLICATIONS -->
-                <!-- <table> -->
-                <!-- <tbody> -->
-                <!-- <tr> -->
-                <!-- <td class="content"> -->
-                <!-- <div class="container"> -->
-                <!-- <div class="text"> -->
-                <!-- <div class="background"></div> -->
-                <!-- <div class="foreground"> -->
-
-                <!-- <div class="publicationContent"> -->
-
-                <div class="section-title-parent">
-                    <div class="section-title">Publications 📜</div><br>
-                </div>
-
-                <div class="paperSet">
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle" style="font-size: 16pt;">
-                            Going with the Flow
-                        </div>
-
-                        <div class="image-container">
-                            <img src="./Projects/Going_with_the_Flow/SwimmingTurtle.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 11pt;">
-
-                                <div class="authorList">
-                                    Soliman, Padilla, Gross,<br> Knöppel, Pinkall, Schröder
-
-                                </div>
-
-                                <div class="venue">
-                                    ACM Transactions on Graphics
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Fast and accurate motion in <br>fluids without simulating the fluid.
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/index.html"
-                                        target="_blank" class="button">🔗
-                                        Project</a>
-                                    <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/GoingWithTheFlow.pdf"
-                                        target="_blank" class="button">📄 PDF</a>
-                                </div>
-
-                                <!-- <div class="button-container">
-                                    
-                                    <a href="./Projects/Going_with_the_Flow/bibtex.txt" target="_blank"
-                                        class="button">📒
-                                        BibTeX (soon)</a>
-                                </div> -->
-
-                                <div class="item-container">
-                                    <div class="item SIGGRAPH">
-                                        SIGGRAPH</div>
-                                    <div class="item">2024</div>
-                                </div>
-                            </div>
-                        </div>
-
-
+                        <hr>
+                        <h4 id="aboutme" class="section-title">About Me:</h4>
+                        <p class="text-start">
+                            My main interest is the interplay between physical simulations, geometry
+                            processing, discrete exterior calculus and applications in graphics and animation.
+                            I am currently starting a Postdoc at the
+                            <a href="https://igl.ethz.ch/" target="_blank">Interactive Geometry Lab</a>
+                            at ETH Zürich through the
+                            <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/feodor-lynen-research-fellowship"
+                                target="_blank">
+                                Feodor-Lynen fellowship</a> from the Alexander von Humboldt foundation.
+                            I was previously employed at the Technical University of Berlin and worked with the
+                            <a href="https://www.discretization.de/" target="_blank">Discretization in Geometry and
+                                Dynamics</a>
+                            research group.
+                        </p>
                     </div>
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            The Solar Corona: Modeled,
-                            Discretized, Visualized
-                        </div>
-
-                        <div class="image-container">
-                            <img src="./Projects/Dissertation/Thumbnail.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 11pt;">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Doctoral Dissertation,<br> TU Berlin
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    <!-- Magnetohydrostatics, Differential Geometry, Optimization, Visualization -->
-                                    Detailed solar magnetic field theory <br>and
-                                    image generation
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Dissertation/The Solar Corona Modeled, Discretized, Visualized.pdf"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/Dissertation/bibtex.txt" target="_blank" class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item"
-                                        style="background-image: linear-gradient(to bottom right, rgb(246, 255, 0), rgb(255, 94, 0));  color: black;">
-                                        PhD</div>
-                                    <div class="item">2023</div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle" style="font-size: 15pt;">
-                            Motion from<br>Shape Change
-                        </div>
-
-                        <div class="image-container">
-                            <img src="./Projects/Motion_From_Shape_Change/JellyfishSequence.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 9pt;">
-
-                                <div class="authorList" style="font-size: 11pt;">
-                                    Gross, Soliman, Padilla, <br> Knöppel,
-                                    Pinkall,
-                                    Schröder
-                                </div>
-
-                                <div class="venue">
-                                    ACM Transactions on Graphics
-                                </div>
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-
-                                <div class="mini-abstract">
-                                    <!-- Fluid dynamics, Geometry, Animation -->
-                                    Estimated motion in viscous medium without running a fluid
-                                    simulation
-                                </div>
-
-                                <div class="button-container">
-
-                                    <a href="https://olligross.github.io/projects/MotionFromShapeChange/MotionFromShapeChange_project.html"
-                                        target="_blank" class="button">🔗
-                                        Project Page</a>
-
-                                </div>
-
-                                <div class="button-container">
-
-                                    <a href="https://olligross.github.io/publications/MotionFromShapeChange/MotionFromShapeChange_reduced.pdf"
-                                        target="_blank" class="button">📄 PDF</a>
-                                    <a href="./Projects/Motion_From_Shape_Change/bibtex.txt" target="_blank"
-                                        class="button">📒
-                                        BibTeX</a>
-
-                                </div>
-
-                                <div class="item-container">
-
-                                    <div class="item SIGGRAPH">
-                                        SIGGRAPH</div>
-
-                                    <div class="item">2023</div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle" style="font-size: 14px;">
-                            4D Atlas: Statistical Analysis
-                            of the Apatiotemporal Variability in Longitudinal 3D
-                            Shape Data
-                        </div>
-
-                        <div class="image-container">
-                            <img src="./Projects/4D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_3D_Shape_Data/Australian-Paper-Title.jpg"
-                                alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 12px;">
-
-                                <div class="authorList">
-                                    Laga, Padilla, Jermyn, <br> Kurtek,
-                                    Bennamoun,
-                                    Srivastava
-                                </div>
-
-                                <div class="venue">
-                                    Transactions on Pattern Analysis <br>
-                                    and Machine Intelligence
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Temporal shape matching
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="https://sites.google.com/view/hamidlaga/3d4d-shape-analysis"
-                                        target="_blank" class="button">🔗
-                                        Project Page</a>
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="https://arxiv.org/pdf/2101.09403.pdf" target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/4D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_3D_Shape_Data/bibtex.txt"
-                                        target="_blank" class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item IEEE">
-                                        IEEE</div>
-                                    <div class="item">2023</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Filament Based Plasma
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Filament_Based_Plasma/Project Thumbnail.png" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <span class="authorList">
-                                    Padilla, Gross, Knöppel, <br> Chern,
-                                    Pinkall,
-                                    Schröder
-                                </span>
-
-                                <div class="venue">
-                                    ACM Transactions on Graphics
-                                </div>
-
-                            </div>
-
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Plasma loop modeling
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Filament_Based_Plasma/" target="_blank" class="button">🔗
-                                        Project Page</a>
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/Filament_Based_Plasma/bibtex.txt" target="_blank"
-                                        class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item"
-                                        style="background-image: linear-gradient(to bottom right, rgb(0, 204, 255), rgb(174, 0, 255), red);">
-                                        SIGGRAPH</div>
-                                    <div class="item">2022</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            On Bubble Rings <br>and Ink
-                            Chandeliers
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/thumbnail.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Padilla, Chern, <br> Knöppel, Pinkall, Peter
-                                </div>
-
-                                <div class="venue">
-                                    ACM Transactions on Graphics
-                                </div>
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Vortex filament dynamics
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/" class="button"
-                                        target="_blank">🔗
-                                        Project Page</a>
-                                </div>
-                                <div class="button-container">
-                                    <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/On_Bubble_Rings_and_Ink_Chandeliers.pdf"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/On_Bubble_Rings_and_Ink_Chandeliers/bibtex.txt" target="_blank"
-                                        class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item SIGGRAPH">
-                                        SIGGRAPH</div>
-                                    <div class="item">2019</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Point Vortex Dynamics
-                            <br>On Closed Surfaces
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/PointVortexCoverGif.gif"
-                                alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 11pt;">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    M.S. Thesis, TU Berlin.
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    <!-- Magnetohydrostatics, Differential Geometry, Optimization, Visualization -->
-                                    Surface fluid dynamics theory
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Marcel-Padilla-master-thesis-final-small.pdf"
-                                        target="_blank" class="button">🔗
-                                        Project Page
-                                    </a>
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Marcel-Padilla-master-thesis-final-small.pdf"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/bibtex.txt"
-                                        target="_blank" class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item"
-                                        style="background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(105, 105, 105)); color: black;">
-                                        MSc</div>
-                                    <div class="item">2018</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle" style="font-size: 14px;">The
-                            Nearest Hermitian
-                            Inverse Eigenvalue Problem Solution<br>with
-                            Respect to the 2-Norm
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/The_Nearest_Hermitian_Inverse_Eigenvalue_Problem_Solution_with_Respect_to_the_2-Norm/Mandi.png"
-                                alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 11pt;">
-
-                                <div class="authorList">
-                                    Padilla, Kolbe, Chakraborty
-                                </div>
-
-                                <div class="venue">DAAD Rise
-                                    Worldwide<br>Internship
-                                    Results
-                                </div>
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    <!-- Magnetohydrostatics, Differential Geometry, Optimization, Visualization -->
-                                    Matrix geometry analysis<br>for eigenvalue
-                                    restoration
-                                </div>
-
-
-                                <div class="button-container">
-                                    <a href="https://arxiv.org/pdf/1703.00829.pdf" target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/The_Nearest_Hermitian_Inverse_Eigenvalue_Problem_Solution_with_Respect_to_the_2-Norm/bibtex.txt"
-                                        target="_blank" class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item arXiv">
-                                        arXiv</div>
-                                    <div class="item">
-                                        2017
+                </aside>
+                <!-- End Sidebar -->
+
+                <!-- Main Content -->
+                <main class="ol-lg-9 col-md-8 py-4 main-content">
+                    <!-- Publications Section -->
+                    <section>
+                        <h2 id="publications" class="section-title mb-4">Publications 📜</h2>
+                        <!-- Publication Cards -->
+                        <div class="row">
+                            <!-- Publication Card 1 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Going with the Flow</h5>
+                                        <div class="card-img-container">
+                                            <img src="./Projects/Going_with_the_Flow/SwimmingTurtle.jpg"
+                                                class="card-img-top" alt="Going with the Flow">
+                                        </div>
+                                        <p class="card-authors">Soliman, Padilla, Gross, Knöppel, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Fast and accurate motion in fluids without simulating the
+                                            fluid.</p>
+
+                                        <div class="button-container">
+                                            <a href="https://www.yousufsoliman.com/projects/GoingWithTheFlow/index.html"
+                                                target="_blank" class="button">🔗Page</a>
+                                            <a href="https://www.yousufsoliman.com/projects/download/GoingWithTheFlow.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Going_with_the_Flow/bibtex.txt" target="_blank"
+                                                class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2024</div>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle" style="font-size: 15px;">The
-                            Zeros of Random <br>Sections
-                            on Line Bundles
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/SumatraPDF_2018-12-20_16-50-20.png"
-                                alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 11pt;">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    B.S. Thesis, TU Berlin.
-                                </div>
-
                             </div>
 
-                            <div class="paper-info-bottom">
+                            <!-- Publication Card 2 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">The Solar Corona: Modeled, Discretized, Visualized</h5>
+                                        <div class="card-img-container">
+                                            <img src="./Projects/Dissertation/Thumbnail.jpg" class="card-img-top"
+                                                alt="The Solar Corona">
+                                        </div>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">Doctoral Dissertation, TU Berlin</p>
+                                        <p class="card-info">Detailed solar magnetic field theory and image generation.
+                                        </p>
 
-                                <div class="mini-abstract">
-                                    <!-- Magnetohydrostatics, Differential Geometry, Optimization, Visualization -->
-                                    Root analysis of <br>smoothed random fields
-                                </div>
+                                        <div class="button-container">
+                                            <a href="/Projects/Dissertation/The Solar Corona Modeled, Discretized, Visualized.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Dissertation/bibtex.txt" target="_blank"
+                                                class="button">📒Cite</a>
+                                        </div>
 
-
-                                <div class="button-container">
-                                    <a href="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/" target="_blank"
-                                        class="button">🔗
-                                        Project Page</a>
-                                </div>
-                                <div class="button-container">
-                                    <a href="./Projects/Zeros_of_Random_Sections_on_Line_Bundles/Zeros-of-Random-Sections-on-Line-Bundles-B.S.-Thesis.pdf"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/Zeros_of_Random_Sections_on_Line_Bundles/bibtex.txt"
-                                        target="_blank" class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item"
-                                        style="background-image: linear-gradient(to bottom right, rgb(255, 165, 81), rgb(167, 64, 0)); color: black;">
-                                        BSc
-                                    </div>
-                                    <div class="item">
-                                        2016
+                                        <div class="item-container">
+                                            <div class="item PhD">PhD</div>
+                                            <div class="item">2023</div>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            A.C.T.I.V.E. <br>Superellipsoid-based<br>CFD Visualization
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/ACTIVE/ACTIVE.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top" style="font-size: 11pt;">
-
-                                <div class="authorList">
-                                    Herrmann, Padilla, Pastorelli
-                                </div>
-
-                                <div class="venue">
-                                    EuroVR, European Association of Virtual and
-                                    Augmented Reality
-                                </div>
-
                             </div>
 
-                            <div class="paper-info-bottom">
+                            <!-- Publication Card 3 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Motion from Shape Change</h5>
+                                        <div class="card-img-container">
+                                            <img src="./Projects/Motion_From_Shape_Change/JellyfishSequence.jpg"
+                                                class="card-img-top" alt="Motion from Shape Change">
+                                        </div>
+                                        <p class="card-authors">Gross, Soliman, Padilla, Knöppel, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Estimated motion in viscous medium without running a fluid
+                                            simulation.</p>
 
-                                <div class="mini-abstract">
-                                    <!-- Magnetohydrostatics, Differential Geometry, Optimization, Visualization -->
-                                    Tensor field visualisation in virtual
-                                    reality
+                                        <div class="button-container">
+                                            <a href="https://olligross.github.io/projects/MotionFromShapeChange/MotionFromShapeChange_project.html"
+                                                target="_blank" class="button">🔗Page</a>
+                                            <a href="https://olligross.github.io/publications/MotionFromShapeChange/MotionFromShapeChange_reduced.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Motion_From_Shape_Change/bibtex.txt" target="_blank"
+                                                class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2023</div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
+                            <!-- Publication Card 4 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">4D Atlas: Statistical Analysis of the Spatiotemporal
+                                            Variability in Longitudinal 3D Shape Data</h5>
+                                        <div class="card-img-container">
+                                            <img src="./Projects/4D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_3D_Shape_Data/Australian-Paper-Title.jpg"
+                                                class="card-img-top" alt="4D Atlas">
+                                        </div>
+                                        <p class="card-authors">Laga, Padilla, Jermyn, Kurtek, Bennamoun, Srivastava</p>
+                                        <p class="card-venue">Transactions on Pattern Analysis and Machine Intelligence
+                                        </p>
+                                        <p class="card-info">Temporal shape matching.</p>
 
+                                        <div class="button-container">
+                                            <a href="https://sites.google.com/view/hamidlaga/3d4d-shape-analysis"
+                                                target="_blank" class="button">🔗Page</a>
+                                            <a href="https://arxiv.org/pdf/2101.09403.pdf" target="_blank"
+                                                class="button">📄PDF</a>
+                                            <a href="./Projects/4D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_3D_Shape_Data/bibtex.txt"
+                                                target="_blank" class="button">📒Cite</a>
+                                        </div>
 
-                                <div class="button-container">
-                                    <a href="http://diglib.eg.org/handle/10.2312/eurovr.20141344.089-092"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/ACTIVE/bibtex.txt" target="_blank" class="button">📒
-                                        BibTeX</a>
+                                        <div class="item-container">
+                                            <div class="item IEEE">IEEE</div>
+                                            <div class="item">2023</div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="item-container">
-                                    <div class="item Eurographics">
-                                        EG</div>
-                                    <div class="item">
-                                        2014
+                            <!-- Publication Card 5 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Filament Based Plasma</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Filament_Based_Plasma/Project Thumbnail.png"
+                                                class="card-img-top" alt="Filament Based Plasma">
+                                        </div>
+                                        <p class="card-authors">Padilla, Gross, Knöppel, Chern, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Plasma loop modeling.</p>
+
+                                        <div class="button-container">
+                                            <a href="/Projects/Filament_Based_Plasma/" target="_blank"
+                                                class="button">🔗Page</a>
+                                            <a href="/Projects/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Filament_Based_Plasma/bibtex.txt" target="_blank"
+                                                class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Card 6 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">On Bubble Rings and Ink Chandeliers</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/thumbnail.jpg"
+                                                class="card-img-top" alt="On Bubble Rings and Ink Chandeliers">
+                                        </div>
+                                        <p class="card-authors">Padilla, Chern, Knöppel, Pinkall, Schröder</p>
+                                        <p class="card-venue">ACM Transactions on Graphics</p>
+                                        <p class="card-info">Vortex filament dynamics.</p>
+
+                                        <div class="button-container">
+                                            <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/" target="_blank"
+                                                class="button">🔗Page</a>
+                                            <a href="/Projects/On_Bubble_Rings_and_Ink_Chandeliers/On_Bubble_Rings_and_Ink_Chandeliers.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/On_Bubble_Rings_and_Ink_Chandeliers/bibtex.txt"
+                                                target="_blank" class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item SIGGRAPH">SIGGRAPH</div>
+                                            <div class="item">2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Card 7 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Point Vortex Dynamics On Closed Surfaces</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/PointVortexCoverGif.gif"
+                                                class="card-img-top" alt="Point Vortex Dynamics">
+                                        </div>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">M.S. Thesis, TU Berlin</p>
+                                        <p class="card-info">Surface fluid dynamics theory.</p>
+
+                                        <div class="button-container">
+                                            <a href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Marcel-Padilla-master-thesis-final-small.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/bibtex.txt"
+                                                target="_blank" class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item MSc">MSc</div>
+                                            <div class="item">2018</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Card 8 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">The Nearest Hermitian Inverse Eigenvalue Problem Solution
+                                            with Respect to the 2-Norm</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/The_Nearest_Hermitian_Inverse_Eigenvalue_Problem_Solution_with_Respect_to_the_2-Norm/Mandi.png"
+                                                class="card-img-top" alt="Nearest Hermitian Inverse Eigenvalue Problem">
+                                        </div>
+                                        <p class="card-authors">Padilla, Kolbe, Chakraborty</p>
+                                        <p class="card-venue">DAAD RISE Worldwide Internship Results</p>
+                                        <p class="card-info">Matrix geometry analysis for eigenvalue restoration.</p>
+
+                                        <div class="button-container">
+                                            <a href="https://arxiv.org/pdf/1703.00829.pdf" target="_blank"
+                                                class="button">📄PDF</a>
+                                            <a href="./Projects/The_Nearest_Hermitian_Inverse_Eigenvalue_Problem_Solution_with_Respect_to_the_2-Norm/bibtex.txt"
+                                                target="_blank" class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item arXiv">arXiv</div>
+                                            <div class="item">2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Card 9 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">The Zeros of Random Sections on Line Bundles</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/SumatraPDF_2018-12-20_16-50-20.png"
+                                                class="card-img-top" alt="Zeros of Random Sections on Line Bundles">
+                                        </div>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">B.S. Thesis, TU Berlin</p>
+                                        <p class="card-info">Root analysis of smoothed random fields.</p>
+
+                                        <div class="button-container">
+                                            <a href="/Projects/Zeros_of_Random_Sections_on_Line_Bundles/"
+                                                target="_blank" class="button">🔗Page</a>
+                                            <a href="./Projects/Zeros_of_Random_Sections_on_Line_Bundles/Zeros-of-Random-Sections-on-Line-Bundles-B.S.-Thesis.pdf"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Zeros_of_Random_Sections_on_Line_Bundles/bibtex.txt"
+                                                target="_blank" class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item BSc">BSc</div>
+                                            <div class="item">2016</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Card 10 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">A.C.T.I.V.E. Superellipsoid-based CFD Visualization</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/ACTIVE/ACTIVE.jpg" class="card-img-top"
+                                                alt="A.C.T.I.V.E. Superellipsoid-based CFD Visualization">
+                                        </div>
+                                        <p class="card-authors">Herrmann, Padilla, Pastorelli</p>
+                                        <p class="card-venue">EuroVR, European Association of Virtual and Augmented
+                                            Reality</p>
+                                        <p class="card-info">Tensor field visualization in virtual reality.</p>
+
+                                        <div class="button-container">
+                                            <a href="http://diglib.eg.org/handle/10.2312/eurovr.20141344.089-092"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/ACTIVE/bibtex.txt" target="_blank"
+                                                class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item Eurographics">EG</div>
+                                            <div class="item">2014</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Card 11 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Komplexe Funktionen Darstellen</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Komplexe_Funktionen_Darstellen/chrome_2018-12-11_13-43-10.png"
+                                                class="card-img-top" alt="Komplexe Funktionen Darstellen">
+                                        </div>
+                                        <p class="card-authors">Marcel Padilla</p>
+                                        <p class="card-venue">Junge Wissenschaft issue Nr. 94</p>
+                                        <p class="card-info">Visualizing through matching parallel planes.</p>
+
+                                        <div class="button-container">
+                                            <a href="https://www.junge-wissenschaft.ptb.de/fileadmin/hefte/bis_2017/JuWi_94_2012.pdf#page=46"
+                                                target="_blank" class="button">📄PDF</a>
+                                            <a href="./Projects/Komplexe_Funktionen_Darstellen/bibtex.txt"
+                                                target="_blank" class="button">📒Cite</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item">2012</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
 
 
-                    <div class="paperCard">
 
-                        <div class="paperTitle">
-                            Komplexe<br>Funktionen
-                            Darstellen
-                        </div>
+                    </section>
+                    <!-- End Publications Section -->
 
-                        <div class="image-container">
-                            <img src="/Projects/Komplexe_Funktionen_Darstellen/chrome_2018-12-11_13-43-10.png"
-                                alt="Your Image">
-                        </div>
+                    <!-- Teaching Section -->
+                    <section>
+                        <h2 id="teaching" class="section-title mb-4">Teaching 📖</h2>
+                        <div class="row">
+                            <!-- Teaching Card 1 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">The Art of Presenting</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Teaching/The_Art_of_Presenting/Marcelito_A_stage_with_a_scientist_giving_a_power_point_present_AI_GEN.png"
+                                                class="card-img-top" alt="The Art of Presenting">
+                                        </div>
+                                        <p class="card-venue">Math+, Berlin Mathematical School Seminars</p>
+                                        <p class="card-info">Literature review on scientific presentations.</p>
 
-                        <div class="paper-info">
+                                        <div class="button-container">
+                                            <a href="/Teaching/The_Art_of_Presenting/TheArtofPresenting.pdf"
+                                                target="_blank" class="button">📄 Help Sheet</a>
+                                        </div>
 
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
+                                        <div class="item-container">
+                                            <div class="item">2020</div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="venue" style="font-size: 10pt;">
-                                    Junge Wissenschaft issue Nr. 94. <br> School
-                                    project.
-                                </div>
-
                             </div>
 
-                            <div class="paper-info-bottom">
+                            <!-- Teaching Card 2 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Geometry Processing and Applications</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Teaching/Geometry_Processing_and_Applications/bunny-earth.gif"
+                                                class="card-img-top" alt="Geometry Processing and Applications">
+                                        </div>
+                                        <p class="card-venue">University Course, TU Berlin</p>
+                                        <p class="card-info">Mathematical visualization and discrete differential
+                                            geometry.</p>
 
-                                <div class="mini-abstract">
-                                    Visualizing through matching parallel
-                                    planes.
+                                        <div class="button-container">
+                                            <a href="http://wordpress.discretization.de/geometryprocessingandapplicationsws19/"
+                                                target="_blank" class="button">🔗 Course Page</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item">2019</div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
+                            <!-- Teaching Card 3 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Houdini Tutorials Tailored for Mathematicians</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Teaching/Houdini_Tutorials_Tailored_for_Mathematicians/Main_Page.png"
+                                                class="card-img-top"
+                                                alt="Houdini Tutorials Tailored for Mathematicians">
+                                        </div>
+                                        <p class="card-venue">Open Course Material, TU Berlin</p>
+                                        <p class="card-info">Using Houdini for research.</p>
 
+                                        <div class="button-container">
+                                            <a href="http://wordpress.discretization.de/houdini/" target="_blank"
+                                                class="button">🔗 Course Page</a>
+                                        </div>
 
-                                <div class="button-container">
-                                    <a href="https://www.junge-wissenschaft.ptb.de/fileadmin/hefte/bis_2017/JuWi_94_2012.pdf#page=46"
-                                        target="_blank" class="button">📄
-                                        PDF</a>
-                                    <a href="./Projects/ACTIVE/bibtex.txt" target="_blank" class="button">📒
-                                        BibTeX</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">
-                                        2012
+                                        <div class="item-container">
+                                            <div class="item">2019</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-
-                </div>
+                    </section>
+                    <!-- End Teaching Section -->
 
 
-                <!-- </div> -->
-                <!-- </div> -->
-                <!-- </div> -->
-                <!-- </td> -->
-                <!-- </tr> -->
-                <!-- </tbody> -->
-                <!-- </table> -->
-            </div> <!-- END PUBLICATIONS -->
+                    <!-- Exploration Section -->
+                    <section>
+                        <h2 id="exploration" class="section-title mb-4">Exploration 🔮</h2>
+                        <div class="row">
+                            <!-- Exploration Card 1 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Rotating Snakes Study</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Rotating_Snakes_Study/thumbnail.jpg"
+                                                class="card-img-top" alt="Rotating Snakes Study">
+                                        </div>
+                                        <p class="card-venue">Playing around with optical illusions</p>
+                                        <p class="card-info">Python scripting fun.</p>
 
-            <a class="anchor" id="teaching"></a>
-            <div class="publications"> <!-- TEACHING -->
+                                        <div class="button-container">
+                                            <a href="/Projects/Rotating_Snakes_Study/" target="_blank" class="button">🔗
+                                                Project Page</a>
+                                        </div>
 
-                <div class="section-title-parent">
-                    <div class="section-title">Teaching 📖</div>
-                </div>
-
-                <div class="paperSet">
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            The Art of Presenting
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Teaching/The_Art_of_Presenting/Marcelito_A_stage_with_a_scientist_giving_a_power_point_present_AI_GEN.png"
-                                alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Math+, Berlin Mathematical School
-                                    Seminars
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Literature review<br>on scientific
-                                    presentations.
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Teaching/The_Art_of_Presenting/TheArtofPresenting.pdf" target="_blank"
-                                        class="button">📄 Help
-                                        Sheet</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2020</div>
+                                        <div class="item-container">
+                                            <div class="item">2024</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
+                            <!-- Exploration Card 2 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Mathematicians Reimagined</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Mathematicians_Reimagined/thumbnail.png"
+                                                class="card-img-top" alt="Mathematicians Reimagined">
+                                        </div>
+                                        <p class="card-venue">Playing around with AI</p>
+                                        <p class="card-info">Restoring images with a modern touch.</p>
 
-                    <div class="paperCard">
+                                        <div class="button-container">
+                                            <a href="/Projects/Mathematicians_Reimagined/" target="_blank"
+                                                class="button">🔗 Project Page</a>
+                                        </div>
 
-                        <div class="paperTitle">
-                            Geometry Processing and
-                            Applications
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Teaching/Geometry_Processing_and_Applications/bunny-earth.gif" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Peter Schröder,<br> Olga Diamanti, Marcel
-                                    Padilla
-                                </div>
-
-                                <div class="venue">
-                                    University Course, TU Berlin
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Mathematical visualization<br>and discrete
-                                    differential geometry
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="http://wordpress.discretization.de/geometryprocessingandapplicationsws19/"
-                                        class="button" target="_blank">🔗 Course
-                                        Page</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2019</div>
+                                        <div class="item-container">
+                                            <div class="item">2023</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="paperCard">
+                            <!-- Exploration Card 3 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">RGB Meltdown Experiment</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/RGB_Meltdown/thumbnail.png" class="card-img-top"
+                                                alt="RGB Meltdown Experiment">
+                                        </div>
+                                        <p class="card-venue">Experimenting with light effects</p>
+                                        <p class="card-info">Creating the illusion of motion through color switching.
+                                        </p>
 
-                        <div class="paperTitle">
-                            Houdini Tutorials<br>Tailored for
-                            Mathematicians
-                        </div>
+                                        <div class="button-container">
+                                            <a href="https://youtu.be/QbrdwjH95cE" target="_blank" class="button">🎬
+                                                Video</a>
+                                        </div>
 
-                        <div class="image-container">
-                            <img src="/Teaching/Houdini_Tutorials_Tailored_for_Mathematicians/Main_Page.png"
-                                alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
+                                        <div class="item-container">
+                                            <div class="item">2023</div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="venue">
-                                    Open Course Material, TU Berlin
-                                </div>
-
-
-
                             </div>
 
-                            <div class="paper-info-bottom">
+                            <!-- Exploration Card 4 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Hyperbolic Tiling {3,7}</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Hyperbolic_Tiling_3,7/Thumbnail_Notext.jpg"
+                                                class="card-img-top" alt="Hyperbolic Tiling {3,7}">
+                                        </div>
+                                        <p class="card-venue">Toying with hyperbolic geometry</p>
+                                        <p class="card-info">Animating a triangular tiling.</p>
 
-                                <div class="mini-abstract">
-                                    Using Houdini for research
+                                        <div class="button-container">
+                                            <a href="/Projects/Hyperbolic_Tiling_3,7/" target="_blank" class="button">🔗
+                                                Project Page</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item">2020</div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="button-container">
-                                    <a href="http://wordpress.discretization.de/houdini/" class="button"
-                                        target="_blank">🔗 Course
-                                        Page</a>
+                            <!-- Exploration Card 5 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Nailing the Bunny</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Nailing_the_Bunny/thumbnail.jpg" class="card-img-top"
+                                                alt="Nailing the Bunny">
+                                        </div>
+                                        <p class="card-venue">Hammering a minimal 3D Representation</p>
+                                        <p class="card-info">Hammer + nails on board. Good.</p>
+
+                                        <div class="button-container">
+                                            <a href="/Projects/Nailing_the_Bunny/" target="_blank" class="button">🔗
+                                                Project Page</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item">2020</div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="item-container">
-                                    <div class="item">2019</div>
+                            <!-- Exploration Card 6 -->
+                            <div class="col-sm-6 col-lg-4 col-xxl-3 mb-4 publication-card">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Sphere Eversion with Transparency Video</h5>
+                                        <div class="card-img-container">
+                                            <img src="/Projects/Sphere_Eversion_with_Transparency_Video/mid.png"
+                                                class="card-img-top" alt="Sphere Eversion with Transparency Video">
+                                        </div>
+                                        <p class="card-venue">Rendering some geometry</p>
+                                        <p class="card-info">Turning the sphere inside out without pinching it anywhere.
+                                        </p>
+
+                                        <div class="button-container">
+                                            <a href="/Projects/Sphere_Eversion_with_Transparency_Video/" target="_blank"
+                                                class="button">🔗 Project Page</a>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item">2018</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <!-- End Exploration Section -->
 
 
 
-                </div> <!-- end papercards -->
+                    <!-- About Me Section -->
+                    <!-- (About Me content can go here or can be included in the sidebar as per your preference) -->
 
 
-            </div> <!-- end Teaching -->
+                    <!-- Footer -->
+                    <footer class="bg-dark text-white text-center py-3">
+                        <p>ETH Zürich
+                            <br>Department of Computer Science<br>Universitätstrasse 6<br>8092 Zürich, Switzerland
+                        </p>
+                    </footer>
+                    <!-- End Footer -->
 
+                </main>
 
-            <a class="anchor" id="exploration"></a>
-            <div class="publications"> <!-- EXPLORATION -->
-
-                <div class="section-title-parent">
-                    <div class="section-title">Exploration 🔮</div>
-                </div>
-
-
-                <div class="paperSet">
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Rotating Snakes Study
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Rotating_Snakes_Study/thumbnail.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Playing around <br> with optical illusions
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Python scripting fun
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Rotating_Snakes_Study/" target="_blank" class="button">🔗
-                                        Project Page</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2024</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Mathematicians
-                            Reimagined
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Mathematicians_Reimagined/thumbnail.png" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Playing around with AI
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Resotring images <br> with a
-                                    modern touch
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Mathematicians_Reimagined/" target="_blank" class="button">🔗
-                                        Project Page</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2023</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            RGB Meltdown Experiment
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/RGB_Meltdown/thumbnail.png" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Experimenting with light effects
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Creating the illusion of<br>motion through
-                                    color switching
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="https://youtu.be/QbrdwjH95cE" target="_blank" class="button">🎬
-                                        Video</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2023</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Hyperbolic Tiling {3,7}
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Hyperbolic_Tiling_3,7/Thumbnail_Notext.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Toying with hyperbolic geometry
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Animating a triangular tiling.
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Hyperbolic_Tiling_3,7/" target="_blank" class="button">🔗
-                                        Project Page</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2020</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Nailing the Bunny
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Nailing_the_Bunny/thumbnail.jpg" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Hammering a minimal <br>3D Representation
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Hammer + nails on board. Good.
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Nailing_the_Bunny/" class="button">🔗
-                                        Project Page</a>
-                                </div>
-
-                                <div class="item-container">
-                                    <div class="item">2020</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paperCard">
-
-                        <div class="paperTitle">
-                            Sphere Eversion with
-                            Transparency Video
-                        </div>
-
-                        <div class="image-container">
-                            <img src="/Projects/Sphere_Eversion_with_Transparency_Video/mid.png" alt="Your Image">
-                        </div>
-
-                        <div class="paper-info">
-
-                            <div class="paper-info-top">
-
-                                <div class="authorList">
-                                    Marcel Padilla
-                                </div>
-
-                                <div class="venue">
-                                    Rendering some geometry
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="paper-info-bottom">
-
-                                <div class="mini-abstract">
-                                    Turning the sphere inside out<br>without
-                                    pinching it anywhere
-                                </div>
-
-                                <div class="button-container">
-                                    <a href="/Projects/Sphere_Eversion_with_Transparency_Video/" target="_blank"
-                                        class="button">🔗
-                                        Project Page</a>
-                                </div>
-                                <div class="item-container">
-                                    <div class="item">2018</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
+                <!-- End Main Content -->
 
             </div>
-        </div>
-
-    </div> <!-- Teaching -->
-
-
-
-
-
-
-    </div> <!-- END MAINCONTENT -->
-
-
-
-
-
-
-
-
-    <div class="bottom-sidebar">
-
-        <div class="sidebar-element">
-
-            <div class="text-box">
-
-                <div class="institute">
-                    Technische Universität Berlin
-                </div>
-
-                <div class="address">
-                    TU Berlin, MA 8–3<br>Str. des 17. Juni 136
-                    <br>10623 Berlin, Germany
-                </div>
-
-            </div>
-            <!-- 
-            <div class="sidebar-element">
-                <img src="./Files/AboutMe/my office final.jpg" alt="Image" class="other-img">
-            </div>
-         -->
 
 
         </div>
+        <!-- End Sidebar and Main Content -->
 
-    </div>
 
 
-    </div>
-    <!-- end page container -->
+    </main>
 
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+            var bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    bsCollapse.hide();
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var encodedEmail = 'bWFpbEBtYXJjZWxwYWRpbGxhLmNvbQ==';
+
+            function decodeEmail(encoded) {
+                return atob(encoded);
+            }
+
+            var emailElement = document.getElementById('email');
+            var decodedEmail = decodeEmail(encodedEmail);
+            emailElement.innerHTML = decodedEmail;
+            emailElement.href = 'mailto:' + decodedEmail;
+        });
+    </script>
 </body>
 
+</body>
 
 </html>
