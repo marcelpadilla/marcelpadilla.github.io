@@ -63,7 +63,8 @@ projects = [
     ["Mathematicians_Reimagined", "🎨Mathematicians Reimagined"],
     ["Sphere_Eversion_with_Transparency_Video", "🌐Sphere Eversion with Transparency"],
     ["Rotating_Snakes_Study", "🐍Rotating Snakes Study"],
-    ["Nailing_the_Bunny", "🐇Nailing the Bunny"]
+    ["Nailing_the_Bunny", "🐇Nailing the Bunny"],
+    ["Academic_Tarot_Cards", "🃏 Academic Tarot Cards"]
 ]
 #["", ""],
 

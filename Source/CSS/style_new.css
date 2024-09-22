@@ -22,6 +22,10 @@
    --min-card-width: 300px;
 }
 
+* {
+    scroll-margin: 80px;
+}
+
 /* Base Styles */
 body {
    font-family: Arial, sans-serif;
@@ -121,6 +125,7 @@ p a:hover {
    background-image: linear-gradient(to bottom, var(--main_color_dark), var(--main_color_very_light));
    color: white;
    border-right: calc(2 * var(--outline-thickness)) solid black;
+   border-bottom: calc(2 * var(--outline-thickness)) solid black;
    max-width: 300px; /* Maximum width of 300px */
    width: 100%; /* Take full width on smaller screens */
    flex-grow: 0; /* Prevent sidebar from growing */
@@ -499,6 +504,36 @@ footer {
    color: black;
 }
 
+
+.tarot-cards-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px; /* Minimal spacing between cards, both horizontally and vertically */
+   margin: 0 auto; /* Center the row horizontally */
+   max-width: 100%; /* Make sure it uses the full width of the screen */
+   padding: 0;
+}
+
+.tarot-card-wrapper {
+   flex: 1 1 calc(20% - 10px); /* Each card takes 20% of the width minus the gap */
+   min-width: 150px; /* Ensure that each card has at least a minimum width */
+   max-width: 200px; /* Optional: Ensure cards don't get too large on wide screens */
+   margin: 0; /* Remove any additional margin */
+}
+
+.tarot-card {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+   max-width: 100%;
+   height: auto;
+}
+
+
+
+
+
 /* For responsiveness */
 @media (max-width: 576px) {
    .page-author {
@@ -534,6 +569,12 @@ footer {
    line-height: 1.2; /* Reduce the line spacing */
    overflow-wrap: break-word; /* Break words to prevent overflow */
 }
+
+.project-box-bibtex {
+   margin-bottom: 0; /* Removes excess bottom margin */
+   padding-bottom: 0; /* Ensures no extra padding at the bottom */
+}
+
 
 .project-button {
    padding: 10px 20px;
