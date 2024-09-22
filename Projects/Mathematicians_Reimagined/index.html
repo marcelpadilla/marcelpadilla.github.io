@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-<!-- META -->
+<html lang="en">
 
 <head>
-
-    <!-- Charset -->
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -21,555 +24,336 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- TAG marcelpadilla.github.com -->
-    <!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YE3HMMJMWH');
-</script> -->
-
-    <!-- ICON -->
-    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
-
-    <!-- GET FONT -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
-
-
-    <!-- CSS import Legacy for the project pages-->
-    <link href='/Source/style_old.css' rel='stylesheet'>
-
-    <!-- CSS import -->
-    <link href='/Source/CSS/style.css' rel='stylesheet'>
-
-    <!-- Navigation Bar Inclusion Function -->
-    <!-- <script>
-        $(function () {
-            $("#navigation-bar").load("/Source/navigation-bar.html");
-        });
-    </script> -->
-
-    <a class="anchor" id="top"></a>
-    <div class="header">
-        <div class="navigation">
-            <a href="/">Marcel Padilla 🎓</a>
-            <a href="#publications">Publications 📜</a>
-            <a href="#teaching">Teaching 📖</a>
-            <a href="#exploration">Exploration 🔮</a>
-            <a href="#aboutme">About Me 📌</a>
-        </div>
-    </div>
-    <div class="headerSpacer"></div>
-
-<title>🎨Mathematicians Reimagined</title>
-
-</head>
-
-
-
-<!-- BODY -->
-
-<body>
-
-
-
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- NAVIGATION -->
-    <!-- <div id="navigation-bar"></div> -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
 
-
-
-    <!-- MAIN -->
-    <main id="home">
-        <!-- <div class="mainContent"> MAINCONTENT -->
-
-        <!-- TITLE -->
-        <h1 class="project-title">Mathematicians Reimagined</h1>
-
-        <p class="project-subtitle">
-            A private side project, winter 2023
-        </p>
-
-
-
-        <!-- AUTHORS -->
-        <div class="project-authors-row">
-
-            <a class="project-author" href="/">
-                Marcel Padilla
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+<title>🎨Mathematicians Reimagined</title>
 
+</head>
 
+<body>
 
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
 
-        <!-- ABSTRACT -->
-        <div class="project-box">
+        <!-- Project Title -->
+        <h1 class="text-center mb-4 page-title">Mathematicians Reimagined</h1>
+        <p class="text-center">A private side project by Marcel Padilla - Winter 2023</p>
 
+        <!-- Abstract Section -->
+        <section class="mb-5">
             <h2>Abstract</h2>
-
             <p>
-                I was fooling around with Ai image generators
-                and came across stable diffusion models and extensions which allowed
-                me to generate modern images of famous mathematicians using old existing public domain images
-                as input. I present here a few of my results. The people displayed here are sorted
-                by birth year.
+                I was fooling around with AI image generators and came across stable diffusion models and extensions
+                that allowed
+                me to generate modern images of famous mathematicians using old existing public domain images as input.
+                I present here a few of my results. The people displayed here are sorted by birth year.
             </p>
+        </section>
 
-        </div>
-
-        <!-- EUCLID ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/euclid.webp"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Euclid Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/euclid.webp" alt="Euclid"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/euclid_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/euclid_reimagined.png" alt="Euclid Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Euclid (Sometime in ~350-200BC) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Euclid (Sometime in ~350-200BC) reimagined.
-            </p>
-
-        </div>
-
-        <!-- DESCARTES ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/descartes.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Descartes Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/descartes.jpg" alt="Descartes"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/descartes_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/descartes_reimagined.png" alt="Descartes Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">René Descartes (1596-1650) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                René Descartes (1596-1650) reimagined.
-            </p>
-
-        </div>
-
-
-
-
-
-        <!-- NEWTON ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/newton.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Newton Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/newton.jpg" alt="Newton"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/newton_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/newton_reimagined.png" alt="Newton Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Issac Newton (1642-1727) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Issac Newton (1642-1727) reimagined.
-            </p>
-
-        </div>
-
-        <!-- LEIBNIZ ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/leibniz.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Leibniz Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/leibniz.jpg" alt="Leibniz"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/leibniz_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/leibniz_reimagined.png" alt="Leibniz Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Gottfried Wilhelm Leibniz (1646-1716) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Gottfried Wilhelm Leibniz (1646-1716) reimagined.
-            </p>
-
-        </div>
-
-        <!-- EULER ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/euler.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Euler Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/euler.jpg" alt="Euler"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/euler_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/euler_reimagined.png" alt="Euler Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Leonhard Euler (1707-1783) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Leonhard Euler (1707-1783) reimagined.
-            </p>
-
-        </div>
-
-        <!-- LAPLACE -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/laplace.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Laplace Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/laplace.jpg" alt="Laplace"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/laplace_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/laplace_reimagined.png" alt="Laplace Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Pierre-Simon Laplace (1749-1827) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Pierre-Simon Laplace (1749-1827) reimagined.
-            </p>
-
-        </div>
-
-        <!-- GAUSS ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/gauss.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Gauss Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/gauss.jpg" alt="Gauss"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/gauss_reimagined.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/gauss_reimagined.jpg" alt="Gauss Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Carl Friedrich Gauss (1777-1855) reimagined in a modern look.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Carl Friedrich Gauss (1777-1855) reimagined in a modern look.
-            </p>
-
-        </div>
-
-
-        <!-- GAUSS ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/jacobi.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Jacobi Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/jacobi.jpg" alt="Jacobi"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/jacobi_reimagined.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/jacobi_reimagined.jpg" alt="Jacobi Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-
-
-            <p class="project-box-caption">
-                Carl Gustav Jacob Jacobi (1804-1851) reimagined. Fun fact: Jacobi is <a class="publication-link"
+            <p class="text-center">
+                Carl Gustav Jacob Jacobi (1804-1851) reimagined. Fun fact: Jacobi is
+                <a class="publication-link"
                     href="/Projects/Mathematicians_Reimagined/jacobi_is_not_living_next_door.jpg" target="_blank"
-                    style="font-size: 11px;">not
-                    living in my neighbourhood</a>.
+                    style="font-size: 11px;">not living in my neighborhood</a>.
             </p>
+        </section>
 
-        </div>
-
-
-
-
-
-
-        <!-- RIEMANN ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/riemann.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Riemann Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/riemann.jpg" alt="Riemann"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/riemann_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/riemann_reimagined.png" alt="Riemann Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Bernhard Riemann (1826-1866) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Bernhard Riemann (1826-1866) reimagined.
-            </p>
-
-        </div>
-
-
-        <!-- Cantor ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/cantor.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Cantor Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/cantor.jpg" alt="Cantor"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/cantor_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/cantor_reimagined.png" alt="Cantor Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Georg Cantor (1845-1918) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Georg Cantor (1845-1918) reimagined.
-            </p>
-
-        </div>
-
-        <!-- POINCARE ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/poincare.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Poincare Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/poincare.png" alt="Poincare"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/poincare_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/poincare_reimagined.png" alt="Poincare Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Henri Poincaré (1854-1912) reimagined. He became a bit of a hipster.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Henri Poincaré (1854-1912) reimagined. He became a bit of a
-                hipster.
-            </p>
-
-        </div>
-
-
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/hilbert.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Hilbert Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/hilbert.jpg" alt="Hilbert"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/hilbert_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/hilbert_reimagined.png" alt="Hilbert Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">David Hilbert (1862-1943) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                David Hilberto (1862-1943) reimagined.
-            </p>
-
-        </div>
-
-        <!-- NOETHER ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/noether.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Noether Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/noether.jpg" alt="Noether"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/noether_reimagined.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/noether_reimagined.png" alt="Noether Reimagined"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Emmy Noether (1882-1935) reimagined.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Emmy Noether (1882-1935) reimagined.
-            </p>
-
-        </div>
-
-
-
-
-
-        <!-- WORKFLOW -->
-        <div class="project-box">
-
+        <!-- Workflow Section -->
+        <section class="mb-5">
             <h2>Workflow</h2>
-
-            <p class="project-box-abstract">
-            <ul class="project-summary">
-                <li>
-                    Stable diffusion 1.5 img2img
-                </li>
-                <li>
-                    ControlNet with various stuff, whatever worked best at the moment
-                </li>
-                <li>
-                    ReActor face swapping
-                </li>
-                <li>
-                    Lots, and lots and lots of fixes
-                </li>
+            <ul>
+                <li>Stable diffusion 1.5 img2img</li>
+                <li>ControlNet with various settings</li>
+                <li>ReActor face swapping</li>
+                <li>Lots and lots of fixes</li>
             </ul>
-
-            </p>
-
-            <p class="project-box-abstract">
-
-                I cant really be more specific without going into endless explainations when to use which ControlNet
-                model with what settings. None two examples here were made with the same pipeline. Things kept not
-                working here and there and I had to test my way around to get images that I am ok with. I had many
-                visions that I could simply not fullfil. Especially regarding hair and beard features.
-            </p>
-
-            <p class="project-box-abstract">
-
-                👉 Email me if you have a specific request for a mathematician.
-            </p>
-
-        </div>
-
-
-        <div class="project-box">
-
-            <h2>Bonus Content</h2>
-
             <p>
-                Using a few more Ai tools, I manged to recreate more creative stuff.
+                I can't really be more specific without going into endless explanations when to use which ControlNet
+                model
+                with what settings. No two examples here were made with the same pipeline. I had to test my way around
+                to get images I am satisfied with. Many ideas were not realized, especially regarding hair and beard
+                features.
             </p>
+            <p>👉 Email me if you have a specific request for a mathematician.</p>
+        </section>
 
-        </div>
+        <!-- Bonus Content Section -->
+        <section class="mb-5">
+            <h2>Bonus Content</h2>
+            <p>
+                Using a few more AI tools, I managed to recreate more creative stuff.
+            </p>
+        </section>
 
-        <!-- EULER Bonus -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/euler_gave_up.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Bonus Euler Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/euler_gave_up.png" alt="Euler Gave Up"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Mathematicians_Reimagined/euler_flex.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Mathematicians_Reimagined/euler_flex.png" alt="Euler Flex"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-
-
-            <p class="project-box-caption">
-                More Euler images. The left image focuses on
-                maintinging the painting stlye. Yes, the hat-wear is weird. The right image is Leon-Hard Euler.
+            <p class="text-center">
+                More Euler images. Left: maintaining the painting style (weird hat). Right: Leon-Hard Euler.
             </p>
+        </section>
 
-        </div>
-
-
-
-
-        <div class="project-box">
-
+        <!-- Copyright Section -->
+        <section class="mb-5">
             <h2>About Copyright</h2>
-
-            <p class="project-box-abstract">
-
-                I personally make no copy right claims on this output, and advice you to be careful regarding
-                copyrights of these images as they are output of ai models that were trained on unknown data sets.
-                You can however still cite this webpage using the bibtext below.
+            <p>
+                I personally make no copyright claims on this output and advise you to be careful regarding copyrights
+                of these images, as they are output from AI models trained on unknown datasets. You can still cite this
+                webpage using the BibTeX below.
             </p>
+        </section>
 
-        </div>
-
-        <!-- BIBTEX -->
-        <div class="project-box" id="Cite">
-
-            <h2>Bibtex</h2>
-
-            <p class="project-box-bibtex">
-                @article{padilla_mathematicians_reimagined,<br>
-                &#8196; author = {Marcel Padilla,<br>
-                &#8196; title = {Mathematicians Reimagined},<br>
-                &#8196; year = {2023},<br>
-                &#8196; url = {https://marcelpadilla.com/Projects/Mathematicians_Reimagined/},<br>
-                }
-            </p>
-
-        </div>
-
-
+        <!-- Bibtex Section -->
+        <section class="mb-5" id="Cite">
+            <h2>BibTeX</h2>
+            <div class="page-cite">
+                <p class="project-box-bibtex">
+                    @article{padilla_mathematicians_reimagined,<br>
+                    &#8196; author = {Marcel Padilla},<br>
+                    &#8196; title = {Mathematicians Reimagined},<br>
+                    &#8196; year = {2023},<br>
+                    &#8196; url = {https://marcelpadilla.com/Projects/Mathematicians_Reimagined/},<br>
+                    }
+                </p>
+            </div>
+        </section>
 
     </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

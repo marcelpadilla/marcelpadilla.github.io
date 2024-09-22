@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-<!-- META -->
+<html lang="en">
 
 <head>
-
-    <!-- Charset -->
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -21,362 +24,264 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- TAG marcelpadilla.github.com -->
-    <!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YE3HMMJMWH');
-</script> -->
-
-    <!-- ICON -->
-    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
-
-    <!-- GET FONT -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
-
-
-    <!-- CSS import Legacy for the project pages-->
-    <link href='/Source/style_old.css' rel='stylesheet'>
-
-    <!-- CSS import -->
-    <link href='/Source/CSS/style.css' rel='stylesheet'>
-
-    <!-- Navigation Bar Inclusion Function -->
-    <!-- <script>
-        $(function () {
-            $("#navigation-bar").load("/Source/navigation-bar.html");
-        });
-    </script> -->
-
-    <a class="anchor" id="top"></a>
-    <div class="header">
-        <div class="navigation">
-            <a href="/">Marcel Padilla 🎓</a>
-            <a href="#publications">Publications 📜</a>
-            <a href="#teaching">Teaching 📖</a>
-            <a href="#exploration">Exploration 🔮</a>
-            <a href="#aboutme">About Me 📌</a>
-        </div>
-    </div>
-    <div class="headerSpacer"></div>
-
-<title>☀️Filament Based Plasma</title>
-
-</head>
-
-
-
-<!-- BODY -->
-
-<body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- NAVIGATION -->
-    <div id="navigation-bar"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
 
-
-    <!-- MAIN -->
-    <main id="home">
-
-        <!-- TITLE -->
-        <h1 class="project-title">Filament Based Plasma</h1>
-
-        <a class="project-subtitle" href="https://doi.org/10.1145/3528223.3530102">
-            published in ACM Transactions on Graphics (SIGGRAPH 2022), Jul. 2022
-        </a>
-
-
-
-        <!-- AUTHORS -->
-        <div class="project-authors-row">
-
-            <a class="project-author" href="/">
-                Marcel Padilla
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
-            <a class="project-author" href="https://olligross.github.io/" target="_blank">
-                Oliver Gross
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
-            <a class="project-author" href="https://page.math.tu-berlin.de/~knoeppel/" target="_blank">
-                Felix Knöppel
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
-            <a class="project-author" href="https://cseweb.ucsd.edu/~alchern/" target="_blank">
-                Albert Chern
-                <div class="project-author-affiliation">
-                    UC San Diego
-                </div>
-            </a>
-
-            <a class="project-author" href="https://page.math.tu-berlin.de/~pinkall/" target="_blank">
-                Ulrich Pinkall
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
-            <a class="project-author" href="https://www.eas.caltech.edu/people/ps" target="_blank">
-                Peter Schröder
-                <div class="project-author-affiliation">
-                    Caltech
-                </div>
-            </a>
-        </div>
-
-
-
-        <!-- IMAGE ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: black;">
-
-                <div class="column" style="width: 88.7%;">
-                    <img src="/Projects/Filament_Based_Plasma/Quick-Flyover-Gif.gif">
-                    <img src="/Projects/Filament_Based_Plasma/Right-Lower-Corner-Sun-Zoom.gif">
-                </div>
-
-                <div class="column" style="width: 100%;">
-                    <img src="/Projects/Filament_Based_Plasma/HeroFinal.png">
-                </div>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
             </div>
-
-            <p class="project-box-caption">
-                Simulate EUV footage of the sun generated by simply inputing a randomly <br>generated magnetic surface
-                flux texture into our pipeline.
-            </p>
-
         </div>
+    </nav>
+<title>☀️Filament Based Plasma</title>
 
+</head>
 
+<body>
 
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
+
+        <!-- Project Title and Subtitle -->
+        <section class="text-center mb-4">
+            <h1 class="page-title">Filament Based Plasma</h1>
+            <a class="page-subtitle" href="https://doi.org/10.1145/3528223.3530102">
+                published in ACM Transactions on Graphics (SIGGRAPH 2022), Jul. 2022
+            </a>
+        </section>
+
+        <!-- Author Information -->
+        <section class="text-center mb-5 page-authors">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="./" class="page-author">
+                        Marcel Padilla
+                        <div class="project-author-affiliation">TU Berlin</div>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://olligross.github.io/" target="_blank" class="page-author">
+                        Oliver Gross
+                        <div class="project-author-affiliation">TU Berlin</div>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://page.math.tu-berlin.de/~knoeppel/" target="_blank" class="page-author">
+                        Felix Knöppel
+                        <div class="project-author-affiliation">TU Berlin</div>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://cseweb.ucsd.edu/~alchern/" target="_blank" class="page-author">
+                        Albert Chern
+                        <div class="project-author-affiliation">UC San Diego</div>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://page.math.tu-berlin.de/~pinkall/" target="_blank" class="page-author">
+                        Ulrich Pinkall
+                        <div class="project-author-affiliation">TU Berlin</div>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://www.eas.caltech.edu/people/ps" target="_blank" class="page-author">
+                        Peter Schröder
+                        <div class="project-author-affiliation">Caltech</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="text-center mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mb-3">
+                    <img src="/Projects/Filament_Based_Plasma/Quick-Flyover-Gif.gif" alt="Flyover Gif"
+                        class="img-fluid">
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <img src="/Projects/Filament_Based_Plasma/Right-Lower-Corner-Sun-Zoom.gif" alt="Sun Zoom Gif"
+                        class="img-fluid">
+                </div>
+                <div class="col-lg-8 mb-3">
+                    <img src="/Projects/Filament_Based_Plasma/HeroFinal.png" alt="Hero Final Image" class="img-fluid">
+                </div>
+            </div>
+            <p class="project-box-caption">
+                Simulate EUV footage of the sun generated by simply inputting a randomly generated magnetic surface flux
+                texture into our pipeline.
+            </p>
+        </section>
 
         <!-- Buttons -->
-        <div class="project-buttons-row">
-
-            <a class="project-button" href="/Projects/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf"
-                target="_blank">
-                📄<br>See Paper
+        <section class="text-center mb-5">
+            <a class="btn btn-primary project-button m-2"
+                href="/Projects/Filament_Based_Plasma/Filament_Based_Plasma.compressed.pdf" target="_blank">
+                📄 See Paper
             </a>
-
-            <a class="project-button" href="https://github.com/marcelpadilla/Filament-Based-Plasma" target="_blank">
-                📂<br>Supplement Material
+            <a class="btn btn-secondary project-button m-2"
+                href="https://github.com/marcelpadilla/Filament-Based-Plasma" target="_blank">
+                📂 Supplement Material
             </a>
-
-            <a class="project-button" href="#Talk">
-                🗣️<br>Talk
+            <a class="btn btn-secondary project-button m-2" href="#Talk">
+                🗣️ Talk
             </a>
-
-            <a class="project-button" href="#Cite">
-                ✍️<br>Cite
+            <a class="btn btn-secondary project-button m-2" href="#Cite">
+                ✍️ Cite
             </a>
+        </section>
 
-        </div>
-
-
-
-
-        <!-- ABSTRACT -->
-        <div class="project-box">
-
+        <!-- Abstract -->
+        <section class="mb-5">
             <h2>Abstract</h2>
-
             <p>
                 Simulation of stellar atmospheres, such as that of our own sun, is a common task in CGI for scientific
-                visualization, movies and games. A fibrous volumetric texture is a visually dominant feature of the
-                solar corona---the plasma that extends from the solar surface into space. These coronal fibers can be
+                visualization, movies, and games. A fibrous volumetric texture is a visually dominant feature of the
+                solar corona—the plasma that extends from the solar surface into space. These coronal fibers can be
                 modeled as magnetic filaments whose shape is governed by the magnetohydrostatic equation. The magnetic
                 filaments provide a Lagrangian curve representation and their initial configuration can be prescribed by
-                an artist or generated from magnetic flux given as a scalar texture on the sun's surface. Subsequently
+                an artist or generated from magnetic flux given as a scalar texture on the sun's surface. Subsequently,
                 the shape of the filaments is determined based on a variational formulation. The output is a visual
                 rendering of the whole sun. We demonstrate the fidelity of our method by comparing the resulting
                 renderings with actual images of our sun's corona.
             </p>
+            <a class="publication-link" href="https://doi.org/10.1145/3528223.3530102">🔗
+                DOI:10.1145/3528223.3530102</a>
+        </section>
 
-            <a class="publication-link" href="https://doi.org/10.1145/3528223.3530102">
-                🔗DOI:10.1145/3528223.3530102
-            </a>
-
-        </div>
-
-
-
-
-
-        <!-- VIDEO -->
-        <div class="project-box">
-
+        <!-- Submission Video -->
+        <section class="text-center mb-5">
             <h2>Submission Video</h2>
-
-            <iframe src="https://www.youtube.com/embed/D9NIF-2lRjA" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
-
-
-        </div>
-
-
-
-
-        <!-- TEASER IMAGE -->
-        <div class="project-box">
-
-            <img class="project-box-image" style="outline: 1px solid black; border-radius: 20px; max-width: 500px; max-height: 500px;margin: 0 auto; display: flex;" src="/Projects/Filament_Based_Plasma/Discretization.png">
-
-            <p class="project-box-caption">
-                A smooth magnetic field (left) is approximated by a collection of magnetic filaments (middle), which are discretized by a set of discrete curves with thicknesses.
-            </p>
-
-        </div>
-
-
-        <!-- SUMMARY -->
-        <div class="project-box">
-
-            <h2>Quick Summary</h2>
-
-            <p class="project-box-abstract">
-            <ul class="project-summary">
-                <li>
-                    Addresses Magnetoghydrostatic equations through a Lagrangian technique
-                </li>
-                <li>
-                    Establish plasma filament model
-                </li>
-                <li>
-                    Establish filament glow model
-                </li>
-                <li>
-                    Procedurally generate solar-like images
-                </li>
-                <li>
-                    Reproduce solar loop structures
-                </li>
-            </ul>
-
-            </p>
-
-        </div>
-
-        <!-- TALK -->
-        <div class="project-box" id="Talk">
-
-            <h2>Talk</h2>
-
-            <iframe src="https://www.youtube.com/embed/Bd6OZGZI9RU" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
-
-        </div>
-
-        <!-- REPLICABILITY -->
-        <a href="https://www.replicabilitystamp.org/">
-            <div style="text-align: center;">
-                <img style="width: 30%; min-width:300px;" src="/Files/Other/replicable_stamp-300x143.png">
-                <p class="project-box-caption">
-                    The supplement material of this pubplication has been officialy verified for functionality and
-                    replicability.
-                </p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/D9NIF-2lRjA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
-        </a>
+        </section>
 
-
-
-
-        <!-- TEASER IMAGE -->
-        <div class="project-box">
-
-            <img class="project-box-image" src="/Projects/Filament_Based_Plasma/XRayComparisons-1536x668_with_text.jpg">
-
+        <!-- Teaser Image -->
+        <section class="text-center mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <img src="/Projects/Filament_Based_Plasma/Discretization.png" alt="Magnetic Field Discretization"
+                        class="img-fluid" style="outline: 1px solid black; border-radius: 20px;">
+                </div>
+            </div>
             <p class="project-box-caption">
-                Pairwise comparisons of our output (left) with footage by NASA (right) <br> in both, EUV (top row) and
-                X-Ray (bottom row) emissions.
+                A smooth magnetic field (left) is approximated by a collection of magnetic filaments (middle), which are
+                discretized by a set of discrete curves with thicknesses.
             </p>
+        </section>
 
-        </div>
+        <!-- Quick Summary -->
+        <section class="mb-5">
+            <h2>Quick Summary</h2>
+            <ul class="project-summary">
+                <li>Addresses Magnetohydrostatic equations through a Lagrangian technique</li>
+                <li>Establish plasma filament model</li>
+                <li>Establish filament glow model</li>
+                <li>Procedurally generate solar-like images</li>
+                <li>Reproduce solar loop structures</li>
+            </ul>
+        </section>
 
+        <!-- Talk -->
+        <section class="text-center mb-5" id="Talk">
+            <h2>Talk</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Bd6OZGZI9RU" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
 
-        <!-- ACKNOWLEDGEMENTS -->
-        <div class="project-box">
+        <!-- Teaser Image -->
+        <section class="text-center mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="/Projects/Filament_Based_Plasma/XRayComparisons-1536x668_with_text.jpg"
+                        alt="X-Ray Comparisons" class="img-fluid">
+                </div>
+            </div>
+            <p class="project-box-caption">
+                Pairwise comparisons of our output (left) with footage by NASA (right) in both, EUV (top row) and X-Ray
+                (bottom row) emissions.
+            </p>
+        </section>
 
+        <!-- Acknowledgements -->
+        <section class="mb-5">
             <h2>Acknowledgements</h2>
-
             <p class="project-box-abstract">
-                This work was supported in part by the DFG Collaborative Research Center TRR 109 "Discretization
-                in
-                Geometry and Dynamics," the Caltech Center for Information Science and Technology, and the
-                Einstein
-                Foundation Berlin. Additional support was provided by SideFX software. We thank the reviewers
-                for
-                their
+                This work was supported in part by the DFG Collaborative Research Center TRR 109 "Discretization in
+                Geometry and Dynamics," the Caltech Center for Information Science and Technology, and the Einstein
+                Foundation Berlin. Additional support was provided by SideFX software. We thank the reviewers for their
                 helpful input.
             </p>
+        </section>
 
-        </div>
+        <!-- BibTeX -->
+        <section class="mb-5" id="Cite">
+            <h2>BibTeX</h2>
+            <div class="page-cite">
+                <pre class="project-box-bibtex">
+@article{padilla2022filament,
+   author = {Marcel Padilla and Oliver Gross and 
+            Felix Kn\"{o}ppel and Albert Chern and 
+            Ulrich Pinkall and Peter Schr\"{o}der},
+   title = {Filament Based Plasma},
+   journal = {ACM Transaction on Graphics (TOG)},
+   year = {2022},
+   month = {07},
+   volume = {41},
+   number = {4},
+   articleno = {153},
+   doi = {https://doi.org/10.1145/3528223.3530102},
+   publisher = {ACM},
+   address = {New York, NY, USA}
+}
+                </pre>
+            </div>
+        </section>
 
-        <!-- BIBTEX -->
-        <div class="project-box" id="Cite">
-
-            <h2>Bibtex</h2>
-
-            <p class="project-box-bibtex">
-                @article{padilla2022filament,<br>
-                &#8196; author = {Marcel Padilla and Oliver Gross and <br> &#8196; Felix Kn\"{o}ppel and Albert
-                Chern
-                and Ulrich Pinkall and Peter Schr\"{o}der},<br>
-                &#8196; title = {Filament Based Plasma},<br>
-                &#8196; journal = {ACM Transaction on Graphics (TOG)},<br>
-                &#8196; year = {2022},<br>
-                &#8196; month = {07},<br>
-                &#8196; volume = {41},<br>
-                &#8196; number = {4},<br>
-                &#8196; articleno = {153},<br>
-                &#8196; doi = {https://doi.org/10.1145/3528223.3530102},<br>
-                &#8196; publisher = {ACM},<br>
-                &#8196; address = {New York, NY, USA}<br>
-                }
+        <!-- Note -->
+        <section class="mb-5">
+            <h2 class="small">Note</h2>
+            <p class="small">
+                This work was wildly expanded and covered in more detail in my <a
+                    href="/Projects/Dissertation/The Solar Corona Modeled, Discretized, Visualized.pdf">PhD
+                    dissertation</a>.
             </p>
-
-        </div>
-
-
-        <!-- NOTE -->
-        <div class="project-box">
-
-            <h2 style="font-size: 15px">Note</h2>
-
-            <p style="font-size: 10px" project-box-abstract">
-                This work was wildly expanded and covered in more detail in my PhD dissertation.
-            </p>
-
-
-        </div>
-
-
-
+        </section>
 
     </main>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

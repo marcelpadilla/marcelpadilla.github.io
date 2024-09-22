@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-<!-- META -->
+<html lang="en">
 
 <head>
-
-    <!-- Charset -->
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -21,224 +24,158 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- TAG marcelpadilla.github.com -->
-    <!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YE3HMMJMWH');
-</script> -->
-
-    <!-- ICON -->
-    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
-
-    <!-- GET FONT -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
-
-
-    <!-- CSS import Legacy for the project pages-->
-    <link href='/Source/style_old.css' rel='stylesheet'>
-
-    <!-- CSS import -->
-    <link href='/Source/CSS/style.css' rel='stylesheet'>
-
-    <!-- Navigation Bar Inclusion Function -->
-    <!-- <script>
-        $(function () {
-            $("#navigation-bar").load("/Source/navigation-bar.html");
-        });
-    </script> -->
-
-    <a class="anchor" id="top"></a>
-    <div class="header">
-        <div class="navigation">
-            <a href="/">Marcel Padilla 🎓</a>
-            <a href="#publications">Publications 📜</a>
-            <a href="#teaching">Teaching 📖</a>
-            <a href="#exploration">Exploration 🔮</a>
-            <a href="#aboutme">About Me 📌</a>
-        </div>
-    </div>
-    <div class="headerSpacer"></div>
-
-<title>🌍Point Vortex Dynamics on Closed Surfaces</title>
-
-</head>
-
-
-
-<!-- BODY -->
-
-<body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- NAVIGATION -->
-    <div id="navigation-bar"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
 
-
-    <!-- MAIN -->
-    <main id="home">
-
-        <!-- TITLE -->
-        <h1 class="project-title">Point Vortex Dynamics on Closed Surfaces</h1>
-
-        <p class="project-subtitle">
-            Master Thesis at TU Berlin (2018). Supervision: Ulrich Pinkall
-        </p>
-
-
-
-        <!-- AUTHORS -->
-        <div class="project-authors-row">
-
-            <a class="project-author" href="/">
-                Marcel Padilla
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
-        </div>
-
-
-
-        <!-- IMAGE ROW -->
-        <div class="project-box">
-
-            <div class="image-row" style="justify-content: center;">
-
-                <div class="column" style="width: 32.6%;">
-                    <img
-                        src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/planar-point-vortex-dynamics-compressed.gif">
-                </div>
-
-                <div class="column" style="width: 32%;">
-                    <img class="project-box-image"
-                        src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/sphere-point-vortex-dynamics-40ms-compressed.gif">
-                </div>
-
-                <div class="column" style="width: 30.1%;">
-                    <img class="project-box-image"
-                        src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/bunny-40ms-compressed.gif">
-                </div>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
+<title>🌍Point Vortex Dynamics on Closed Surfaces</title>
 
+</head>
+
+<body>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
+
+        <!-- Project Title and Subtitle -->
+        <section class="text-center mb-4">
+            <h1 class="page-title">Point Vortex Dynamics on Closed Surfaces</h1>
+            <p class="page-subtitle">
+                Master Thesis at TU Berlin (2018). Supervision: Ulrich Pinkall
+            </p>
+        </section>
+
+        <!-- Author Information -->
+        <section class="text-center mb-5 page-authors">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="/" class="page-author">
+                        Marcel Padilla
+                        <div class="project-author-affiliation">TU Berlin</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Row -->
+        <section class="text-center mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/planar-point-vortex-dynamics-compressed.gif"
+                        alt="Planar Point Vortex Dynamics" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-4">
+                    <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/sphere-point-vortex-dynamics-40ms-compressed.gif"
+                        alt="Sphere Point Vortex Dynamics" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-4">
+                    <img src="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/bunny-40ms-compressed.gif"
+                        alt="Bunny Point Vortex Dynamics" class="img-fluid mb-3">
+                </div>
+            </div>
             <p class="project-box-caption">
                 Point vortices moving on a plane (left), a sphere (middle), and a bunny (right).
             </p>
-
-        </div>
-
+        </section>
 
         <!-- Buttons -->
-        <div class="project-buttons-row">
-
-            <a class="project-button"
+        <section class="text-center mb-5">
+            <a class="btn btn-primary project-button m-2"
                 href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Marcel-Padilla-master-thesis-final-small.pdf"
                 target="_blank">
-                📄<br>See Thesis
+                📄 See Thesis
             </a>
-
-            <a class="project-button" href="https://github.com/marcelpadilla/Point-Vortex-Dynamics-on-Closed-Surfaces"
-                target="_blank">
-                📂<br>Supplement <br>Material
+            <a class="btn btn-secondary project-button m-2"
+                href="https://github.com/marcelpadilla/Point-Vortex-Dynamics-on-Closed-Surfaces" target="_blank">
+                📂 Supplement Material
             </a>
-        </div>
-
-        <div class="project-buttons-row">
-            <a class="project-button" href="#Talk">
-                🗣️<br>Talk
+            <a class="btn btn-secondary project-button m-2" href="#Talk">
+                🗣️ Talk
             </a>
-
-            <a class="project-button"
+            <a class="btn btn-secondary project-button m-2"
                 href="/Projects/Point_Vortex_Dynamics_on_Closed_Surfaces/Point-Vortex-Dynamics-Final-Marcel-Padilla.pdf"
                 target="_blank">
-                🖥️<br>Slides
+                🖥️ Slides
             </a>
-
-            <a class="project-button" href="#Cite">
-                ✍️<br>Cite
+            <a class="btn btn-secondary project-button m-2" href="#Cite">
+                ✍️ Cite
             </a>
+        </section>
 
-        </div>
-
-
-        <!-- ABSTRACT -->
-        <div class="project-box">
-
+        <!-- Abstract -->
+        <section class="mb-5">
             <h2>Abstract</h2>
-
             <p>
                 The theory of point vortex dynamics has existed since Kirchhoff's proposal in 1891 and is still under
                 development with connections to many fields in mathematics. As a strong simplification of the concept of
-                vorticity it excels in computational speed for vorticity based fluid simulations at the cost of
-                accuracy. Recent finding by Stefanella Boatto and Jair Koiller allowed the extension of this theory on
-                to closed surfaces. A comprehensive guide to point vortex dynamics on closed surfaces with genus zero
-                and vanishing total vorticity is presented here. Additionally fundamental knowledge of fluid dynamics
-                and surfaces are explained in a way to unify the theory of point vortex dynamics of the plane, the
-                sphere and closed surfaces together with implementation details and supplement material.
+                vorticity it excels in computational speed for vorticity-based fluid simulations at the cost of
+                accuracy. Recent findings by Stefanella Boatto and Jair Koiller allowed the extension of this theory
+                onto closed surfaces. This thesis presents a comprehensive guide to point vortex dynamics on closed
+                surfaces with genus zero and vanishing total vorticity, unifying the theory for the plane, the sphere,
+                and closed surfaces, along with implementation details and supplemental material.
             </p>
+        </section>
 
-
-        </div>
-
-
-
-
-
-        <!-- VIDEO -->
-        <div class="project-box" id="Talk">
-
+        <!-- Talk Section -->
+        <section class="mb-5" id="Talk">
             <h2>Talk</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/-B2kFRJnaYA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
 
-
-            <iframe src="https://www.youtube.com/embed/-B2kFRJnaYA" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-
-
-        </div>
-
-
-
-
-
-
-
-        <!-- BIBTEX -->
-        <div class="project-box" id="Cite">
-
-            <h2>Bibtex</h2>
-
-            <p class="project-box-bibtex">
-                @article{padilla2018pointvotices,<br>
-                &#8196; author = {Marcel Padilla},<br>
-                &#8196; title = {Point Vortex Dynamics on Closed Surfaces},<br>
-                &#8196; journal = {M.S. Thesis},<br>
-                &#8196; year = {2018},<br>
-                &#8196; month = {05},<br>
-                &#8196; publisher = {TU Berlin},<br>
-                }
-            </p>
-
-        </div>
-
-
-
-
-
-
+        <!-- BibTeX Section -->
+        <section class="mb-5" id="Cite">
+            <h2>BibTeX</h2>
+            <div class="page-cite">
+                <pre class="project-box-bibtex">
+@article{padilla2018pointvortices,
+   author = {Marcel Padilla},
+   title = {Point Vortex Dynamics on Closed Surfaces},
+   journal = {M.S. Thesis},
+   year = {2018},
+   month = {05},
+   publisher = {TU Berlin},
+}
+                </pre>
+            </div>
+        </section>
 
     </main>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

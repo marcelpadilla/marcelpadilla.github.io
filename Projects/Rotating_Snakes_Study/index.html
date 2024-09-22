@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-<!-- META -->
+<html lang="en">
 
 <head>
-
-    <!-- Charset -->
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -21,465 +24,202 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- TAG marcelpadilla.github.com -->
-    <!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YE3HMMJMWH');
-</script> -->
-
-    <!-- ICON -->
-    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
-
-    <!-- GET FONT -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
-
-
-    <!-- CSS import Legacy for the project pages-->
-    <link href='/Source/style_old.css' rel='stylesheet'>
-
-    <!-- CSS import -->
-    <link href='/Source/CSS/style.css' rel='stylesheet'>
-
-    <!-- Navigation Bar Inclusion Function -->
-    <!-- <script>
-        $(function () {
-            $("#navigation-bar").load("/Source/navigation-bar.html");
-        });
-    </script> -->
-
-    <a class="anchor" id="top"></a>
-    <div class="header">
-        <div class="navigation">
-            <a href="/">Marcel Padilla 🎓</a>
-            <a href="#publications">Publications 📜</a>
-            <a href="#teaching">Teaching 📖</a>
-            <a href="#exploration">Exploration 🔮</a>
-            <a href="#aboutme">About Me 📌</a>
-        </div>
-    </div>
-    <div class="headerSpacer"></div>
-
-<title>🐍Rotating Snakes Study</title>
-
-</head>
-
-
-
-<!-- BODY -->
-
-<body>
-
-
-
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- NAVIGATION -->
-    <!-- <div id="navigation-bar"></div> -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
 
-
-
-    <!-- MAIN -->
-    <main id="home">
-        <!-- <div class="mainContent"> MAINCONTENT -->
-
-        <!-- TITLE -->
-        <h1 class="project-title">Rotating Snakes Study</h1>
-
-        <p class="project-subtitle">
-            A private side project, Spring 2024
-        </p>
-
-
-
-        <!-- AUTHORS -->
-        <div class="project-authors-row">
-
-            <a class="project-author" href="/">
-                Marcel Padilla
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+<title>🐍Rotating Snakes Study</title>
 
+</head>
 
+<body>
 
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
 
-        <!-- ABSTRACT -->
-        <div class="project-box">
+        <!-- Project Title -->
+        <h1 class="text-center mb-4 page-title">Rotating Snakes Study</h1>
+        <p class="text-center page-subtitle">A private side project by Marcel Padilla - Spring 2024</p>
 
+        <!-- Abstract Section -->
+        <section class="mb-5">
             <h2>Abstract</h2>
-
             <p>
-                I was very impressed by
-                <a target="_blank" href="https://www.ritsumei.ac.jp/%7Eakitaoka/index-e.html">Akiyoshi Kitaoka's
-                    rotating snakes illusion</a>
-                and had a need for a extremely high-res version for large printing. So I started building scripts to
-                create such images. After throwing more and more ideas into this along the way, I ended up with a color
-                controlled version with a Möbius inverted doyle spiral with an Appolonian gasget style fractal
-                construciton.
+                I was very impressed by <a target="_blank" href="https://www.ritsumei.ac.jp/%7Eakitaoka/index-e.html">
+                    Akiyoshi Kitaoka's rotating snakes illusion</a> and needed an extremely high-res version for large
+                printing.
+                After experimenting with more ideas, I ended up with a color-controlled version with a Möbius inverted
+                Doyle spiral
+                and an Apollonian gasket style fractal construction.
             </p>
+        </section>
 
-        </div>
-
-        <div class="project-box">
-
+        <!-- Snake Elements Section -->
+        <section class="mb-5">
             <h2>Snake Elements</h2>
-
             <p>
-                I followed the constructing a simple element with two colors simply picked from the HSV color wheel.
-                Each snake element has two colors that have a constant hue shift. 2D coordinates and radii are
-                computed in lists and passed to a snake element drawing function.
-                <br>
-                However, one can see that the illusion is not equally effective for all elements displayed below. The
-                reason is the varying luminance of the colors. This highlights the need to study the color more
-                closely.
+                I started by constructing a simple element using two colors from the HSV color wheel. Each snake element
+                has two colors
+                with a constant hue shift. However, the illusion’s effectiveness varies due to the different luminances
+                of the colors.
             </p>
-
-            <br>
-
-            <div class="image-row" style="display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/basic snake elements.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <img src="/Projects/Rotating_Snakes_Study/basic snake elements.png" alt="Basic Snake Elements"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Basic snake elements.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Basic snake elements.
-            </p>
-
-        </div>
-
-        <div class="project-box">
-
+        <!-- Color Control Section -->
+        <section class="mb-5">
             <h2>Color Control</h2>
-
             <p>
-                Luckily for me, Lea Atala-Gérard and Michael Bach have published
-                <a href="https://journals.sagepub.com/doi/10.1177/2041669517691779" target="_blank">
-                    "Rotating Snakes Illusion—Quantitative Analysis Reveals a Region in Luminance Space With Opposite
-                    Illusory Rotation"
-                </a> in which they establish that the optical illusion effect is determined by the <a
-                    href="https://en.wikipedia.org/wiki/Relative_luminance">luminance</a> of the
-                sequence in the snake. They also determine that black - 60% luminance - white - 20% luminance results
-                in the strongest optical illusion effect.
-                <br>
-                We use these results to optimize our results. We vary the hue, and then ask our selves: "what
-                value/saturation do we have to pick in the HSV color space to get the required luminances of 60% and
-                20%?" As I did not find an answer to this question on the web, I brute forced the computation to obtain
-                an interpolating map that does exactly this. The video below shows the result of this computational
-                color study at varying hues.
+                Lea Atala-Gérard and Michael Bach’s work on the <a
+                    href="https://journals.sagepub.com/doi/10.1177/2041669517691779" target="_blank">
+                    rotating snakes illusion</a> shows that the illusion is driven by luminance.
+                I built a computational map to optimize the colors for the strongest illusion effects based on their
+                findings.
             </p>
-
-            <br>
-            <div style="display: flex; justify-content: center; align-items: center; height: auto;">
-                <video width="640" height="360" autoplay loop muted>
-                    <source src="/Projects/Rotating_Snakes_Study/color_study_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <p class="project-box-caption">
-                The display of varying value (x-axis) and varying saturation (y-axis) vs time varying hue (see top
-                left). The white line indicated the values of 60% luminance and the black line 20% luminances. These
-                are the colors needed for maximal optical illusion effects.
-            </p>
-
-            <br>
-
-            <p>
-                The result is that I can now pick a hue and get the
-                rotating snake with the best optical illusion effect.
-            </p>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/better color version.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="text-center mb-4">
+                <div class="video-container">
+                    <video width="640" height="360" autoplay loop muted>
+                        <source src="/Projects/Rotating_Snakes_Study/color_study_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
             </div>
-
-
-            <p class="project-box-caption">
-                Baisc snake elements arranged in a hexagonal latice now with the correct luminesnce for the optical
-                illusion to happen and a specified hue.
+            <p class="text-center">
+                The white line indicates 60% luminance, and the black line 20% luminance—these are the colors required
+                for maximal optical illusion effects.
             </p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <img src="/Projects/Rotating_Snakes_Study/better color version.png" alt="Better Color Version"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+            </div>
+            <p class="text-center">Snake elements with optimized luminance arranged in a hexagonal lattice.</p>
+        </section>
 
-        </div>
-
-
-
-
-        <div class="project-box">
-
+        <!-- Arrangements Section -->
+        <section class="mb-5">
             <h2>Arrangements</h2>
-
             <p>
-                Any circle packing is suitable for this. The original rotating snakes only have a square grid and an
-                offset grid to fill the gaps. Here we start with a <a
-                    href="https://gist.github.com/robinhouston/6096562">Doyle spiral</a> which is then sent through a
-                conformal Möbius mapping.
-
+                Any circle packing can be used for this, though I chose a <a
+                    href="https://gist.github.com/robinhouston/6096562" target="_blank">Doyle spiral</a>
+                mapped through a conformal Möbius mapping.
             </p>
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/final mid quality.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <img src="/Projects/Rotating_Snakes_Study/final mid quality.jpg" alt="Doyle Spiral"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-
-            <p class="project-box-caption">
-                A Aoyle spiral mapped by a (conformal) Möbius map.
-            </p>
-
-            <br>
-
+            <p class="text-center">A Doyle spiral mapped by a (conformal) Möbius map.</p>
             <p>
-                To spice things up even further, Apollonian gasket style fractal packing was used to fill in the gaps
-                between the circles. Every triplet of circles that touch receives another circle in between them that
-                touches all of the three circles, recursively for a few generations.
+                To fill in the gaps, I used Apollonian gasket style fractal packing, adding a circle between every
+                triplet of
+                touching circles recursively for a few generations.
             </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/packing view.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <img src="/Projects/Rotating_Snakes_Study/packing view.jpg" alt="Fractal Packing"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Apollonian gasket style fractal packing.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                Appolonian gasket style fractal packing of the space in between.
-            </p>
-
-        </div>
-
-        <div class="project-box">
-
+        <!-- Variations Section -->
+        <section class="mb-5">
             <h2>Variations</h2>
-
             <p>
-                Thanks to our handy script it was easy to explore variations of the rotating snake. Different
-                arrangements and different number of "spokes" as well as different thicknesses of each layer in the
-                circles. These parameters control the level of twist and detail seen in each rotating snake element and
-                can cause the illusion to become a growth/shrink illusion rather than a rotating illusion. We see a
-                bunch of variations below:
+                By altering parameters such as the number of "spokes" and thickness of the layers, I created several
+                variations that adjust the twist and detail of the illusion.
             </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (1).jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (1).jpg" alt="Variation 1"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                The Doyle spiral with a higher twist.
-            </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (2).jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (2).jpg" alt="Variation 2"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
+            <p class="text-center">Various snake element arrangements with different levels of twist.</p>
+        </section>
 
-
-            <p class="project-box-caption">
-                The Doyle spiral with a higher twist Möbius mapped.
-            </p>
-
-            <br>
-
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (3).jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                A higher twist in a hexagonal arrangement.
-            </p>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (4).png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                A grid structure and a phase shift in the layers of the rotating snake elements.
-            </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (5).jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                Classic rotating snakes with Appolonian gasket style packing.
-            </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (6).png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                Square grid structure and offset element rather than Appolonian gasket styled packing.
-            </p>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (7).png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                Square grid arrangement with stronger twist.
-            </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/variations/variation (8).jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                The Doyle spiral Möbius mapped with a higher twist.
-            </p>
-
-
-
-        </div>
-
-
-        <div class="project-box">
-
+        <!-- Why Section -->
+        <section class="mb-5">
             <h2>Why?</h2>
-
-            <p class="project-box-abstract">
-
-                For fun.
-
-                <br>
-                And I wanted some deco.
-            </p>
-
-            <div class="image-row" style="background-color: black; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Rotating_Snakes_Study/PXL_20240830_200032736_edited.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <p>For fun—and I wanted some unique decoration.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <img src="/Projects/Rotating_Snakes_Study/PXL_20240830_200032736_edited.jpg" alt="Printed on Nylon"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-            <p class="project-box-caption">
-                Printed on nylon fabric.
-            </p>
+            <p class="text-center">Printed on nylon fabric.</p>
+        </section>
 
-        </div>
-
-
-
-
-
-        <div class="project-box">
-
+        <!-- Copyright Section -->
+        <section class="mb-5">
             <h2>About Copyright</h2>
+            <p>Do what you want!</p>
+        </section>
 
-            <p class="project-box-abstract">
-
-                Do what you want!
-            </p>
-
-        </div>
-
-        <!-- BIBTEX -->
-        <div class="project-box" id="Cite">
-
-            <h2>Bibtex</h2>
-
-            <p class="project-box-bibtex">
-                @article{padilla_mathematicians_reimagined,<br>
-                &#8196; author = {Marcel Padilla,<br>
-                &#8196; title = {Rotating Snakes Study},<br>
-                &#8196; year = {2024},<br>
-                &#8196; url = {https://marcelpadilla.com/Projects/Rotating_Snakes_Study/},<br>
-                }
-            </p>
-
-        </div>
-
-
+        <!-- Bibtex Section -->
+        <section class="mb-5" id="Cite">
+            <h2>BibTeX</h2>
+            <div class="page-cite">
+                <p class="project-box-bibtex">
+                    @article{padilla_rotating_snakes_study,<br>
+                    &#8196; author = {Marcel Padilla},<br>
+                    &#8196; title = {Rotating Snakes Study},<br>
+                    &#8196; year = {2024},<br>
+                    &#8196; url = {https://marcelpadilla.com/Projects/Rotating_Snakes_Study/},<br>
+                    }
+                </p>
+            </div>
+        </section>
 
     </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
