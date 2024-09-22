@@ -1,346 +1,206 @@
 <!DOCTYPE html>
-<html>
-
-<!-- META -->
+<html lang="en">
 
 <head>
-
-    <!-- Charset -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐇 Nailing the Bunny</title>
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- TAG marcelpadilla.github.com -->
-    <!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE3HMMJMWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
 
-  gtag('config', 'G-YE3HMMJMWH');
-</script> -->
-
-    <!-- ICON -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
 
-    <!-- GET FONT -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial"> -->
-
-
-    <!-- CSS import Legacy for the project pages-->
-    <link href='/Source/style_old.css' rel='stylesheet'>
-
-    <!-- CSS import -->
-    <link href='/Source/CSS/style.css' rel='stylesheet'>
-
-    <!-- Navigation Bar Inclusion Function -->
-    <!-- <script>
-        $(function () {
-            $("#navigation-bar").load("/Source/navigation-bar.html");
-        });
-    </script> -->
-
-    <a class="anchor" id="top"></a>
-    <div class="header">
-        <div class="navigation">
-            <a href="/">Marcel Padilla 🎓</a>
-            <a href="#publications">Publications 📜</a>
-            <a href="#teaching">Teaching 📖</a>
-            <a href="#exploration">Exploration 🔮</a>
-            <a href="#aboutme">About Me 📌</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn btn-primary" href="/">Dr. Marcel Padilla 🎓</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="headerSpacer"></div>
-
-    <title>🐇Nailing the Bunny</title>
-
+    </nav>
 </head>
-
-
-
-<!-- BODY -->
 
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
 
+        <!-- Project Title -->
+        <h1 class="text-center mb-4 page-title">Nailing the Bunny</h1>
+        <p class="text-center">A private side project by Marcel Padilla - TU Berlin - 2020</p>
 
-
-    <!-- MAIN -->
-    <main id="home">
-
-        <!-- TITLE -->
-        <h1 class="project-title">Nailing the Bunny</h1>
-
-        <p class="project-subtitle">
-            A private side project, 2020
-        </p>
-
-
-
-        <!-- AUTHORS -->
-        <div class="project-authors-row">
-
-            <a class="project-author" href="/">
-                Marcel Padilla
-                <div class="project-author-affiliation">
-                    TU Berlin
-                </div>
-            </a>
-
-        </div>
-
-
-
-
-        <!-- ABSTRACT -->
-        <div class="project-box">
-
+        <!-- Intro Section -->
+        <section class="mb-5">
             <h2>Abstract</h2>
-
             <p>
-                Grab some whiteboard, hammer some nails into it, and connect the nails to form the visualization of a
-                3D mesh. This is about as minimal as things can get. My goal was to physically recreate this 2D
-                mesh representation of the familiar 3D bunny.
-
-                <br><br>
-                I present here the short story of how this project turned out.
+                Grab some whiteboard, hammer some nails into it, and connect the nails to form the visualization of a 3D
+                mesh.
+                This is about as minimal as things can get. My goal was to physically recreate this 2D mesh
+                representation
+                of the familiar 3D bunny. I present here the short story of how this project turned out.
             </p>
+        </section>
 
-        </div>
-
-        <div class="project-box">
-
+        <!-- Design Section -->
+        <section class="mb-5">
             <h2>Design</h2>
-
             <p>
                 Launch Houdini and remesh the bunny to a low polygon mesh to stay sane during this project. Then delete
-                all faces/points/edges that are not facing the camera. Then project it onto the plane and copy some
-                nails into the mesh points. The virtual creation of this project was really straightforward and simple.
+                all faces/points/edges that are not facing the camera. Project it onto the plane and copy some nails
+                into
+                the mesh points. The virtual creation of this project was really straightforward and simple.
             </p>
+        </section>
 
-        </div>
-
-
-        <div class="project-box">
-
+        <!-- Virtual Setup Section -->
+        <section class="mb-5">
             <h2>Virtual Setup</h2>
-
             <p>
-                Once all the nails were hammered in, I could connect each of them using lines.
-                Originally, I was set to use a thin black string for this. I quickly noticed
-                that that would take way too much time. So instead, I drew the lines with a black fine liner.
+                Once all the nails were hammered in, I could connect each of them using lines. Originally, I was set to
+                use a thin black string for this. However, I quickly noticed that would take too much time, so instead,
+                I drew the lines with a black fine liner.
             </p>
+        </section>
 
-        </div>
-
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: white; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
+        <!-- Rendered Images Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Add Bootstrap grid classes -->
                     <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_front_simple_projection_04_374.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="Bunny Front" class="img-fluid mb-3 max-img-size">
+                    <!-- Add img-fluid and max-img-size class -->
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
+                <div class="col-md-6 col-lg-4">
                     <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_close_up_simple_projection_04_375.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="Bunny Close Up" class="img-fluid mb-3 max-img-size">
                 </div>
-
-
             </div>
+            <p class="text-center">The virtual version of the project rendered.</p>
+        </section>
 
-            <p class="project-box-caption">
-                The virtual version of the project rendered.
-            </p>
 
-        </div>
-
-        <div class="project-box">
-
-            <div class="image-row" style="background-color: white; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Banana and Bear Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer.jpg" alt="Banana"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
+                <div class="col-md-6 col-lg-4">
                     <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer_2.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="Banana Side View" class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/renders/bear_wood_test_observer.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bear_wood_test_observer.jpg" alt="Bear"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-
-            <p class="project-box-caption">
-                A banana, and the Mathon bear processed by the same method.
-            </p>
-
-        </div>
+            <p class="text-center">A banana and the Mathon bear processed using the same method.</p>
+        </section>
 
 
-        <div class="project-box">
-
+        <!-- Mesh Section -->
+        <section class="mb-5">
             <h2>Finding the Right Mesh</h2>
-
             <p>
                 I also attempted to remesh according to different criteria. After all, the density of triangles
-                influences our perception of depth. In the end, the natural 3D remeshing of similar triangle sizes (in
-                3D) gave the best results.
+                influences our perception of depth. In the end, the natural 3D remeshing of similar triangle sizes
+                (in 3D) gave the best results.
             </p>
-
-            <br>
-
-            <div class="image-row" style="background-color: white; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Bootstrap grid column -->
                     <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_simple_projection.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="3D Mesh" class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
+                <div class="col-md-6 col-lg-4">
                     <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_flat_shade_adaptive_02.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="Curvature Dependent" class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
+                <div class="col-md-6 col-lg-4">
                     <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_flat_shade_adaptive_03.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="2D Triangles" class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-
-            <p class="project-box-caption">
-                Various versions of the bunny with different remeshing techniques. Left: all triangles similar size in
-                3D. Middle: curvature dependent. Right: similar triangle size in 2D.
-            </p>
-
-        </div>
+            <p class="text-center">Various versions of the bunny with different remeshing techniques. Left: 3D similar
+                triangles.
+                Middle: curvature dependent. Right: 2D similar triangles.</p>
+        </section>
 
 
-        <!-- IMAGE ROW -->
-        <div class="project-box">
-
-
-
+        <!-- Physical Construction Section -->
+        <section class="mb-5">
             <h2>Mapping and Building</h2>
-
             <p>
-                Next comes the dreaded physical part. In order to get the mapping well on a board I had, I simply used a
-                projector.
+                Next came the dreaded physical part. To get the mapping well onto the board, I simply used a projector.
+                After projecting the image, I marked the dots with a pencil, then connected the dots using black lines.
+                Originally, I planned to use string but found it too complex, so I stuck to drawing.
             </p>
-
-            <br>
-
-
-            <div class="image-row" style="background-color: white; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/bunny_print_out.jpeg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/bunny_print_out.jpeg" alt="Projection"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/Projection crop.png"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/Projection crop.png" alt="Drawing Dots"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/see_dots.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/see_dots.jpg" alt="Dots on Board"
+                        class="img-fluid mb-3 max-img-size">
                 </div>
-
             </div>
-
-            <p class="project-box-caption">
-                Projecting the image on the left using a simple projector and then drawing the dots with a pencil.
-            </p>
-
-            <br>
+            <p class="text-center">Projecting and marking the dots before drawing the lines.</p>
+        </section>
 
 
-            <p>
-                Then we connect each line. Interestingly, following the exact line instructions was very important. I
-                once connected the wrong lines, and then it became really confusing to the viewer as to what was
-                happening to the geometry in that area.
-                <br>
-                Originally, I had intended to use a black string and wrap it around the nails. This turned out to be too
-                difficult, and thus I stuck to drawing each line.
-            </p>
-
-            <div class="image-row" style="background-color: white; display: flex;">
-
-                <div class="column" style="flex: 1; overflow: hidden;">
-                    <img src="/Projects/Nailing_the_Bunny/Progression.jpg"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-
-            </div>
-
-
-            <p class="project-box-caption">
-                Connecting all the nails using black lines.
-            </p>
-
-        </div>
-
-
-        <div class="project-box">
-
+        <!-- Final Result Section -->
+        <section class="mb-5">
             <h2>Final Result</h2>
-
-            <div class="column" style="flex: 1; overflow: hidden;">
-                <img src="/Projects/Nailing_the_Bunny/Final.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/Final.jpg" alt="Final Result"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
             </div>
+        </section>
 
-        </div>
 
-
-        <!-- SUMMARY -->
-        <div class="project-box">
-
+        <!-- Summary Section -->
+        <section class="mb-5">
             <h2>Why?</h2>
-
             <p>
-
                 Why not?
-
             </p>
-
-        </div>
-
-
-        <!-- ACKNOWLEDGEMENTS -->
-        <!-- <div class="project-box">
-
-            <h2>Note</h2>
-
-            <p class="project-box-abstract">
-                Don't forget to be a friend to yourself too!
-            </p>
-
-        </div> -->
+        </section>
 
     </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

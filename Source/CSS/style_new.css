@@ -27,12 +27,13 @@ body {
    font-family: Arial, sans-serif;
 }
 
-main {
+/* main {
    background: linear-gradient(to bottom right, #ffffff, #474747);
-}
+} */
 
 .main-field {
    padding-top: 55px;
+   background: linear-gradient(to bottom right, #ffffff, var(--gray_very_very_dark));
 }
 
 .main-content {
@@ -426,6 +427,29 @@ footer {
 .BSc {
    background-image: linear-gradient(to bottom right, rgb(255, 165, 81), rgb(167, 64, 0)); color: black;
 }
+
+.page-field {
+   background: linear-gradient(to bottom right, #ffffff, var(--gray_medium));
+   padding-bottom: 1px;
+   margin-bottom: 1px;
+   outline: 1px solid black;
+   padding: 30px;
+}
+
+.page-title {
+   font-weight: bold;
+   color: var(--main_color_dark);
+}
+
+.page-img {
+   max-width: 600px;
+   width: auto;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+   
+}
+
 
 /* Media Queries */
 
