@@ -537,6 +537,27 @@ footer {
    height: auto;
 }
 
+.tarot-cards-thubmnail-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0px; /* Minimal spacing between cards, both horizontally and vertically */
+   margin: 0 auto; /* Center the row horizontally */
+   max-width: 100%; /* Make sure it uses the full width of the screen */
+   padding: 0;
+}
+
+.tarot-card-thumbnail-wrapper {
+   flex: 1 1 calc(10% - 10px); /* Adjust size for smaller thumbnails */
+   min-width: 80px; /* Smaller minimum width */
+   max-width: 80px; /* Smaller maximum width */
+   margin: 0;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border-radius: 5px;
+}
+
+
+
 .more-cards {
    display: none;
 }
@@ -605,8 +626,12 @@ footer {
 
 
 .project-button:hover {
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-   text-decoration: none;   
+   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+   text-decoration: none !important;
+   transform: scale(1.02);
+   transition: transform 0.3s ease-in-out;
+   transition: box-shadow 0.2s ease-in-out;
+
 }
 
 
