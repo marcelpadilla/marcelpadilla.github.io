@@ -366,6 +366,16 @@ footer {
    color: white;
 }
 
+.button:hover {
+   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1); /* Strong shadow in all directions */
+   transition: box-shadow 0.1s ease-out; /* Smooth transition */
+   transform: scale(1.05); /* Zoom in a bit */
+   transition: transform 0.1s ease-out;
+   
+}
+
+
+
 .card-body .btn {
    background-color: var(--main_color_light); /* Set the button background color */
    color: #fff; /* Optional: Set text color to white */
@@ -481,7 +491,7 @@ footer {
 .page-authors .row {
    display: flex;
    flex-wrap: wrap; /* Ensure authors wrap if they exceed the page width */
-   gap: 20px; /* Adds spacing between each author */
+   gap: 0px; /* Adds spacing between each author */
 }
 
 .page-author {
@@ -492,7 +502,7 @@ footer {
    padding: 10px;
    text-align: center;
    margin-bottom: 10px;
-   min-width: 150px; /* Minimum width to prevent very small cards */
+   min-width: 100px; /* Minimum width to prevent very small cards */
    font-weight: bold;
    color: var(--main_color_light) !important;
 }
