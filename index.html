@@ -113,7 +113,7 @@
                         <p class="text-start">
                             My main interest is the interplay between physical simulations, geometry
                             processing, discrete exterior calculus and applications in graphics and animation.
-                            I am currently starting a Postdoc at the
+                            I am currently doing my Postdoc at the
                             <a href="https://igl.ethz.ch/" target="_blank">Interactive Geometry Lab</a>
                             at ETH Zürich through the
                             <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/feodor-lynen-research-fellowship"
@@ -773,21 +773,22 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var encodedEmail = 'bWFpbEBtYXJjZWxwYWRpbGxhLmNvbQ==';
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var encodedEmail = 'bWFyY2VsLnBhZGlsbGFAaW5mLmV0aHouY2g=';
 
-            function decodeEmail(encoded) {
-                return atob(encoded);
-            }
+        function decodeEmail(encoded) {
+            return atob(encoded);
+        }
 
-            var emailElement = document.getElementById('email');
-            var decodedEmail = decodeEmail(encodedEmail);
-            emailElement.innerHTML = decodedEmail;
-            emailElement.href = 'mailto:' + decodedEmail;
-        });
-    </script>
+        var emailElement = document.getElementById('email');
+        var decodedEmail = decodeEmail(encodedEmail);
+        emailElement.innerHTML = decodedEmail;
+        emailElement.href = 'mailto:' + decodedEmail;
+    });
+</script>
 </body>
+
 
 </body>
 
