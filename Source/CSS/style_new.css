@@ -430,7 +430,8 @@ footer {
 }
 
 .Code {
-   background-image: linear-gradient(to bottom right, rgb(191, 195, 209), rgb(109, 100, 112), rgb(24, 21, 65));
+   background-image: linear-gradient(to bottom right, rgb(226, 156, 251),rgb(129, 0, 148));
+   /* color: black; */
 }
 
 .YouTube {
