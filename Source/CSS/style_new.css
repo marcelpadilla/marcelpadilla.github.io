@@ -434,6 +434,14 @@ footer {
    /* color: black; */
 }
 
+.Course{
+   background-image: linear-gradient(to bottom right, rgb(0, 196, 173), rgb(4, 0, 128));
+}
+
+.Workshop{
+   background-image: linear-gradient(to bottom right, rgb(0, 196, 75), rgb(4, 45, 1));
+}
+
 .YouTube {
    background-color: #FF0000;
    color: white;
