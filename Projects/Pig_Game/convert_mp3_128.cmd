@@ -11,7 +11,7 @@ for %%F in (*.mp3) do (
     echo ==========================================
     echo Converting: "%%~nxF"
     echo Output:     "audio\%%~nF.mp3"
-    ffmpeg -y -loglevel error -i "%%F" -c:a libmp3lame -b:a 128k "audio\%%~nF.mp3"
+    ffmpeg -y -loglevel error -i "%%F" -c:a libmp3lame -b:a 96k -ac 1 "audio\%%~nF.mp3"
     if errorlevel 1 echo   FAILED: %%~nxF
 )
 

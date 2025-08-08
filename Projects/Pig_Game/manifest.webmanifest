@@ -1,6 +1,6 @@
 {
-  "name": "SoundStage",
-  "short_name": "SoundStage",
+  "name": "Pig Game",
+  "short_name": "Pig Game",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

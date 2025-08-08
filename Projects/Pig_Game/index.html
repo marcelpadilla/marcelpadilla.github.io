@@ -8,10 +8,10 @@
 <link rel="manifest" href="./manifest.webmanifest">
 <style>
   :root {
-    --bg: #0f172a;          /* slate-900 */
-    --card: #111827;        /* gray-900 */
-    --text: #e5e7eb;        /* gray-200 */
-    --subtext: #cbd5e1;     /* slate-300 */
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --subtext: #cbd5e1;
     --btn-orange: #fb923c;
     --btn-blue:   #60a5fa;
     --btn-gray:   #4b5563;
@@ -74,51 +74,166 @@
   <main>
     <section class="card">
       <div class="section-title">Background Music</div>
+      <div class="section-title" style="font-size:16px;color:var(--text);margin-top:-8px;">Start Game</div>
+      <div class="row">
+      <div class="flex-1">
+        <button class="btn" id="btn-funny" style="background:var(--btn-orange);">
+        <div class="icon">♪</div>
+        <div>Funny</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn" id="btn-game_show" style="background:var(--btn-blue);">
+        <div class="icon">♪</div>
+        <div>Game show</div>
+        </button>
+      </div>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title" style="font-size:16px;color:var(--text);margin-top:-8px;">Mid Game</div>
       <div class="row">
         <div class="flex-1">
-          <button class="btn orange" id="btn-funny">
-            <div class="icon">♪</div>
-            <div>Funny</div>
+    <button class="btn" id="btn-casino" style="background:var(--btn-indigo);">
+        <div class="icon">♪</div>
+        <div>Casino</div>
           </button>
         </div>
         <div class="flex-1">
-          <button class="btn blue" id="btn-winning">
-            <div class="icon">♪</div>
-            <div>Winning</div>
+    <button class="btn" id="btn-dark_night" style="background:var(--btn-gray);">
+        <div class="icon">♪</div>
+        <div>Dark Night</div>
+          </button>
+        </div>
+        <div class="flex-1">
+    <button class="btn" id="btn-medival" style="background:#7c3aed;">
+        <div class="icon">♪</div>
+        <div>Medival</div>
+          </button>
+        </div>
+        <div class="flex-1">
+    <button class="btn" id="btn-millionaire_1" style="background:#f59e42;">
+        <div class="icon">♪</div>
+        <div>Millionaire 1</div>
           </button>
         </div>
       </div>
-      <button class="btn gray" id="btn-stop">Stop Music</button>
+      <div class="divider"></div>
+      <div class="section-title" style="font-size:16px;color:var(--text);margin-top:-8px;">End Game</div>
+      <div class="row">
+        <div class="flex-1">
+    <button class="btn" id="btn-millionaire_2" style="background:#10b981;">
+        <div class="icon">♪</div>
+        <div>Millionaire 2</div>
+          </button>
+        </div>
+        <div class="flex-1">
+    <button class="btn" id="btn-millionaire_3" style="background:#f43f5e;">
+        <div class="icon">♪</div>
+        <div>Millionaire 3</div>
+          </button>
+        </div>
+      </div>
+      <div class="section-title" style="font-size:16px;color:var(--text);margin-top:-8px;">Victory</div>
+      <div class="row">
+      <div class="flex-1">
+        <button class="btn" id="btn-winning" style="background:#fbbf24;">
+        <div class="icon">♪</div>
+        <div>Winning</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn" id="btn-millionaire_win" style="background:#6366f1;">
+        <div class="icon">♪</div>
+        <div>Millionaire Win</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn" id="btn-price_is_right" style="background:#ef4444;">
+        <div class="icon">♪</div>
+        <div>Price is Right</div>
+        </button>
+      </div>
+      </div>
+  <!-- Removed Stop Music button -->
     </section>
 
     <div class="divider"></div>
 
     <section class="card">
       <div class="section-title">Sound Effects</div>
-      <button class="btn indigo" id="btn-drama">
+      <div class="row">
+      <div class="flex-1">
+        <button class="btn indigo" id="btn-drama">
         <div class="icon">🔊</div>
-        <div>Drama Sound</div>
-      </button>
+        <div>Boom</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn orange" id="btn-air_horn">
+        <div class="icon">📢</div>
+        <div>Air Horn</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn blue" id="btn-applause">
+        <div class="icon">👏</div>
+        <div>Applause</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn gray" id="btn-bruh">
+        <div class="icon">😐</div>
+        <div>Bruh</div>
+        </button>
+      </div>
+      <div class="flex-1">
+        <button class="btn" style="background:#10b981;" id="btn-golf_clap">
+        <div class="icon">🫰</div>
+        <div>Golf Clap</div>
+        </button>
+      </div>
+      </div>
     </section>
 
     <div class="footer">
       Tap a button to play. Audio still requires a user gesture even when offline (browser policy).
+    </div>
+
+    <!-- Persistent Music Player -->
+    <div id="music-player" style="position:fixed;bottom:0;left:0;width:100%;background:rgba(17,24,39,0.98);border-top:1px solid #6366f1;padding:10px 0;display:flex;justify-content:center;align-items:center;z-index:1000;box-shadow:0 -2px 12px rgba(0,0,0,0.12);">
+      <button id="btn-playpause" style="background:var(--btn-indigo);color:white;border:none;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:28px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.18);transition:filter .08s;">
+        <span id="icon-playpause">▶️</span>
+      </button>
     </div>
   </main>
 
 <script>
     // ---------- App files (must match service-worker ASSETS) ----------
     const FILES = {
-        funny:  "audio/starting.mp3",
-        winning:"audio/winning.mp3",
-        drama:  "audio/boom.mp3",
+      funny:  "audio/start game/funny.mp3", // start
+      game_show:  "audio/start game/game_show.mp3", // start
+      winning:"audio/victory/winning.mp3", // victory
+      Millionaire_Win:"audio/victory/Millionaire Win.mp3", // victory
+      Price_is_Right:"audio/victory/Price is right.mp3", // victory
+      boom:  "audio/sounds/boom.mp3", // sound
+      air_horn: "audio/sounds/Air horn.mp3", // sound
+      applause: "audio/sounds/Applause.mp3", // sound
+      bruh: "audio/sounds/Bruh.mp3", // sound
+      golf_clap: "audio/sounds/Golf clap.mp3", // sound
+      casino: "audio/mid game/casino.mp3", // mid game
+      dark_night: "audio/mid game/dark_night.mp3", // mid game
+      medival: "audio/mid game/medival.mp3", // mid game
+      Millionaire_1: "audio/mid game/Millionaire 1.mp3", // mid game
+      Millionaire_2: "audio/end game/Millionaire 2.mp3", // end game
+      Millionaire_3: "audio/end game/Millionaire 3.mp3", // end game
     };
+    // Cache all audio files and main assets for offline use
     const ASSETS_TO_CACHE = [
-        "./",
-        "./index.html",
-        "./" + FILES.funny,
-        "./" + FILES.winning,
-        "./" + FILES.drama
+      "./",
+      "./index.html",
+      "./manifest.webmanifest",
+      // All audio files from FILES
+      ...Object.values(FILES).map(f => "./" + f)
     ];
 
     // ---------- Audio logic ----------
@@ -141,7 +256,16 @@
         }
     }
 
-    function stopBackground(){ bg.pause(); }
+
+  function pauseBackground(){ bg.pause(); }
+  function resumeBackground(){
+    if (bg.src) {
+      bg.play().catch(err => {
+        console.warn("BG play failed:", err);
+        alert("Playback was blocked. Please tap again.");
+      });
+    }
+  }
 
     function playSfx(file){
         const a = new Audio(urlFor(file));
@@ -152,10 +276,61 @@
         a.play().catch(err => console.warn("SFX play failed:", err));
     }
 
-    document.getElementById("btn-funny") .addEventListener("click", () => playBackground(FILES.funny));
-    document.getElementById("btn-winning").addEventListener("click", () => playBackground(FILES.winning));
-    document.getElementById("btn-stop")   .addEventListener("click", stopBackground);
-    document.getElementById("btn-drama")  .addEventListener("click", () => playSfx(FILES.drama));
+
+    // ---------- Start Game ----------
+    document.getElementById("btn-funny") .addEventListener("click", () => { playBackground(FILES.funny); updatePlayerIcon(); });
+    document.getElementById("btn-game_show") .addEventListener("click", () => { playBackground(FILES.game_show); updatePlayerIcon(); });
+
+    // ---------- Mid Game ----------
+    document.getElementById("btn-casino") .addEventListener("click", () => { playBackground(FILES.casino); updatePlayerIcon(); });
+    document.getElementById("btn-dark_night") .addEventListener("click", () => { playBackground(FILES.dark_night); updatePlayerIcon(); });
+    document.getElementById("btn-medival") .addEventListener("click", () => { playBackground(FILES.medival); updatePlayerIcon(); });
+    document.getElementById("btn-millionaire_1") .addEventListener("click", () => { playBackground(FILES.Millionaire_1); updatePlayerIcon(); });
+
+    // ---------- End Game ----------
+    document.getElementById("btn-millionaire_2").addEventListener("click", () => { playBackground(FILES.Millionaire_2); updatePlayerIcon(); });
+    document.getElementById("btn-millionaire_3").addEventListener("click", () => { playBackground(FILES.Millionaire_3); updatePlayerIcon(); });
+
+    // ---------- Victory ----------
+    document.getElementById("btn-winning").addEventListener("click", () => { playBackground(FILES.winning); updatePlayerIcon(); });
+    document.getElementById("btn-millionaire_win").addEventListener("click", () => { playBackground(FILES.Millionaire_Win); updatePlayerIcon(); });
+    document.getElementById("btn-price_is_right").addEventListener("click", () => { playBackground(FILES.Price_is_Right); updatePlayerIcon(); });
+
+    // ---------- Sound Effects ----------
+    document.getElementById("btn-drama")  .addEventListener("click", () => playSfx(FILES.boom));
+    document.getElementById("btn-air_horn").addEventListener("click", () => playSfx(FILES.air_horn));
+    document.getElementById("btn-applause").addEventListener("click", () => playSfx(FILES.applause));
+    document.getElementById("btn-bruh").addEventListener("click", () => playSfx(FILES.bruh));
+    document.getElementById("btn-golf_clap").addEventListener("click", () => playSfx(FILES.golf_clap));
+
+    // ---------- Music Player Controls ----------
+    const playPauseBtn = document.getElementById("btn-playpause");
+    const iconPlayPause = document.getElementById("icon-playpause");
+
+    function updatePlayerIcon() {
+      if (bg.paused || !bg.src) {
+        iconPlayPause.textContent = "▶️";
+      } else {
+        iconPlayPause.textContent = "⏸️";
+      }
+    }
+
+    playPauseBtn.addEventListener("click", () => {
+      if (bg.paused) {
+        resumeBackground();
+      } else {
+        pauseBackground();
+      }
+      updatePlayerIcon();
+    });
+
+    // Update icon when music ends or is paused
+    bg.addEventListener("pause", updatePlayerIcon);
+    bg.addEventListener("play", updatePlayerIcon);
+    bg.addEventListener("ended", updatePlayerIcon);
+
+    // Initial icon state
+    updatePlayerIcon();
 
     // ---------- Service worker & install/offline flow ----------
     const statusEl = document.getElementById('offline-status');
@@ -181,20 +356,23 @@
         offlineBtn.textContent = 'Install app / Make available offline';
     });
 
-    offlineBtn.addEventListener('click', async () => {
-        // 1) Warm the cache so it works offline immediately
-        await warmCache();
+  offlineBtn.addEventListener('click', async () => {
+    // 1) Warm the cache so it works offline immediately
+    await warmCache();
 
-        // 2) Trigger A2HS prompt when available (Android/Chrome)
-        if (deferredPrompt) {
-            deferredPrompt.prompt();
-            try { await deferredPrompt.userChoice; } catch {}
-            deferredPrompt = null;
-        } else {
-            // iOS: user must use Share -> Add to Home Screen
-            // Keep silent; offline still works via SW cache.
-        }
-    });
+    // 2) Trigger A2HS prompt when available (Android/Chrome)
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      try { await deferredPrompt.userChoice; } catch {}
+      deferredPrompt = null;
+    } else {
+      // iOS: user must use Share -> Add to Home Screen
+      // Show a friendly message for iOS users
+      if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+        alert('To install this app on your iPhone or iPad, tap the Share button in Safari, then choose "Add to Home Screen".');
+      }
+    }
+  });
 
     async function warmCache(){
         // Touch each asset; SW will intercept and store
