@@ -1,8 +1,0 @@
-@article{padilla2018pointvotices,
-  author = {Marcel Padilla},
-  title = {Point Vortex Dynamics on Closed Surfaces},
-  journal = {M.S. Thesis},
-  year = {2018},
-  month = {05},
-  publisher = {TU Berlin},
-}
