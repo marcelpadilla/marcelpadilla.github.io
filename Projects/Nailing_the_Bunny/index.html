@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<title>🐇Nailing the Bunny</title>
+
+</head>
+
+<body>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
+
+        <!-- Project Title -->
+        <h1 class="text-center mb-4 page-title">Nailing the Bunny</h1>
+        <p class="text-center">A private side project by Marcel Padilla - TU Berlin - 2020</p>
+
+        <!-- Intro Section -->
+        <section class="mb-5">
+            <h2>Abstract</h2>
+            <p>
+                Grab some whiteboard, hammer some nails into it, and connect the nails to form the visualization of a 3D
+                mesh.
+                This is about as minimal as things can get. My goal was to physically recreate this 2D mesh
+                representation
+                of the familiar 3D bunny. I present here the short story of how this project turned out.
+            </p>
+        </section>
+
+        <!-- Design Section -->
+        <section class="mb-5">
+            <h2>Design</h2>
+            <p>
+                Launch Houdini and remesh the bunny to a low polygon mesh to stay sane during this project. Then delete
+                all faces/points/edges that are not facing the camera. Project it onto the plane and copy some nails
+                into
+                the mesh points. The virtual creation of this project was really straightforward and simple.
+            </p>
+        </section>
+
+        <!-- Virtual Setup Section -->
+        <section class="mb-5">
+            <h2>Virtual Setup</h2>
+            <p>
+                Once all the nails were hammered in, I could connect each of them using lines. Originally, I was set to
+                use a thin black string for this. However, I quickly noticed that would take too much time, so instead,
+                I drew the lines with a black fine liner.
+            </p>
+        </section>
+
+        <!-- Rendered Images Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Add Bootstrap grid classes -->
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_front_simple_projection_04_374.jpg"
+                        alt="Bunny Front" class="img-fluid mb-3 max-img-size">
+                    <!-- Add img-fluid and max-img-size class -->
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_close_up_simple_projection_04_375.jpg"
+                        alt="Bunny Close Up" class="img-fluid mb-3 max-img-size">
+                </div>
+            </div>
+            <p class="text-center">The virtual version of the project rendered.</p>
+        </section>
+
+
+        <!-- Banana and Bear Section -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer.jpg" alt="Banana"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/renders/banana_wood_test_observer_2.jpg"
+                        alt="Banana Side View" class="img-fluid mb-3 max-img-size">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bear_wood_test_observer.jpg" alt="Bear"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+            </div>
+            <p class="text-center">A banana and the Mathon bear processed using the same method.</p>
+        </section>
+
+
+        <!-- Mesh Section -->
+        <section class="mb-5">
+            <h2>Finding the Right Mesh</h2>
+            <p>
+                I also attempted to remesh according to different criteria. After all, the density of triangles
+                influences our perception of depth. In the end, the natural 3D remeshing of similar triangle sizes
+                (in 3D) gave the best results.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_simple_projection.jpg"
+                        alt="3D Mesh" class="img-fluid mb-3 max-img-size">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_flat_shade_adaptive_02.jpg"
+                        alt="Curvature Dependent" class="img-fluid mb-3 max-img-size">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/renders/bunny_test_observer_flat_shade_adaptive_03.jpg"
+                        alt="2D Triangles" class="img-fluid mb-3 max-img-size">
+                </div>
+            </div>
+            <p class="text-center">Various versions of the bunny with different remeshing techniques. Left: 3D similar
+                triangles.
+                Middle: curvature dependent. Right: 2D similar triangles.</p>
+        </section>
+
+
+        <!-- Physical Construction Section -->
+        <section class="mb-5">
+            <h2>Mapping and Building</h2>
+            <p>
+                Next came the dreaded physical part. To get the mapping well onto the board, I simply used a projector.
+                After projecting the image, I marked the dots with a pencil, then connected the dots using black lines.
+                Originally, I planned to use string but found it too complex, so I stuck to drawing.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/bunny_print_out.jpeg" alt="Projection"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/Projection crop.png" alt="Drawing Dots"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="/Projects/Nailing_the_Bunny/see_dots.jpg" alt="Dots on Board"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+            </div>
+            <p class="text-center">Projecting and marking the dots before drawing the lines.</p>
+        </section>
+
+
+        <!-- Final Result Section -->
+        <section class="mb-5">
+            <h2>Final Result</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6"> <!-- Bootstrap grid column -->
+                    <img src="/Projects/Nailing_the_Bunny/Final.jpg" alt="Final Result"
+                        class="img-fluid mb-3 max-img-size">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Summary Section -->
+        <section class="mb-5">
+            <h2>Why?</h2>
+            <p>
+                Why not?
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

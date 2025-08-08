@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Source/images/MP_New.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Source/CSS/style_new.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PHNM37S');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNM37S" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="/">Dr. Marcel Padilla 🎓</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-text">Nav</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#publications">Publications 📜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#teaching">Teaching 📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#exploration">Exploration 🔮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#aboutme">About Me 📌</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<title>📐Hyperbolic Tiling {3,7}</title>
+
+</head>
+
+<body>
+
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 page-field">
+
+        <!-- Project Title -->
+        <h1 class="text-center mb-4 page-title">Hyperbolic Tiling {3,7}</h1>
+        <p class="text-center">A private side project by Marcel Padilla - TU Berlin - 2020</p>
+
+        <!-- Intro Section -->
+        <section class="mb-5">
+            <h2>Intro</h2>
+            <p>
+                Here are some documentations on my attempt to generate a hyperbolic tiling. The goal was to set up a
+                system where I can use any texture/video to be displayed inside the tiling. With a bit of creativity, we
+                could then make images in the style of
+                <a href="https://en.wikipedia.org/wiki/Circle_Limit_III" target="_blank">M.C. Escher’s circle limit</a>.
+            </p>
+        </section>
+
+        <!-- Video Section -->
+        <section class="mb-5">
+            <h2>Mission Statement</h2>
+            <div class="text-center">
+                <img src="/Projects/Hyperbolic_Tiling_3,7/arrows-perfect-texture-right-size-01.png" alt="Arrow Texture"
+                    class="img-fluid mb-3" style="max-width: 400px;">
+                <p>Given any texture of a triangle in the Klein disc model, map it into each triangle of the {3,7}
+                    tiling of the Poincaré disk model.</p>
+                <img src="/Projects/Hyperbolic_Tiling_3,7/arrows-tile.jpeg" alt="Arrow Tile" class="img-fluid mb-3"
+                    style="max-width: 400px;">
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="mb-5">
+            <h2>Solution</h2>
+            <ul>
+                <li>Create the basic reference mesh for the tiling</li>
+                <li>Create a refined textured mesh of a single tile</li>
+                <li>Expand the refined tile using the reference mesh</li>
+                <li>Place a circle of constant color behind the tiling for fine details at the edge</li>
+                <li>Be aware of floating point issues near the edge</li>
+            </ul>
+        </section>
+
+        <!-- Results Section -->
+        <section class="mb-5">
+            <h2>Results</h2>
+            <div class="text-center mb-3 page-img page-img">
+                <video class="img-fluid" autoplay muted loop playsinline controls>
+                    <source src="/Projects/Hyperbolic_Tiling_3,7/Hyperbolic-Growth-37.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>
+                Notice that the arrow’s colors don’t match up everywhere. There is not much freedom when trying to build
+                a seamless pattern.
+            </p>
+            <p>
+                Using the TU logo we get this:
+            </p>
+            <div class="text-center mb-3 page-img">
+                <img src="/Projects/Hyperbolic_Tiling_3,7/TU-Tile.jpeg" alt="TU Berlin Logo Tiling" class="img-fluid">
+            </div>
+            <p>
+                If we stick to radially symmetric textures, we can get quite fancy. Here is some fitting <a
+                    href="https://soundcloud.com/yousuf-soliman/psytrance-mix-0" target="_blank">music</a>. Put this on
+                fullscreen and stare at it for a minute.
+            </p>
+            <div class="text-center mb-3 page-img">
+                <iframe class="embed-responsive-item" width="560" height="315"
+                    src="https://www.youtube.com/embed/aAcEq623PeE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <p>The clip placed into each triangle:</p>
+            <div class="text-center mb-3 page-img">
+                <video class="img-fluid" autoplay muted loop playsinline controls>
+                    <source src="/Projects/Hyperbolic_Tiling_3,7/Trippy-Triangle.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="mb-5">
+            <h2>Notes</h2>
+            <p>
+                There is already a web version of a good tiling generator, but it does not allow us to place the initial
+                image in the straight Klein model setting. These sources were very inspiring for this work:
+            </p>
+            <ul>
+                <li><a href="http://www.malinc.se/m/ImageTiling.php" target="_blank">Make Hyperbolic Tilings of
+                        Images</a></li>
+                <li><a href="http://www.malinc.se/noneuclidean/en/poincaretiling.php" target="_blank">Interactive
+                        Hyperbolic Tiling in the Poincaré Disc</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@inproceedings {10.2312:eurovr.20141344,
+booktitle = {EuroVR 2014 - Conference and Exhibition of the European Association of Virtual and Augmented Reality},
+editor = {Jerome Perret and Valter Basso and Francesco Ferrise and Kaj Helin and Vincent Lepetit and James Ritchie and Christoph Runde and Mascha van der Voort and Gabriel Zachmann},
+title = {{A.C.T.I.V.E.: A Scalable Superellipsoid-based CFD Visualization for Virtual and Desktop Environments}},
+author = {Herrmann, Heiko and Padilla, Marcel and Pastorelli, Emiliano},
+year = {2014},
+publisher = {The Eurographics Association},
+ISBN = {978-3-905674-76-7},
+DOI = {10.2312/eurovr.20141344}
+}

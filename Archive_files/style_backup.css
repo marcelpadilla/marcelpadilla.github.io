@@ -1,0 +1,1615 @@
+:root {
+
+   /* COLORS */
+   --main_color_dark: #550000;
+   --main_color_medium: #790000;
+   --main_color_light: #930000;
+   --main_color_very_light: rgb(194, 0, 0);
+   --gray_very_dark: rgb(124, 124, 124);
+   --gray_dark: rgb(210, 210, 210);
+   --gray_medium_dark: rgb(225, 225, 225);
+   --gray_medium: rgb(240, 240, 240);
+   --gray_light: rgb(247, 247, 247);
+   --gray_very_very_dark: #303030;
+
+   /* MEASUREMENTS */
+   --card_width: 230px;
+   --card_height: calc( var(--card_width)*1.586 );
+   --header_height: 45px;
+   --sidebar_width: 220px;
+   --main_content_width: 1220px;
+   /* Set your desired width here */
+
+   /* Card measurements */
+   --card_height_title: calc( var(--card_height)*0.18 );
+   --card_height_img: calc( var(--card_height)*0.35 );
+   --card_height_info: calc( var(--card_height)*0.50 );
+   --card_height_authors: calc( var(--card_height)*0.1 );
+   --card_height_venue: calc( var(--card_height)*0.1 );
+   --card_height_mini_abstract: calc( var(--card_height)*0.1 );
+   --card_height_buttons: calc( var(--card_height)*0.15 );
+
+   /* TIME */
+   --transition-duration_medium: 75ms;
+   --transition-duration_medium_fast: 50ms;
+   --transition-duration_fast: 25ms;
+}
+
+html {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   height: 100%;
+   background: linear-gradient(to bottom right, var(--gray_medium), var(--gray_very_dark));
+   /* Smooth transition from teal to light purple */
+   /* background-repeat: no-repeat; */
+   background-attachment: fixed;
+}
+
+.document {
+   min-width: 300px;
+   /* max-width: 1440px; */
+   margin: 0px auto;
+   position: relative;
+   text-align: justify;
+}
+
+a img {
+   outline: none;
+}
+
+img {
+   border: 0;
+}
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+   margin: 0px;
+   padding: 0px;
+   /* background-color: var(--main_color_light); */
+   /* background-color: #000000; */
+}
+
+sup,
+sub {
+   vertical-align: 0;
+   position: relative;
+}
+
+sup {
+   bottom: 1ex;
+}
+
+sub {
+   top: 0.8ex;
+}
+
+.quotes:before {
+   content: "\201C";
+}
+
+.quotes:after {
+   content: "\201D";
+}
+
+a:link {
+   color: var(--main_color_medium);
+   text-decoration: none;
+}
+
+a:visited {
+   color: var(--main_color_light);
+}
+
+a:hover {
+   color: var(--main_color_dark);
+}
+
+a.anchor {
+   display: block;
+   position: relative;
+   top: -60px;
+   visibility: hidden;
+}
+
+.fakeLink {
+   font-size: 10pt;
+   font-weight: bold;
+   color: #000000;
+}
+
+.fakeLink:hover {
+   color: var(--main_color_medium);
+}
+
+.disabledLink {
+   font-size: 10pt;
+   font-weight: bold;
+   color: #bbbbbb;
+}
+
+.highlight {
+   color: var(--main_color_light);
+}
+
+
+
+
+
+.card {
+   display: flex;
+   align-items: center;
+   border: 2px solid black;
+   background-color: var(--gray_medium);
+   border-radius: 10px;
+   /* margin: 10px; */
+   width: 60%;
+   max-width: 100%;
+   overflow: hidden;
+   margin: auto;
+   /* padding: 0px 20px; */
+   /* Prevents any overflow */
+   /* margin: 10px; */
+}
+
+.profile-img {
+   width: 130px;
+   height: auto;
+   border-radius: 50%;
+   margin: 20px;
+   /* margin-left: 50px; */
+}
+
+.info-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-grow: 1;
+   /* Allows the container to take up any remaining space */
+   overflow: hidden;
+   /* Prevents any overflow */
+   font-size: 13px;;
+}
+
+.info-container img {
+   margin-left: auto;
+}
+
+.info-text {
+   width: 100%;
+   /* Forces the .info block to take up all the horizontal space in .info-container */
+}
+
+.info-text h2,
+.info-text p {
+   margin: 3px 0;
+   word-break: break-word;
+   /* Ensures text breaks to prevent overflow */
+}
+
+img.icon {
+   width: 16px;
+   height: 16px;
+   vertical-align: text-top;
+}
+
+
+
+.frontPage {
+   width: 100%;
+   margin: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0px;
+}
+
+.frontPage .background {
+   position: absolute;
+   right: 0px;
+   top: 36px;
+   z-index: -1;
+   border-radius: 10px;
+   /* outline: 1px solid black; */
+   border-radius: 20px;
+   /* background-color: var(--gray_very_very_dark); */
+}
+
+.frontPage .foreground {
+   position: relative;
+}
+
+.header {
+   position: fixed;
+   width: 100%;
+   height: var(--header_height);
+   background-color: var(--main_color_light);
+   z-index: 1000;
+   border-bottom: 2px solid #000000;
+   border-top: 2px solid #000000;
+}
+
+.headerSpacer {
+   width: 100%;
+   height: var(--header_height);
+   height: calc(var(--header_height) + 4px);
+}
+
+
+
+.header .navigation {
+   background-color: var(--main_color_dark);
+   width: 100%;
+   height: var(--header_height);
+   z-index: 2;
+   color: white;
+   font-size: 16px;
+   white-space: nowrap;
+   overflow: auto;
+   scrollbar-width: none;
+   /* Firefox */
+   -ms-overflow-style: none;
+   /* Internet Explorer 10+ */
+   display: flex;
+   /* Flex container for evenly spaced items */
+   align-items: center;
+   /* Vertically center items in the navigation bar */
+   justify-content: center;
+   /* Horizontally center the navigation links */
+
+}
+
+.header .navigation .first {
+   background-color: var(--main_color_dark);
+
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.header .navigation a {
+   background-color: var(--main_color_medium);
+   position: relative;
+   color: white;
+   margin: 0px;
+   margin-left: 3px;
+   margin-right: 3px;
+   height: var(--header_height);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* This will center the text horizontally */
+   height: 100%;
+   /* Make the <a> tag fill the .navigation height */
+   padding: 10px 20px;
+   /* Adjust horizontal padding as needed, remove vertical padding */
+   text-decoration: none;
+}
+
+
+.header .navigation a:hover {
+   background-color: var(--gray_very_very_dark);
+}
+
+table tr td {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+   border-spacing: 0px;
+   border-collapse: collapse;
+}
+
+.frontPage .headshot {
+   display: inline-block;
+   width: var(--sidebar_width);
+   height: var(--sidebar_width);
+}
+
+.frontPage .headShotImage {
+   margin: 0px;
+   border-radius: 10px;
+}
+
+
+.frontPage .about {
+   display: inline-block;
+   width: 400px;
+   height: 205px;
+   margin-left: 5px;
+}
+
+.frontPage .research {
+   display: none;
+   width: 200px;
+   height: 205px;
+   margin-left: 1px;
+}
+
+.frontPage .info {
+   display: inline-block;
+   float: right;
+   width: 200px;
+   height: 173px;
+}
+
+.frontPage .info table {
+   width: 100%;
+   height: 100%;
+}
+
+.frontPage .info td.contact {}
+
+.frontPage .info td.sponsor {}
+
+.contentArea {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.mainContent {
+   display: inline-block;
+   position: absolute;
+   left: 0px;
+   width: auto;
+   margin-right: calc(var(--sidebar_width) + 15px);
+   padding-left: 10px;
+   padding-right: 5px;
+   padding-top: 10px;
+}
+
+.teaching {
+   width: fit-content;
+   height: auto;
+}
+
+.publications {
+   width: auto;
+   height: auto;
+}
+
+.sidebar {
+   display: inline-block;
+   position: fixed;
+   right: 0px;
+   width: var(--sidebar_width);
+   padding: 5px;
+   background-image: linear-gradient(to bottom right, rgb(224, 221, 221), rgb(208, 208, 208));
+   height: 100vh;
+   
+}
+
+.sidebar-element{
+   width: var(--sidebar_width);
+   height: auto;
+   background-color: yellowgreen;
+   margin: 10px 0;
+}
+
+.sidebar-element .img{
+   object-fit: contain; 
+   justify-content: center;
+   outline: 10px, black;
+
+}
+
+.sidebarItem {}
+
+.sidebarItem .content .newsTitle {
+   text-align: left;
+   font-weight: bold;
+   font-size: 11px;
+}
+
+.sidebarItem .content .newsDescription {
+   font-size: 11px;
+   padding-bottom: 14px;
+   text-align: left;
+   hyphens: auto;
+   -moz-hyphens: auto;
+   -webkit-hyphens: auto;
+}
+
+.frontPage .video {
+   display: inline-block;
+   background-color: #000000;
+   width: 300px;
+   height: 400px;
+}
+
+.frontPage table {
+   width: 100%;
+   height: 100%;
+}
+
+.frontPage td.title {
+   height: 16pt;
+   position: relative;
+}
+
+.frontPage td.title .container {
+   position: relative;
+}
+
+
+
+.frontPage td.title .text {
+   font-weight: bold;
+   font-size: 25pt;
+   color: var(--main_color_light);
+   color: white;
+   z-index: 3;
+   text-align: center;
+   justify-content: center;
+   width: 50%;
+   margin: 5px;
+   
+   
+
+}
+
+.section-title-parent {
+   text-align: center; /* Centers inline and inline-block children */
+   /* Other styles as needed */
+}
+
+.section-title {
+   display: inline-block; /* Allows the background to fit tightly around the text */
+   background-color: rgba(0, 0, 0, .4);
+   outline: 1px, black;
+   padding: 10px 40px; /* Adjusts the space around the text inside the background */
+   border-radius: 50px; /* Adjusts the roundness of the corners */
+   text-align: center; /* Centers the text horizontally */
+   line-height: 1.5; /* Adjusts line height for vertical centering */
+   /* Optional styles */
+   color: white; /* Replace with your desired text color */
+   font-size: 1rem; /* Adjusts the text size */
+   margin: auto; /* For horizontal centering in a parent container */
+   font-weight: bold;
+   font-size: 25pt;
+   color: white;
+   z-index: 3;
+   --outline-thickness: 1px;
+   text-shadow:
+      calc(-1 * var(--outline-thickness)) calc(-1 * var(--outline-thickness)) 0 #000,
+      var(--outline-thickness) calc(-1 * var(--outline-thickness)) 0 #000,
+      calc(-1 * var(--outline-thickness)) var(--outline-thickness) 0 #000,
+      var(--outline-thickness) var(--outline-thickness) 0 #000;
+}
+
+.frontPage td.content {
+   vertical-align: top;
+   width: 100%;
+   height: auto;
+}
+
+.frontPage td.content .container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.frontPage td.content .container .background {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   /* background-color: var(--gray_medium); */
+   /* background-color: #c00000; */
+   /* outline: 1px, black; */
+   z-index: 0;
+}
+
+.frontPage td.content .container .text {
+   font-size: 10pt;
+   text-align: left;
+   padding: 10px;
+   z-index: 3;
+}
+
+.frontPage .about td.content .container .text {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   height: 164px;
+   text-align: left;
+}
+
+.frontPage .info td.content .container .text {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+}
+
+.frontPage td.content .container .image {
+   position: absolute;
+   left: 0px;
+   top: 18px;
+   z-index: 3;
+   padding: 4px;
+}
+
+.frontPage table.contact {
+   font-weight: bold;
+   font-size: 12px;
+}
+
+.publicationContent .subTitle {
+   text-align: right;
+   margin: 0px;
+   position: relative;
+   top: 0px;
+   color: black;
+   font-weight: bold;
+   font-size: 10pt;
+}
+
+.publicationContent hr {
+   position: relative;
+   background-color: var(--gray_light);
+   margin-left: 0px;
+   margin-right: 0px;
+   height: 2px;
+   top: -9px;
+   border: none;
+}
+
+#faqHeader {
+   padding: 10px;
+   font-size: 32px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.faqContent {
+   position: relative;
+   margin: 20px;
+   padding: 10px;
+}
+
+.faqContent .title {
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--main_color_dark);
+}
+
+.faqContent .questionBox {
+   background-color: #ebebeb;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.faqContent .questionBox .question:before {
+   content: "Q:";
+   color: #000000;
+   font-weight: bold;
+   font-style: normal;
+}
+
+.faqContent .questionBox .question {
+   margin: 4px;
+   font-style: italic;
+}
+
+.faqContent .questionBox .answer:before {
+   content: "A:";
+   color: #000000;
+   font-weight: bold;
+}
+
+.faqContent .questionBox .answer {
+   margin: 4px;
+   margin-top: 24px;
+   color: #000000;
+}
+
+.paperSet {
+   /* text-align: left; */
+   display: flex;
+   flex-wrap: wrap;
+   /* Allows the items to wrap onto the next line */
+   justify-content: center;
+   /* Evenly spaces the items with space around them */
+   align-items: stretch;
+   /* Stretches the items to fill the container */
+   flex: 1;
+   overflow: hidden;
+   padding: 10px;
+   padding-bottom: 18px;;
+
+}
+
+.paperBlock {
+   
+   width: var(--card_width);
+   height: var(--card_height);
+   font-size: 12px;
+   padding: 15px 10px 7px 10px;
+   margin: 10px;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: start;
+
+   transition: background-color var(--transition-duration_medium) ease-out var(--transition-duration_medium);
+   transition: box-shadow var(--transition-duration_medium) ease-out var(--transition-duration_medium);
+   border-radius: 20px;
+   background-color: var(--gray_medium_dark);
+   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.5);
+   
+}
+
+.paperBlock:hover {
+   background-color: var(--gray_medium);
+   box-shadow: 6px 6px 25px 2px rgba(0, 0, 0, 0.5);
+}
+
+.paperBlock a {
+   font-weight: bold;
+   font-size: 10pt;
+   color: #000000;
+}
+
+
+.paperBlock .paperTitle {
+   display: flex; /* Set paperTitle as a flex container */
+   align-items: center; /* Vertically center the content */
+   justify-content: center; /* Horizontally center the content */
+
+   height: var(--card_height_title);
+   width: 100%;
+   text-align: center;
+   font-size: 13pt;
+   font-weight: bold;
+   line-height: 1.2em;
+
+}
+
+
+.paperBlock .image-container {
+   height: var(--card_height_img); /* Fixed height for image container */
+   width: 100%;
+   margin: 5px 0;
+   
+}
+
+.image-container img {
+   height: 100%; /* Scales the image to the height of the container */
+   max-width: 100%; /* Ensures the image width doesn't exceed the container's width */
+   object-fit: contain; 
+   /* margin: 5px 0px; */
+   
+   display: inline-block;
+   /* width: ; */
+   max-height: var(--card_height_img);
+   width: 100%;
+   border-radius: 10px;
+   /* padding: 5px; */
+}
+
+
+
+.paper-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; /* This separates the top and bottom */
+   height: var(--card_height_info);
+   width: 100%;
+   /* background-color: #c3c3c3; */
+   /* opacity: 0.5; */
+}
+
+.paper-info-top {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly; /* This will space out the items equally */
+   flex-grow: 1;
+   font-size: 11pt;
+   
+   margin-top: 2px;
+   
+   /* background-color: #cccccc; */
+}
+
+.paper-info-bottom {
+   
+   /* Your styles for bottom container */
+   /* background-color: #848484; */
+}
+
+
+.paperBlock .authorList {   
+   display: flex;
+   
+   align-items:end;
+   justify-content: center;
+   /* height: var(--card_height_authors); */
+   width: 100%;
+   /* height: 100%; */
+   text-align: center;
+   /* font-size: 10pt; */
+   font-weight: normal;
+   line-height: 1.3em;
+}
+
+.paperBlock .authorList a:hover {
+   color: var(--main_color_light);
+}
+
+.paperBlock .venue {
+   color: var(--main_color_light);
+   display: flex;
+   align-items:start;
+   justify-content: center;
+   /* height: var(--card_height_venue); */
+   width: 100%;
+   /* height: 100%; */
+   text-align: center;
+   /* font-size: 10pt; */
+   font-weight: bold;
+   line-height: 1.3em;
+}
+
+.paperBlock .mini-abstract {
+   font-style: italic;
+   display: flex;
+   align-items:end;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: auto;
+   line-height: 1.2em;
+}
+
+
+
+
+.paperBlock .awardBox {
+   width: 100%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 4px;
+}
+
+.paperBlock .awardBox .emphasize a {
+   color: var(--main_color_very_light);
+   font-size: 9pt;
+}
+
+.abstractBox {
+   display: inline-block;
+   position: relative;
+   width: 58px;
+   height: 10pt;
+}
+
+.abstractBox .abstract {
+   display: inline-block;
+   position: absolute;
+   top: 15px;
+   left: 0px;
+   padding: 0px;
+   margin: 0px;
+   width: 320px;
+   height: auto;
+   color: #ffffff;
+   padding: 10px;
+   font-size: 10pt;
+   background: rgba(0, 0, 0, .8);
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+   border-radius: 6pt;
+   z-index: 200;
+   line-height: 125%;
+   visibility: hidden;
+   opacity: .0001;
+   transition: .5s;
+   -o-transition: .5s;
+   -ms-transition: .5s;
+   -moz-transition: .5s;
+   -webkit-transition: .5s;
+   text-align: left;
+}
+
+.abstractBox .abstract:before {
+   content: "Abstract: ";
+   font-weight: bold;
+   font-style: italic;
+}
+
+.abstractBox:hover .abstract {
+   visibility: visible;
+   opacity: 1.0;
+   transition: .5s;
+   -o-transition: .5s;
+   -ms-transition: .5s;
+   -moz-transition: .5s;
+   -webkit-transition: .5s;
+}
+
+.bibBox {
+   display: inline-block;
+   position: relative;
+   width: 50px;
+   height: 10pt;
+}
+
+.bibBox .bibliography {
+   word-wrap: break-word;
+   font-family: monospace;
+   display: inline-block;
+   position: absolute;
+   top: 15px;
+   left: -120px;
+   padding: 0px;
+   margin: 0px;
+   width: 320px;
+   height: auto;
+   color: #000000;
+   padding: 10px;
+   font-size: 8pt;
+   background: rgba(255, 255, 255, .9);
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+   border-radius: 6pt;
+   z-index: 200;
+   line-height: 125%;
+   visibility: hidden;
+   opacity: .0001;
+   transition: .5s;
+   -o-transition: .5s;
+   -ms-transition: .5s;
+   -moz-transition: .5s;
+   -webkit-transition: .5s;
+   text-align: left;
+}
+
+.bibBox:hover .bibliography {
+   visibility: visible;
+   opacity: 1.0;
+   transition: .5s;
+   -o-transition: .5s;
+   -ms-transition: .5s;
+   -moz-transition: .5s;
+   -webkit-transition: .5s;
+}
+
+.emphasize {
+   color: var(--main_color_dark);
+   background-color: var(--main_color_very_light);
+   border-radius: 4pt;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+   font-weight: bold;
+}
+
+.codeSet {
+   text-align: left;
+}
+
+.codeBlock {
+   display: inline-block;
+   vertical-align: top;
+   text-align: left;
+   width: var(--card_width);
+   padding-left: 8px;
+   padding-right: 8px;
+   padding-bottom: 20px;
+}
+
+.codeBlock img {
+   width: var(--card_width);
+}
+
+.codeBlock .title {
+   font-weight: bold;
+   color: var(--main_color_medium);
+   font-size: 11pt;
+   vertical-align: top;
+}
+
+.sidebarItem img.icon {
+   width: var(--sidebar_width);
+}
+
+.paperBox {
+   margin: 18px;
+}
+
+.paperBox .projectDate {
+   font-style: italic;
+   font-size: 12pt;
+   text-align: center;
+   padding-bottom: 24px;
+}
+
+.paperBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+}
+
+.paperBox .paperContent {
+   background-color: #ebebeb;
+   padding: 24px;
+   font-size: 14px;
+}
+
+.paperBox .paperContent .paperTitle {
+   text-align: center;
+   font-size: 24px;
+}
+
+.paperBox .journalTitle {
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--main_color_medium);
+}
+
+.paperBox .paperAward {
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--main_color_very_light);
+}
+
+.paperBox .paperContent .authorNames {
+   font-size: 12pt;
+   text-align: center;
+}
+
+.paperBox .paperContent .authorNames table {
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+   text-align: center;
+   font-size: 18px;
+}
+
+.paperBox .paperContent .authorNames td {
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+.paperBox .paperContent .authorNames td.author {
+   font-weight: bold;
+}
+
+.paperBox .paperContent .abstractText {
+   text-align: justify;
+   hyphens: auto;
+   -moz-hyphens: auto;
+   -webkit-hyphens: auto;
+   font-size: 12pt;
+}
+
+.paperBox .paperContent .abstractText:before {
+   content: "Abstract: ";
+   font-weight: bold;
+}
+
+.paperBox .paperContent img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: auto;
+   padding-bottom: 20px;
+}
+
+.pdfBox {
+   display: inline-block;
+   vertical-align: top;
+   width: 200px;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+}
+
+.pdfBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+}
+
+.pdfBox .title:before {
+   content: "Paper";
+   margin-left: 6px;
+}
+
+.pdfBox .pdfContent {
+   background-color: #ebebeb;
+   padding: 18px;
+}
+
+.pdfBox .pdfContent img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 128px;
+   box-shadow: -8px 8px 8px rgba(0, 0, 0, .4);
+}
+
+.videoBox {
+   display: inline-block;
+   vertical-align: top;
+   width: auto;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+}
+
+.videoBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+   margin-left: 6px;
+}
+
+.videoBox .videoContent {
+   background-color: #ebebeb;
+   padding: 18px;
+}
+
+.videoBox iframe {
+   width: 420px;
+   height: 315px;
+}
+
+.videoBox iframe.wide {
+   width: 560px;
+   height: 315px;
+}
+
+.supplementalBox {
+   display: inline-block;
+   vertical-align: top;
+   width: 500px;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+   font-size: 10pt;
+}
+
+.supplementalBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+   margin-left: 6px;
+}
+
+.supplementalBox .supplementalContent {
+   background-color: #ebebeb;
+   padding: 18px;
+}
+
+.supplementalBox .supplementalItem {
+   padding-bottom: 10px;
+   font-size: 12pt;
+}
+
+.supplementalBox .supplementalDescription {
+   font-size: 10pt;
+   padding-bottom: 8pt;
+}
+
+.supplementalBox td {
+   padding-left: 4px;
+   padding-right: 4px;
+}
+
+.acknowledgementBox {
+   display: inline-block;
+   vertical-align: top;
+   width: 350px;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+}
+
+.acknowledgementBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+}
+
+.acknowledgementBox .title:before {
+   content: "Acknowledgements";
+   margin-left: 6px;
+}
+
+.acknowledgementBox .acknowledgementContent {
+   background-color: #ebebeb;
+   padding: 18px;
+   font-size: 13px;
+   font-style: italic;
+   text-align: justify;
+   hyphens: auto;
+   -moz-hyphens: auto;
+   -webkit-hyphens: auto;
+}
+
+.referenceBox {
+   display: inline-block;
+   vertical-align: top;
+   width: 400px;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+}
+
+.referenceBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+}
+
+.referenceBox .title:before {
+   content: "BibTeX";
+   margin-left: 6px;
+}
+
+.referenceBox .referenceContent {
+   background-color: #ebebeb;
+   padding: 18px;
+}
+
+.referenceBox .referenceContent .bibEntry {
+   font-family: monospace;
+   white-space: pre-wrap;
+   white-space: -moz-pre-wrap;
+   white-space: -pre-wrap;
+   white-space: -o-pre-wrap;
+   word-wrap: break-word;
+   font-size: 8pt;
+}
+
+.seeAlsoBox {
+   float: right;
+   display: inline-block;
+   vertical-align: bottom;
+   width: 456px;
+   margin-left: 36px;
+   background-color: var(--main_color_dark);
+   padding: 12px;
+   padding-bottom: 24px;
+   margin-bottom: 12px;
+}
+
+.seeAlsoBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: #000000;
+   position: relative;
+}
+
+.seeAlsoBox .title:before {
+   content: "See Also";
+}
+
+.seeAlsoBox .seeAlsoItem {
+   padding-left: 24px;
+   padding-top: 6px;
+}
+
+.seeAlsoBox a {
+   color: #ffffff;
+   font-weight: bold;
+}
+
+.seeAlsoBox a:hover {
+   color: var(--main_color_dark);
+}
+
+.codeBox {
+   display: inline-block;
+   vertical-align: top;
+   width: 450px;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+}
+
+.codeBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+}
+
+.codeBox .title:before {
+   content: "Code";
+   margin-left: 6px;
+}
+
+.codeBox .codeContent {
+   background-color: #ebebeb;
+   padding: 18px;
+}
+
+.codeBox td {
+   font-size: 10pt;
+   vertical-align: top;
+   padding-bottom: 3px;
+   padding-top: 3px;
+}
+
+.codeBox td.codeItem {
+   text-align: right;
+}
+
+.codeBox a {
+   font-weight: bold;
+}
+
+.codeBox .subTitle {
+   display: inline-block;
+   float: right;
+   font-weight: bold;
+   padding-left: 8px;
+   font-size: 12pt;
+}
+
+.codeBox hr {
+   background-color: #777777;
+   height: 1px;
+   border: none;
+}
+
+.dataBox {
+   display: inline-block;
+   vertical-align: top;
+   width: auto;
+   margin-left: 18px;
+   margin-right: 18px;
+   padding-bottom: 36px;
+}
+
+.dataBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+}
+
+.dataBox .title:before {
+   content: "Data";
+   margin-left: 6px;
+}
+
+.dataBox .dataContent {
+   background-color: #ebebeb;
+   padding: 18px;
+}
+
+.dataBox .description {
+   font-size: 12px;
+   padding-bottom: 10px;
+}
+
+.dataBox .fileInfo {
+   padding-top: 12px;
+}
+
+.dataBox td {
+   padding: 0px;
+   margin: 0px;
+}
+
+.dataBox tr {
+   padding: 0px;
+   margin: 0px;
+}
+
+.dataBox table {
+   padding: 0px;
+   margin: 0px;
+}
+
+.figureBox {
+   width: 900px;
+   margin: 18px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.figureBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+   margin-left: 6px;
+}
+
+.figureBox .figureContent {
+   background-color: #ffffff;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #CCCCCC;
+   padding: 24px;
+}
+
+.figureBox .figure {
+   width: 750px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   padding-bottom: 60px;
+}
+
+.figureBox .figureContent .figure img {
+   width: auto;
+}
+
+.figureBox .figureContent .figure img.halfWidth {
+   width: auto;
+}
+
+.figureBox .figureContent .figure .caption {
+   font-size: 12pt;
+   text-align: left;
+}
+
+.figureBox .figureContent .figure .caption .location {
+   font-style: italic;
+}
+
+.fileInfo {
+   padding-top: 18px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.columnWidthBox {
+   display: block;
+   vertical-align: top;
+   margin-left: 36px;
+   margin-right: 36px;
+   margin-bottom: 72px;
+   font-size: 10pt;
+}
+
+.columnWidthBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+   z-index: 50;
+}
+
+.columnWidthBox .content {
+   background-color: #ebebeb;
+   padding: 18px;
+   font-size: 11pt;
+   position: relative;
+}
+
+.columnWidthBox .license {
+   position: absolute;
+   right: 18px;
+   background-color: var(--main_color_dark);
+   color: white;
+   padding: 10px;
+   padding-top: 28px;
+   padding-left: 28px;
+   font-size: 11pt;
+}
+
+.columnWidthBox .license:before {
+   content: "License";
+   font-weight: bold;
+   color: black;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+.columnWidthBox img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.columnWidthBox .download {
+   font-weight: bold;
+   font-size: 14pt;
+}
+
+.textBox {
+   display: inline-block;
+   vertical-align: top;
+   width: 500px;
+   margin-left: 18px;
+   margin-right: 18px;
+   margin-bottom: 10px;
+   font-size: 10pt;
+}
+
+.textBox .title {
+   font-weight: bold;
+   font-size: 24px;
+   color: var(--main_color_dark);
+   position: relative;
+   top: 6px;
+   z-index: 50;
+}
+
+.textBox .textContent {
+   background-color: #ebebeb;
+   padding: 18px;
+   font-size: 10pt;
+   text-align: justify;
+   hyphens: auto;
+   -moz-hyphens: auto;
+   -webkit-hyphens: auto;
+   position: relative;
+}
+
+.frontPage img.sideItem {
+   width: 100%;
+}
+
+
+/* This destroyes everything */
+.vertical_separator {
+   height: 100%;
+   width: 100%;
+}
+
+/* UNUSED */
+.button-outer-container{
+   margin-top: auto;
+   /* height: var(--card_height_buttons) */
+}
+
+.button-container {
+   display: flex;
+   width: 100%;
+}
+
+.button {
+   flex: 1;
+   text-align: center;
+   box-sizing: border-box;
+   background-color: var(--main_color_light);
+   border: 1px solid black;
+   text-decoration: none;
+   border-radius: 5px;
+   margin: 1%;
+   line-height: 1.5em;
+   transition: box-shadow var(--transition-duration_medium_fast) ease-out var(--transition-duration_medium_fast);
+}
+
+.button-container a {
+   color: white;
+}
+
+.button-container a:hover {
+   /* color: black; */
+   /* background-color: var(--gray_light); */
+   /* border: 2px solid black; */
+   /* transform: scale(1.1); */
+   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.item-container {
+   text-align: right; /* Aligns all items to the right */
+   margin-top: 2px;
+   padding-right: 10px;
+   width: 100%;
+}
+
+.item {
+   display: inline-block;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.8);
+   outline: 1px solid black;
+   background-image: linear-gradient(to bottom right, rgb(91, 91, 91), rgb(0, 0, 0));
+   color: white;
+   font-weight: bold;
+   padding: 3px 10px;
+   margin-right: 3px;
+   border-radius: 20px;
+   font-size: 10pt;
+}
+
+.SIGGRAPH{
+   background-image: linear-gradient(to bottom right, rgb(0, 204, 255), rgb(174, 0, 255), red);
+}
+
+.IEEE{
+   background-image: linear-gradient(to bottom right, rgb(0, 204, 255), rgb(4, 0, 255));
+}
+
+.arXiv{
+   background-image: linear-gradient(to bottom right, #ff0000, #520000 );
+}
+
+.Eurographics{
+   background-image: linear-gradient(to bottom right, #FFFF00, #606000 );
+   color: black;
+}
+
+
+.paperBox .paperContent .translationLink {
+   text-align: right;
+   position: absolute;
+   top: 10px;
+   right: 30px;
+}
+
+.paperBox .paperContent .translationLink a {
+   font-weight: bold;
+   font-size: 115%;
+}
+
+.paperBox .paperContent .small {
+   font-size: 60%;
+}
+
+.paperBox .paperContent .small a {
+   color: black;
+}
+
+
+
+.authorNames a:link {
+   color: #000000;
+   text-decoration: underline;
+}
+
+.authorNames a:hover {
+   color: var(--main_color_dark);
+   text-decoration: underline;
+}
+
+.authorNames a:visited {
+   color: #000000;
+}
+
+.courseBlock {
+   display: inline-block;
+   padding: 6px;
+}
+
+.courseBlock .courseTitle {
+   font-weight: bold;
+}
+
+
+
+.newBlock {
+   display: inline-block;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 4px;
+   color: var(--main_color_dark);
+   font-size: 9pt;
+   color: var(--main_color_dark);
+   background-color: var(--main_color_light);
+   border-radius: 4pt;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   font-weight: bold;
+}
