@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pig Game</title>
+<meta name="theme-color" content="#0f172a">
+<link rel="manifest" href="./manifest.webmanifest">
+<style>
+  :root {
+    --bg: #0f172a;          /* slate-900 */
+    --card: #111827;        /* gray-900 */
+    --text: #e5e7eb;        /* gray-200 */
+    --subtext: #cbd5e1;     /* slate-300 */
+    --btn-orange: #fb923c;
+    --btn-blue:   #60a5fa;
+    --btn-gray:   #4b5563;
+    --btn-indigo: #6366f1;
+    --radius: 12px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+    background: radial-gradient(80rem 60rem at 20% -10%, #1f2937 0%, rgba(31,41,55,0) 60%) , var(--bg);
+    color:var(--text);
+  }
+  header{
+    position:sticky; top:0; backdrop-filter:saturate(120%) blur(6px);
+    background:rgba(2,6,23,0.6); border-bottom:1px solid rgba(148,163,184,0.15);
+  }
+  .appbar{max-width:920px;margin:0 auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .appbar h1{margin:0;font-size:20px;letter-spacing:.3px}
+  .install{
+    display:flex; align-items:center; gap:8px;
+  }
+  .install .btn{
+    padding:10px 12px; border:none; border-radius:10px; background:var(--btn-gray); color:white; font-weight:700; cursor:pointer;
+  }
+  .install .status{font-size:12px; color:#cbd5e1}
+  main{max-width:920px;margin:0 auto;padding:16px}
+  .card{background:var(--card);border:1px solid rgba(148,163,184,.15);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:16px;min-height:320px}
+  .section-title{font-size:22px;font-weight:700;text-align:center;color:var(--subtext)}
+  .row{display:flex;gap:12px}
+  .row > .flex-1{flex:1}
+  .btn{
+    display:flex; flex-direction:column; justify-content:center; align-items:center;
+    gap:8px; width:100%; padding:16px; border:none; color:white; border-radius:var(--radius);
+    cursor:pointer; transition:transform .06s ease, filter .06s ease; font-weight:700;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  }
+  .btn:hover{transform:translateY(-1px); filter:brightness(1.03)}
+  .btn:active{transform:translateY(0)}
+  .btn .icon{font-size:28px;line-height:1}
+  .btn.orange{background:var(--btn-orange)}
+  .btn.blue{background:var(--btn-blue)}
+  .btn.gray{background:var(--btn-gray)}
+  .btn.indigo{background:var(--btn-indigo)}
+  .divider{height:2px; background: linear-gradient(90deg, rgba(99,102,241,.0), rgba(99,102,241,.5), rgba(99,102,241,.0)); margin:24px 0}
+  @media (max-width:720px){ .row{flex-direction:column} }
+  .footer{margin-top:10px; font-size:12px; color:#94a3b8; text-align:center}
+</style>
+</head>
+<body>
+  <header>
+    <div class="appbar">
+      <h1>Pig Game 🐖🐖</h1>
+      <div class="install">
+        <button class="btn" id="btn-offline">Install / Make available offline</button>
+        <span class="status" id="offline-status">Not cached</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="section-title">Background Music</div>
+      <div class="row">
+        <div class="flex-1">
+          <button class="btn orange" id="btn-funny">
+            <div class="icon">♪</div>
+            <div>Funny</div>
+          </button>
+        </div>
+        <div class="flex-1">
+          <button class="btn blue" id="btn-winning">
+            <div class="icon">♪</div>
+            <div>Winning</div>
+          </button>
+        </div>
+      </div>
+      <button class="btn gray" id="btn-stop">Stop Music</button>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="card">
+      <div class="section-title">Sound Effects</div>
+      <button class="btn indigo" id="btn-drama">
+        <div class="icon">🔊</div>
+        <div>Drama Sound</div>
+      </button>
+    </section>
+
+    <div class="footer">
+      Tap a button to play. Audio still requires a user gesture even when offline (browser policy).
+    </div>
+  </main>
+
+<script>
+    // ---------- App files (must match service-worker ASSETS) ----------
+    const FILES = {
+        funny:  "audio/starting.mp3",
+        winning:"audio/winning.mp3",
+        drama:  "audio/boom.mp3",
+    };
+    const ASSETS_TO_CACHE = [
+        "./",
+        "./index.html",
+        "./" + FILES.funny,
+        "./" + FILES.winning,
+        "./" + FILES.drama
+    ];
+
+    // ---------- Audio logic ----------
+    const bg = new Audio();
+    bg.loop = true;
+    bg.preload = "metadata";
+
+    const activeSfx = new Set();
+
+    const urlFor = (file) => encodeURI(file);
+
+    async function playBackground(file){
+        try{
+            bg.pause();
+            bg.src = urlFor(file);
+            await bg.play();
+        }catch(err){
+            console.warn("BG play failed:", err);
+            alert("Playback was blocked. Please tap again.");
+        }
+    }
+
+    function stopBackground(){ bg.pause(); }
+
+    function playSfx(file){
+        const a = new Audio(urlFor(file));
+        a.preload = "auto";
+        a.addEventListener("ended", () => activeSfx.delete(a));
+        a.addEventListener("error", (e) => { console.warn("SFX error", e); activeSfx.delete(a); });
+        activeSfx.add(a);
+        a.play().catch(err => console.warn("SFX play failed:", err));
+    }
+
+    document.getElementById("btn-funny") .addEventListener("click", () => playBackground(FILES.funny));
+    document.getElementById("btn-winning").addEventListener("click", () => playBackground(FILES.winning));
+    document.getElementById("btn-stop")   .addEventListener("click", stopBackground);
+    document.getElementById("btn-drama")  .addEventListener("click", () => playSfx(FILES.drama));
+
+    // ---------- Service worker & install/offline flow ----------
+    const statusEl = document.getElementById('offline-status');
+    const offlineBtn = document.getElementById('btn-offline');
+    let deferredPrompt = null;
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js', { scope: './' })
+            .then(() => updateStatusFromCache())
+            .catch(console.warn);
+
+        // Track updates to status when SW changes cache
+        navigator.serviceWorker.addEventListener('message', (evt) => {
+            if (evt.data === 'CACHE_UPDATED') updateStatusFromCache();
+        });
+    }
+
+    // Android/Chrome install prompt capture
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e; // show it when user clicks
+        // Optional: visually hint that install is available
+        offlineBtn.textContent = 'Install app / Make available offline';
+    });
+
+    offlineBtn.addEventListener('click', async () => {
+        // 1) Warm the cache so it works offline immediately
+        await warmCache();
+
+        // 2) Trigger A2HS prompt when available (Android/Chrome)
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            try { await deferredPrompt.userChoice; } catch {}
+            deferredPrompt = null;
+        } else {
+            // iOS: user must use Share -> Add to Home Screen
+            // Keep silent; offline still works via SW cache.
+        }
+    });
+
+    async function warmCache(){
+        // Touch each asset; SW will intercept and store
+        try {
+            await Promise.allSettled(ASSETS_TO_CACHE.map(f => fetch(f, { cache: 'reload' })));
+            updateStatusFromCache(true);
+            alert('Cached for offline use (subject to device limits).');
+        } catch (e) {
+            console.warn('Warm cache failed', e);
+            alert('Could not cache files. Check your connection and try again.');
+        }
+    }
+
+    async function updateStatusFromCache(justCached=false){
+        if (!('caches' in window)) { statusEl.textContent = 'Not cached'; return; }
+        try{
+            const keys = await caches.keys();
+            // Heuristic: if any cache entry contains our index.html, consider ready
+            let cachedIndex = false;
+            await Promise.all(keys.map(async k => {
+                const c = await caches.open(k);
+                const r = await c.match('./index.html');
+                if (r) cachedIndex = true;
+            }));
+            statusEl.textContent = cachedIndex ? (justCached ? 'Cached now' : 'Cached') : 'Not cached';
+        }catch{
+            statusEl.textContent = 'Not cached';
+        }
+    }
+
+    // Pause bg when tab hidden (optional)
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) { /* bg.pause(); */ }
+    });
+</script>
+</body>
+</html>
